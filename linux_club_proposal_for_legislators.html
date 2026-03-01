@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>「Linux部」構想 ― 日本のIT人材を育てる新しいエコシステム</title>
+    <script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Hiragino Kaku Gothic ProN', 'メイリオ', Meiryo, sans-serif;
+            line-height: 1.8;
+            color: #333;
+            background: #f5f5f5;
+        }
+        
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        .header {
+            background: linear-gradient(135deg, #1a237e 0%, #283593 100%);
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        
+        .header h1 {
+            font-size: 1.8em;
+            margin-bottom: 15px;
+        }
+        
+        .header .subtitle {
+            font-size: 1.1em;
+            opacity: 0.9;
+        }
+        
+        .summary-box {
+            background: #fff3e0;
+            border-left: 5px solid #ff9800;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 0 8px 8px 0;
+        }
+        
+        .summary-box h2 {
+            color: #e65100;
+            margin-bottom: 10px;
+            font-size: 1.2em;
+        }
+        
+        .section {
+            background: white;
+            margin: 20px 0;
+            padding: 25px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        
+        .section h2 {
+            color: #1a237e;
+            border-bottom: 3px solid #3f51b5;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+            font-size: 1.3em;
+        }
+        
+        .section h3 {
+            color: #303f9f;
+            margin: 20px 0 10px 0;
+            font-size: 1.1em;
+        }
+        
+        .problem-box {
+            background: #ffebee;
+            border: 1px solid #ef9a9a;
+            padding: 15px;
+            margin: 10px 0;
+            border-radius: 8px;
+        }
+        
+        .problem-box h4 {
+            color: #c62828;
+            margin-bottom: 8px;
+        }
+        
+        .solution-box {
+            background: #e8f5e9;
+            border: 1px solid #a5d6a7;
+            padding: 15px;
+            margin: 10px 0;
+            border-radius: 8px;
+        }
+        
+        .solution-box h4 {
+            color: #2e7d32;
+            margin-bottom: 8px;
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 15px 0;
+        }
+        
+        th, td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: left;
+        }
+        
+        th {
+            background: #e8eaf6;
+            color: #1a237e;
+        }
+        
+        tr:nth-child(even) {
+            background: #fafafa;
+        }
+        
+        .mermaid {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 20px 0;
+            text-align: center;
+        }
+        
+        .highlight-box {
+            background: #e3f2fd;
+            border: 2px solid #2196f3;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 8px;
+            text-align: center;
+        }
+        
+        .highlight-box .big-text {
+            font-size: 1.4em;
+            font-weight: bold;
+            color: #1565c0;
+        }
+        
+        .benefit-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 15px;
+            margin: 20px 0;
+        }
+        
+        .benefit-card {
+            background: linear-gradient(135deg, #fafafa 0%, #f5f5f5 100%);
+            border: 1px solid #e0e0e0;
+            border-radius: 8px;
+            padding: 15px;
+        }
+        
+        .benefit-card.company {
+            border-top: 4px solid #2196f3;
+        }
+        
+        .benefit-card.vendor {
+            border-top: 4px solid #ff9800;
+        }
+        
+        .benefit-card.city {
+            border-top: 4px solid #9c27b0;
+        }
+        
+        .benefit-card.school {
+            border-top: 4px solid #4caf50;
+        }
+        
+        .benefit-card h4 {
+            margin-bottom: 10px;
+            font-size: 1em;
+        }
+        
+        .benefit-card ul {
+            padding-left: 20px;
+            font-size: 0.9em;
+        }
+        
+        .check-list {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .check-list li {
+            padding: 8px 0;
+            padding-left: 30px;
+            position: relative;
+        }
+        
+        .check-list li::before {
+            content: "✅";
+            position: absolute;
+            left: 0;
+        }
+        
+        .footer {
+            text-align: center;
+            padding: 30px;
+            color: #666;
+            font-size: 0.9em;
+        }
+        
+        .key-message {
+            background: linear-gradient(135deg, #1a237e 0%, #283593 100%);
+            color: white;
+            padding: 30px;
+            text-align: center;
+            border-radius: 8px;
+            margin: 30px 0;
+        }
+        
+        .key-message h2 {
+            border: none;
+            color: white;
+            font-size: 1.5em;
+            margin-bottom: 10px;
+        }
+        
+        .timeline {
+            position: relative;
+            padding: 20px 0;
+        }
+        
+        .timeline-item {
+            display: flex;
+            margin: 15px 0;
+        }
+        
+        .timeline-icon {
+            width: 60px;
+            height: 60px;
+            background: #3f51b5;
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5em;
+            flex-shrink: 0;
+        }
+        
+        .timeline-content {
+            margin-left: 20px;
+            padding: 10px 15px;
+            background: #f5f5f5;
+            border-radius: 8px;
+            flex-grow: 1;
+        }
+        
+        .timeline-content h4 {
+            color: #1a237e;
+            margin-bottom: 5px;
+        }
+        
+        @media (max-width: 768px) {
+            .benefit-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .header h1 {
+                font-size: 1.4em;
+            }
+        }
+
+        .print-only {
+            display: none;
+        }
+
+        @media print {
+            .header {
+                background: #1a237e !important;
+                -webkit-print-color-adjust: exact;
+                print-color-adjust: exact;
+            }
+            
+            .section {
+                break-inside: avoid;
+            }
+            
+            .mermaid {
+                break-inside: avoid;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>「Linux部」構想</h1>
+        <p class="subtitle">日本のIT人材を育てる新しいエコシステム</p>
+        <p style="margin-top: 15px; font-size: 0.9em;">企業・自治体・学校・中古PC業者の四者連携による持続可能な教育支援モデル</p>
+    </div>
+    
+    <div class="container">
+        <div class="summary-box">
+            <h2>📋 3分でわかる本提案</h2>
+            <p><strong>提案内容：</strong>企業・官公庁が廃棄する中古PCを中高生に無償提供し、「Linux部」という部活動を通じて次世代のIT人材を育成する仕組み</p>
+            <p style="margin-top: 10px;"><strong>キーワード：</strong>新規予算不要 ｜ 全員にメリット ｜ 持続可能な仕組み</p>
+        </div>
+
+        <!-- 課題セクション -->
+        <div class="section">
+            <h2>🔴 日本のIT教育が抱える3つの課題</h2>
+            
+            <div class="problem-box">
+                <h4>課題① ITを「使う」だけで「作る」経験がない</h4>
+                <p>現在の学校では、生徒は完成されたソフトウェアを「使う」だけ。OSのインストールやサーバー構築といった「作る側」の体験ができません。</p>
+            </div>
+            
+            <div class="problem-box">
+                <h4>課題② 予算の壁</h4>
+                <p>自治体の教育予算は限られており、IT教育のための最新PC導入は困難です。</p>
+            </div>
+            
+            <div class="problem-box">
+                <h4>課題③ 使えるPCが眠っている</h4>
+                <p>企業・官公庁では、会計上の減価償却（4年）が終わると、<strong>まだ十分使えるPC</strong>が廃棄されています。</p>
+            </div>
+        </div>
+
+        <!-- 解決策セクション -->
+        <div class="section">
+            <h2>🟢 解決策：四者連携エコシステム</h2>
+            
+            <p>以下の4者が連携することで、<strong>全員がメリットを得られる持続可能な仕組み</strong>を構築します。</p>
+            
+            <div class="mermaid">
+flowchart TB
+    subgraph 四者連携の流れ
+        A["🏢 企業・官公庁"]
+        B["🔧 中古PC業者"]
+        C["🏛️ 自治体"]
+        D["🏫 学校・Linux部"]
+    end
+    
+    A -->|"① 減価償却済みPC提供<br/>（CSR活動・税制優遇）"| B
+    B -->|"② データ消去・整備<br/>（専門作業で収益確保）"| C
+    C -->|"③ 公平な配分<br/>（ハブ機能）"| D
+    D -->|"④ IT人材輩出<br/>（地域への還元）"| A
+    
+    style A fill:#e3f2fd,stroke:#1976d2,stroke-width:2px
+    style B fill:#fff3e0,stroke:#f57c00,stroke-width:2px
+    style C fill:#f3e5f5,stroke:#7b1fa2,stroke-width:2px
+    style D fill:#e8f5e9,stroke:#388e3c,stroke-width:2px
+            </div>
+        </div>
+
+        <!-- 各者のメリット -->
+        <div class="section">
+            <h2>💡 各ステークホルダーのメリット</h2>
+            
+            <div class="benefit-grid">
+                <div class="benefit-card company">
+                    <h4>🏢 企業・官公庁</h4>
+                    <ul>
+                        <li>廃棄コストの削減</li>
+                        <li>寄付金による税制優遇</li>
+                        <li>CSR活動としての社会貢献</li>
+                        <li>情報漏洩リスクの解消</li>
+                    </ul>
+                </div>
+                
+                <div class="benefit-card vendor">
+                    <h4>🔧 中古PC業者</h4>
+                    <ul>
+                        <li>データ消去で新規収益源</li>
+                        <li>専門性を活かした業務</li>
+                        <li>「教育支援業界」としての価値向上</li>
+                    </ul>
+                </div>
+                
+                <div class="benefit-card city">
+                    <h4>🏛️ 自治体</h4>
+                    <ul>
+                        <li>地域企業との連携強化</li>
+                        <li>教育政策の実績</li>
+                        <li>地域のデジタル人材育成</li>
+                    </ul>
+                </div>
+                
+                <div class="benefit-card school">
+                    <h4>🏫 学校・生徒</h4>
+                    <ul>
+                        <li>予算ゼロでPC確保</li>
+                        <li>「本物の」IT体験</li>
+                        <li>将来のキャリア形成</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- なぜLinuxなのか -->
+        <div class="section">
+            <h2>🐧 なぜ「パソコン部」ではなく「Linux部」なのか</h2>
+            
+            <h3>Linuxとは？</h3>
+            <p>世界中のサーバーの<strong>90%以上</strong>で使われている無料のOS（基本ソフト）です。スマートフォン（Android）、クラウドサービス、スーパーコンピュータなど、現代のIT基盤の大部分がLinuxで動いています。</p>
+            
+            <h3>Linuxを選ぶ3つの理由</h3>
+            <table>
+                <tr>
+                    <th>理由</th>
+                    <th>内容</th>
+                    <th>メリット</th>
+                </tr>
+                <tr>
+                    <td><strong>① 経済性</strong></td>
+                    <td>古いPCでも軽快に動作</td>
+                    <td>10年前のPCでも現役で使える</td>
+                </tr>
+                <tr>
+                    <td><strong>② 教育効果</strong></td>
+                    <td>OSの中身を学べる</td>
+                    <td>「使う側」から「作る側」へ成長</td>
+                </tr>
+                <tr>
+                    <td><strong>③ 実用性</strong></td>
+                    <td>世界標準のスキル</td>
+                    <td>即戦力として就職に有利</td>
+                </tr>
+            </table>
+            
+            <div class="solution-box">
+                <h4>💻 古いPCでも動く軽量Linux</h4>
+                <table>
+                    <tr>
+                        <th>種類</th>
+                        <th>必要メモリ</th>
+                        <th>動作するPCの目安</th>
+                    </tr>
+                    <tr>
+                        <td>Lubuntu</td>
+                        <td>2GB</td>
+                        <td>10年前のPC</td>
+                    </tr>
+                    <tr>
+                        <td>Puppy Linux</td>
+                        <td>1GB</td>
+                        <td>15年前のPC</td>
+                    </tr>
+                    <tr>
+                        <td>antiX</td>
+                        <td>512MB</td>
+                        <td>20年前のPC</td>
+                    </tr>
+                </table>
+                <p style="margin-top: 10px; text-align: center;"><strong>→ 企業が「もう使えない」と判断したPCでも、Linuxなら十分に動作します</strong></p>
+            </div>
+        </div>
+
+        <!-- PCの流れ比較 -->
+        <div class="section">
+            <h2>🔄 PCの流れ：現状と提案の比較</h2>
+            
+            <div class="mermaid">
+flowchart LR
+    subgraph 現状["❌ 現状（もったいない）"]
+        direction LR
+        A1["企業でPC使用<br/>4年間"] --> A2["減価償却終了"]
+        A2 --> A3["中古業者に売却<br/>または廃棄"]
+        A3 --> A4["微妙な性能で<br/>再販売"]
+    end
+    
+    subgraph 提案["✅ 提案（全員Win）"]
+        direction LR
+        B1["企業でPC使用<br/>4年間"] --> B2["減価償却終了<br/>まだ動く！"]
+        B2 --> B3["中古PC業者が<br/>データ消去"]
+        B3 --> B4["自治体経由で<br/>学校へ寄付"]
+        B4 --> B5["Linux部で<br/>IT人材育成"]
+    end
+    
+    style A4 fill:#ffcdd2,stroke:#c62828
+    style B5 fill:#c8e6c9,stroke:#2e7d32
+            </div>
+        </div>
+
+        <!-- 算額の文化 -->
+        <div class="section">
+            <h2>📜 江戸時代の「算額」に学ぶ</h2>
+            
+            <h3>算額（さんがく）とは？</h3>
+            <p>江戸時代、数学の問題を絵馬に書いて神社に奉納し、互いに解き合った文化です。農民から武士まで広く愛好され、<strong>「知の共有と競争」</strong>が全国規模で自発的に行われていました。</p>
+            
+            <div class="mermaid">
+flowchart LR
+    subgraph 江戸時代
+        E1["難問を<br/>神社に奉納"] --> E2["解法を<br/>競い合う"]
+        E2 --> E3["全国に<br/>広がる"]
+    end
+    
+    subgraph 現代のLinux部
+        M1["お題を<br/>ネットで公開"] --> M2["解答を<br/>GitHub/Qiitaで公開"]
+        M2 --> M3["全国の<br/>Linux部がつながる"]
+    end
+    
+    E3 -.->|"現代版として<br/>復活"| M1
+    
+    style E1 fill:#fff8e1,stroke:#ff8f00
+    style E2 fill:#fff8e1,stroke:#ff8f00
+    style E3 fill:#fff8e1,stroke:#ff8f00
+    style M1 fill:#e3f2fd,stroke:#1976d2
+    style M2 fill:#e3f2fd,stroke:#1976d2
+    style M3 fill:#e3f2fd,stroke:#1976d2
+            </div>
+            
+            <h3>想定される競技部門</h3>
+            <table>
+                <tr>
+                    <th>部門</th>
+                    <th>内容</th>
+                </tr>
+                <tr>
+                    <td>セキュリティ部門</td>
+                    <td>システムを安全にする技術を競う</td>
+                </tr>
+                <tr>
+                    <td>プログラミング部門</td>
+                    <td>効率的なプログラム作成を競う</td>
+                </tr>
+                <tr>
+                    <td>インフラ部門</td>
+                    <td>サーバー構築・運用の技術を競う</td>
+                </tr>
+            </table>
+        </div>
+
+        <!-- 税制優遇 -->
+        <div class="section">
+            <h2>💰 企業にとっての税制メリット</h2>
+            
+            <p>企業のCSR活動・寄付には、法人税法上のメリットがあります。</p>
+            
+            <table>
+                <tr>
+                    <th>寄付先</th>
+                    <th>税制優遇</th>
+                </tr>
+                <tr>
+                    <td>国・地方公共団体</td>
+                    <td><strong>全額損金算入</strong></td>
+                </tr>
+                <tr>
+                    <td>認定NPO・公益法人等</td>
+                    <td><strong>特別損金算入限度額</strong></td>
+                </tr>
+                <tr>
+                    <td>企業版ふるさと納税</td>
+                    <td><strong>最大9割が税額控除</strong></td>
+                </tr>
+            </table>
+            
+            <div class="solution-box">
+                <h4>ポイント</h4>
+                <p>企業は「税金を納めるか、教育に寄付するか」を選択できます。<br/>この既存の枠組みを活用し、中古PC業者への作業費用を捻出することが可能です。</p>
+            </div>
+        </div>
+
+        <!-- 期待される効果 -->
+        <div class="section">
+            <h2>📈 期待される効果</h2>
+            
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-icon">短</div>
+                    <div class="timeline-content">
+                        <h4>短期効果</h4>
+                        <p>中古PCの有効活用（廃棄削減）、学校のIT環境整備（予算ゼロで実現）</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-icon">中</div>
+                    <div class="timeline-content">
+                        <h4>中期効果</h4>
+                        <p>Linux人材の早期育成、地域の教育格差解消、デジタル・デバイドの縮小</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-icon">長</div>
+                    <div class="timeline-content">
+                        <h4>長期効果</h4>
+                        <p>日本のIT産業の国際競争力向上、情報産業の底上げ、次世代エンジニアの輩出</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- まとめ -->
+        <div class="section">
+            <h2>✅ まとめ：本提案のポイント</h2>
+            
+            <ul class="check-list">
+                <li><strong>新たな予算は不要</strong> ― 既存資源（中古PC）の有効活用</li>
+                <li><strong>全員にメリット</strong> ― 企業・業者・自治体・学校の四者連携</li>
+                <li><strong>持続可能</strong> ― 一時的な寄付ではなく、仕組みとして定着</li>
+                <li><strong>教育効果が高い</strong> ― 「使う側」から「作る側」への転換</li>
+                <li><strong>日本の強みを活かす</strong> ― 江戸時代の算額文化の現代版</li>
+            </ul>
+        </div>
+
+        <!-- キーメッセージ -->
+        <div class="key-message">
+            <h2>「眠っているPCを、未来のエンジニアの手に」</h2>
+            <p>この構想の実現に向けて、ご支援・ご検討をお願いいたします。</p>
+        </div>
+
+        <div class="footer">
+            <p>本資料は亀田健司氏のQiita記事（2025年12月〜2026年1月）をもとに作成しました</p>
+            <p style="margin-top: 10px;">
+                参考URL:<br>
+                <a href="https://qiita.com/kameda05/items/b5e3a72f164aeb1872c8">「Linux部」を全国の中高に！</a><br>
+                <a href="https://qiita.com/kameda05/items/13e04907217b6c2c873e">性能が微妙な中古PCを中高生にくれてやれ</a><br>
+                <a href="https://qiita.com/kameda05/items/204df7802b9855461f74">企業・自治体・学校・中古PC業者が連携してつくるエコシステム</a>
+            </p>
+        </div>
+    </div>
+
+    <script>
+        mermaid.initialize({
+            startOnLoad: true,
+            theme: 'default',
+            securityLevel: 'loose',
+            flowchart: {
+                useMaxWidth: true,
+                htmlLabels: true,
+                curve: 'basis'
+            }
+        });
+    </script>
+</body>
+</html>
