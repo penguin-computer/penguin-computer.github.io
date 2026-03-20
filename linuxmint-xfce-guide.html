@@ -1,0 +1,849 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Linux Mint Xfce 操作ガイド - Penguin Computer</title>
+<meta name="description" content="Linux Mint Xfce Edition の操作ガイド。デスクトップの基本操作からアプリケーションの使い方、トラブルシューティングまで。ペンギンコンピュータのLinuxプリインストールPC購入者向け。">
+<!-- OGP -->
+<meta property="og:title" content="Linux Mint Xfce 操作ガイド">
+<meta property="og:description" content="Linux Mint Xfce Edition の操作ガイド。デスクトップの基本操作からトラブルシューティングまで。">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://penguin-computer.github.io/linuxmint-xfce-guide.html">
+<meta property="og:site_name" content="Penguin Computer">
+<meta property="og:locale" content="ja_JP">
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary">
+<meta name="twitter:site" content="@penguin_comp">
+<meta name="twitter:title" content="Linux Mint Xfce 操作ガイド">
+<meta name="twitter:description" content="Linux Mint Xfce Edition の操作ガイド。デスクトップの基本操作からトラブルシューティングまで。">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: -apple-system, 'Hiragino Sans', 'Noto Sans JP', sans-serif; background: #f5f7fa; color: #333; line-height: 1.8; }
+  .container { max-width: 700px; margin: 0 auto; padding: 24px 16px; }
+  h1 { font-size: 1.4em; margin-bottom: 8px; }
+  h2 { font-size: 1.15em; margin-bottom: 8px; }
+  h3 { font-size: 1.05em; margin-bottom: 6px; color: #2d6a4f; }
+  h4 { font-size: 0.95em; margin-bottom: 4px; color: #555; }
+  .brand { color: #2d6a4f; }
+  .tagline { font-size: 0.9em; color: #666; margin-bottom: 24px; }
+  a { color: #2d6a4f; }
+  .nav { text-align: center; margin-bottom: 20px; font-size: 0.9em; }
+  .nav a { margin: 0 8px; }
+  .toc { background: #fff; border-radius: 12px; padding: 20px; margin-bottom: 20px; box-shadow: 0 1px 3px rgba(0,0,0,0.08); }
+  .toc h2 { color: #2d6a4f; margin-bottom: 12px; }
+  .toc-group { margin-bottom: 12px; }
+  .toc-group h3 { font-size: 0.92em; color: #2d6a4f; margin-bottom: 4px; border-bottom: 1px solid #e0e0e0; padding-bottom: 4px; }
+  .toc-group ul { list-style: none; padding-left: 0; }
+  .toc-group li { margin-bottom: 3px; font-size: 0.9em; }
+  .toc-group a { text-decoration: none; }
+  .toc-group a:hover { text-decoration: underline; }
+  .section { background: #fff; border-radius: 12px; padding: 20px; margin-bottom: 20px; box-shadow: 0 1px 3px rgba(0,0,0,0.08); }
+  .section p { margin-top: 8px; font-size: 0.95em; }
+  .section ul, .section ol { padding-left: 24px; margin-top: 8px; font-size: 0.95em; }
+  .section li { margin-bottom: 6px; }
+  table { width: 100%; border-collapse: collapse; margin-top: 8px; font-size: 0.9em; }
+  th, td { border: 1px solid #ddd; padding: 8px 10px; text-align: left; }
+  th { background: #f0f7f4; color: #2d6a4f; font-weight: bold; }
+  .cmd { background: #1e1e1e; color: #d4d4d4; padding: 14px 16px; border-radius: 8px; margin-top: 12px; font-family: 'Courier New', monospace; font-size: 0.88em; overflow-x: auto; white-space: pre-wrap; word-break: break-all; }
+  .key { display: inline-block; background: #333; color: #fff; padding: 1px 8px; border-radius: 4px; font-family: 'Courier New', monospace; font-size: 0.88em; font-weight: bold; }
+  .tip { background: #e8f5e9; border-left: 4px solid #2d6a4f; padding: 12px 16px; border-radius: 0 8px 8px 0; margin-top: 16px; font-size: 0.9em; }
+  .warn { background: #fff3cd; border-left: 4px solid #ffc107; padding: 12px 16px; border-radius: 0 8px 8px 0; margin-top: 16px; font-size: 0.9em; }
+  .support { background: #e3f2fd; border-left: 4px solid #1976d2; padding: 12px 16px; border-radius: 0 8px 8px 0; margin-top: 16px; font-size: 0.9em; }
+  .divider { border: none; border-top: 1px solid #e0e0e0; margin: 24px 0; }
+  .back-to-top { text-align: center; margin: 16px 0; font-size: 0.85em; }
+  .footer { text-align: center; margin-top: 32px; font-size: 0.8em; color: #999; }
+  .footer p { margin-bottom: 2px; }
+  @media (max-width: 480px) { table { font-size: 0.82em; } th, td { padding: 6px; } }
+</style>
+</head>
+<body>
+<div class="container">
+
+<div class="nav">
+  <a href="index.html">home</a> | <a href="service.html">service</a> | <a href="setup.html">usb</a> | <a href="linuxmint-xfce-guide.html"><strong>linuxmint</strong></a> | <a href="kdp.html">kdp</a> | <a href="campaign.html">present</a>
+</div>
+
+<h1>🐧 <span class="brand">Linux Mint Xfce 操作ガイド</span></h1>
+<p class="tagline">ペンギンコンピュータ Linux プリインストール PC をお使いの方へ</p>
+
+<!-- イントロ -->
+<div class="section">
+  <p>このガイドは、ペンギンコンピュータの Linux プリインストール PC に搭載されている <strong>Linux Mint Xfce Edition</strong> の操作方法をまとめたものです。</p>
+  <p>Xfce デスクトップ環境は軽量・高速でありながら、カスタマイズ性に優れています。Ubuntu LTS をベースとしており、安定性とセキュリティが保証されます。</p>
+  <div class="support">
+    <strong>サポート:</strong> 不明な点がありましたら、お気軽にメールでお問い合わせください。<br>
+    📧 <a href="mailto:penguin.computer.2026@gmail.com">penguin.computer.2026@gmail.com</a>
+  </div>
+</div>
+
+<!-- 目次 -->
+<div class="toc">
+  <h2>目次</h2>
+
+  <div class="toc-group">
+    <h3>基本操作</h3>
+    <ul>
+      <li><a href="#sec1">1. バージョン確認</a></li>
+      <li><a href="#sec2">2. デスクトップ環境</a></li>
+      <li><a href="#sec3">3. パネル（タスクバー）</a></li>
+      <li><a href="#sec4">4. ウィンドウ管理</a></li>
+      <li><a href="#sec5">5. ワークスペース（仮想デスクトップ）</a></li>
+      <li><a href="#sec6">6. キーボードショートカット</a></li>
+      <li><a href="#sec7">7. 設定マネージャー</a></li>
+      <li><a href="#sec-ime">8. 日本語入力（Fcitx5 + Mozc）</a></li>
+    </ul>
+  </div>
+
+  <div class="toc-group">
+    <h3>ファイル操作</h3>
+    <ul>
+      <li><a href="#sec8">9. ファイルマネージャー（Thunar）</a></li>
+      <li><a href="#sec17">10. ファイル検索（Catfish）</a></li>
+      <li><a href="#sec19">11. アーカイブ（圧縮・展開）</a></li>
+    </ul>
+  </div>
+
+  <div class="toc-group">
+    <h3>標準アプリケーション</h3>
+    <ul>
+      <li><a href="#sec9">12. ターミナル</a></li>
+      <li><a href="#sec10">13. テキストエディター（Mousepad）</a></li>
+      <li><a href="#sec11">14. ウェブブラウザー（Firefox）</a></li>
+      <li><a href="#sec12">15. メール（Thunderbird）</a></li>
+      <li><a href="#sec13">16. オフィス（LibreOffice）</a></li>
+      <li><a href="#sec14">17. 画像ビューアー（Ristretto）</a></li>
+      <li><a href="#sec15">18. メディアプレーヤー（Parole）</a></li>
+      <li><a href="#sec16">19. スクリーンショット</a></li>
+    </ul>
+  </div>
+
+  <div class="toc-group">
+    <h3>システム管理</h3>
+    <ul>
+      <li><a href="#sec23">20. ソフトウェアのインストール</a></li>
+      <li><a href="#sec24">21. アップデート</a></li>
+      <li><a href="#sec25">22. システムスナップショット（Timeshift）</a></li>
+      <li><a href="#sec21">23. タスクマネージャー</a></li>
+      <li><a href="#sec22">24. 電源管理</a></li>
+      <li><a href="#sec29">25. ネットワーク設定</a></li>
+      <li><a href="#sec27">26. Bluetooth</a></li>
+      <li><a href="#sec28">27. プリンター</a></li>
+      <li><a href="#sec40">28. 音声設定</a></li>
+    </ul>
+  </div>
+
+  <div class="toc-group">
+    <h3>上級者向け</h3>
+    <ul>
+      <li><a href="#sec36">29. コマンドライン基本操作</a></li>
+      <li><a href="#sec33">30. ブートメニュー（Grub）</a></li>
+      <li><a href="#sec35">31. システムアップグレード</a></li>
+      <li><a href="#sec42">32. Flatpak</a></li>
+      <li><a href="#sec38">33. トラブルシューティング</a></li>
+    </ul>
+  </div>
+
+  <div class="toc-group">
+    <h3>付録</h3>
+    <ul>
+      <li><a href="#appendixA">付録A: 標準搭載アプリケーション一覧</a></li>
+      <li><a href="#appendixB">付録B: よく使うコマンド・重要なディレクトリ</a></li>
+    </ul>
+  </div>
+</div>
+
+<!-- ===== 基本操作 ===== -->
+
+<!-- 1. バージョン確認 -->
+<div class="section" id="sec1">
+  <h2>1. バージョン確認</h2>
+  <table>
+    <tr><th>バージョン</th><th>サポート期限</th></tr>
+    <tr><td>Linux Mint 21.x</td><td>2027年4月</td></tr>
+    <tr><td>Linux Mint 22.x</td><td>2029年4月</td></tr>
+  </table>
+  <p>お使いのバージョンを確認するには、ターミナルで以下を実行します。</p>
+  <div class="cmd">cat /etc/linuxmint/info</div>
+</div>
+
+<!-- 2. デスクトップ環境 -->
+<div class="section" id="sec2">
+  <h2>2. デスクトップ環境の基本操作</h2>
+  <h3>デスクトップの構成要素</h3>
+  <ul>
+    <li><strong>デスクトップ</strong>: 壁紙、アイコン、右クリックメニュー</li>
+    <li><strong>パネル</strong>: 画面下部のタスクバー（アプリランチャー、時計、システムトレイ）</li>
+    <li><strong>ウィンドウマネージャー</strong>: ウィンドウの配置・装飾・操作</li>
+  </ul>
+  <h3>壁紙の変更</h3>
+  <ol>
+    <li>デスクトップ上で右クリック →「デスクトップの設定」</li>
+    <li>「背景」タブで壁紙画像を選択</li>
+    <li>スタイル（拡大、タイル、中央など）を選択</li>
+  </ol>
+  <h3>デスクトップの右クリックメニュー</h3>
+  <p>デスクトップ上で右クリックするとアプリケーションメニューが表示されます。中クリック（ホイールクリック）すると、実行中のウィンドウ一覧が表示されます。</p>
+</div>
+
+<!-- 3. パネル -->
+<div class="section" id="sec3">
+  <h2>3. パネル（タスクバー）の操作</h2>
+  <p>パネルはアプリケーションランチャー、ウィンドウボタン、ワークスペース切替、システムトレイなどを配置するバーです。</p>
+  <h3>アイテムの追加</h3>
+  <p>パネルの空きスペースを右クリック →「パネル」→「パネルのアイテムの追加」</p>
+  <h3>パネルの設定変更</h3>
+  <p>パネルを右クリック →「パネル」→「パネルの設定」で、位置（上/下/左/右）、長さ、透明度などを変更できます。</p>
+  <h3>標準プラグイン</h3>
+  <table>
+    <tr><th>プラグイン</th><th>機能</th></tr>
+    <tr><td>Whisker Menu</td><td>アプリケーション検索・カテゴリ表示メニュー</td></tr>
+    <tr><td>ウィンドウボタン</td><td>開いているウィンドウ一覧</td></tr>
+    <tr><td>ワークスペース切り替え</td><td>仮想デスクトップの切り替え</td></tr>
+    <tr><td>時計</td><td>日時の表示</td></tr>
+    <tr><td>通知エリア</td><td>バックグラウンドアプリのアイコン</td></tr>
+    <tr><td>デスクトップの表示</td><td>全ウィンドウを最小化</td></tr>
+  </table>
+</div>
+
+<!-- 4. ウィンドウ管理 -->
+<div class="section" id="sec4">
+  <h2>4. ウィンドウ管理</h2>
+  <table>
+    <tr><th>操作</th><th>方法</th></tr>
+    <tr><td>移動</td><td>タイトルバーをドラッグ / <span class="key">Alt+F7</span></td></tr>
+    <tr><td>リサイズ</td><td>ウィンドウ端をドラッグ / <span class="key">Alt+F8</span></td></tr>
+    <tr><td>最大化</td><td>タイトルバーをダブルクリック / <span class="key">Alt+F10</span></td></tr>
+    <tr><td>最小化</td><td><span class="key">Alt+F9</span></td></tr>
+    <tr><td>閉じる</td><td><span class="key">Alt+F4</span></td></tr>
+    <tr><td>全画面表示</td><td><span class="key">Alt+F11</span></td></tr>
+  </table>
+  <h3>タイリング（スナップ）</h3>
+  <p>ウィンドウをドラッグして画面端に持っていくと、半分のサイズにスナップします。左端→左半分、右端→右半分、上端→最大化。</p>
+</div>
+
+<!-- 5. ワークスペース -->
+<div class="section" id="sec5">
+  <h2>5. ワークスペース（仮想デスクトップ）</h2>
+  <p>ワークスペースを使うと、複数の仮想デスクトップを作成してウィンドウを整理できます。</p>
+  <table>
+    <tr><th>操作</th><th>ショートカット</th></tr>
+    <tr><td>左のワークスペースへ</td><td><span class="key">Ctrl+Alt+←</span></td></tr>
+    <tr><td>右のワークスペースへ</td><td><span class="key">Ctrl+Alt+→</span></td></tr>
+    <tr><td>ウィンドウを次のワークスペースへ</td><td><span class="key">Ctrl+Alt+End</span></td></tr>
+    <tr><td>ワークスペースの追加</td><td><span class="key">Alt+Insert</span></td></tr>
+  </table>
+  <p>メニュー →「設定」→「ワークスペース」で数と名前を設定できます。</p>
+</div>
+
+<!-- 6. キーボードショートカット -->
+<div class="section" id="sec6">
+  <h2>6. キーボードショートカット一覧</h2>
+  <h3>ウィンドウ管理</h3>
+  <table>
+    <tr><th>ショートカット</th><th>動作</th></tr>
+    <tr><td><span class="key">Alt+F4</span></td><td>ウィンドウを閉じる</td></tr>
+    <tr><td><span class="key">Alt+Tab</span></td><td>ウィンドウの切り替え</td></tr>
+    <tr><td><span class="key">Alt+F9</span></td><td>最小化</td></tr>
+    <tr><td><span class="key">Alt+F10</span></td><td>最大化</td></tr>
+    <tr><td><span class="key">Alt+F11</span></td><td>全画面表示</td></tr>
+  </table>
+  <h3>アプリケーション起動</h3>
+  <table>
+    <tr><th>ショートカット</th><th>動作</th></tr>
+    <tr><td><span class="key">Ctrl+Alt+T</span></td><td>ターミナルの起動</td></tr>
+    <tr><td><span class="key">Super+E</span></td><td>ファイルマネージャーの起動</td></tr>
+    <tr><td><span class="key">Ctrl+Alt+L</span></td><td>画面のロック</td></tr>
+    <tr><td><span class="key">Ctrl+Alt+Delete</span></td><td>ログアウトダイアログ</td></tr>
+    <tr><td><span class="key">Ctrl+Alt+D</span></td><td>デスクトップの表示</td></tr>
+    <tr><td><span class="key">Print</span></td><td>スクリーンショット</td></tr>
+    <tr><td><span class="key">Alt+Print</span></td><td>アクティブウィンドウのスクリーンショット</td></tr>
+    <tr><td><span class="key">Shift+Print</span></td><td>範囲選択スクリーンショット</td></tr>
+  </table>
+</div>
+
+<!-- 7. 設定マネージャー -->
+<div class="section" id="sec7">
+  <h2>7. 設定マネージャー</h2>
+  <p>メニュー →「設定」→「設定マネージャー」ですべての設定項目を一覧表示できます。</p>
+  <table>
+    <tr><th>設定項目</th><th>内容</th></tr>
+    <tr><td>外観</td><td>テーマ、アイコン、フォント、カーソル</td></tr>
+    <tr><td>ディスプレイ</td><td>解像度、マルチモニター、リフレッシュレート</td></tr>
+    <tr><td>キーボード</td><td>レイアウト、ショートカットの追加・編集</td></tr>
+    <tr><td>マウスとタッチパッド</td><td>ポインター速度、タップ操作、スクロール方向</td></tr>
+    <tr><td>優先するアプリケーション</td><td>デフォルトのブラウザ、メール、ファイルマネージャー</td></tr>
+  </table>
+</div>
+
+<!-- 8. 日本語入力 -->
+<div class="section" id="sec-ime">
+  <h2>8. 日本語入力（Fcitx5 + Mozc）</h2>
+  <p>ペンギンコンピュータの PC は日本語入力をセットアップ済みです。Fcitx5 と Mozc（Google 日本語入力のオープンソース版）がインストールされています。</p>
+
+  <h3>日本語 / 英語の切り替え</h3>
+  <table>
+    <tr><th>操作</th><th>方法</th></tr>
+    <tr><td>日本語 ⇄ 英語 切り替え</td><td><span class="key">半角/全角</span> キー、または <span class="key">Ctrl+Space</span></td></tr>
+    <tr><td>ひらがな → カタカナ変換</td><td><span class="key">F7</span>（全角カタカナ）/ <span class="key">F8</span>（半角カタカナ）</td></tr>
+    <tr><td>ひらがな → 英数変換</td><td><span class="key">F10</span>（半角英数）/ <span class="key">F9</span>（全角英数）</td></tr>
+  </table>
+  <div class="tip">パネル右下のキーボードアイコン（「あ」/「A」）をクリックしても切り替えできます。</div>
+
+  <h3>入力モードの確認</h3>
+  <ul>
+    <li>パネルのシステムトレイに「<strong>あ</strong>」と表示 → 日本語入力モード</li>
+    <li>「<strong>A</strong>」と表示 → 英語入力モード</li>
+  </ul>
+
+  <h3>Fcitx5 の設定</h3>
+  <p>メニュー →「設定」→「Fcitx5 設定」、またはシステムトレイのキーボードアイコンを右クリック →「設定」で開きます。</p>
+  <ul>
+    <li><strong>入力メソッド:</strong> 使用する入力メソッドの追加・削除・順序変更</li>
+    <li><strong>全体の設定:</strong> 切り替えキーの変更、候補ウィンドウの表示設定</li>
+    <li><strong>アドオン:</strong> クリップボード履歴、クイック入力などの追加機能</li>
+  </ul>
+
+  <h3>日本語入力ができない場合</h3>
+  <div class="cmd"># Fcitx5 が起動しているか確認
+pgrep fcitx5
+
+# 起動していない場合は起動
+fcitx5 &amp;
+
+# インストールされているか確認
+dpkg -l | grep fcitx5-mozc</div>
+  <div class="warn">再起動しても日本語入力ができない場合は、ペンギンコンピュータまでご連絡ください。</div>
+</div>
+
+<p class="back-to-top"><a href="#">▲ 目次に戻る</a></p>
+<hr class="divider">
+
+<!-- ===== ファイル操作 ===== -->
+
+<!-- 9. ファイルマネージャー -->
+<div class="section" id="sec8">
+  <h2>9. ファイルマネージャー（Thunar）</h2>
+  <p>起動: パネルのアイコン / <span class="key">Super+E</span> / <span class="key">Ctrl+Alt+F</span></p>
+
+  <h3>基本操作</h3>
+  <table>
+    <tr><th>操作</th><th>方法</th></tr>
+    <tr><td>コピー</td><td><span class="key">Ctrl+C</span></td></tr>
+    <tr><td>切り取り</td><td><span class="key">Ctrl+X</span></td></tr>
+    <tr><td>貼り付け</td><td><span class="key">Ctrl+V</span></td></tr>
+    <tr><td>名前の変更</td><td><span class="key">F2</span></td></tr>
+    <tr><td>削除（ゴミ箱へ）</td><td><span class="key">Delete</span></td></tr>
+    <tr><td>完全な削除</td><td><span class="key">Shift+Delete</span></td></tr>
+    <tr><td>新しいフォルダ</td><td><span class="key">Ctrl+Shift+N</span></td></tr>
+    <tr><td>隠しファイルの表示</td><td><span class="key">Ctrl+H</span></td></tr>
+    <tr><td>パス入力バー</td><td><span class="key">Ctrl+L</span></td></tr>
+  </table>
+
+  <h3>表示の切り替え</h3>
+  <p><span class="key">Ctrl+1</span> アイコン / <span class="key">Ctrl+2</span> 詳細リスト / <span class="key">Ctrl+3</span> コンパクト</p>
+
+  <h3>ブックマーク</h3>
+  <p>頻繁にアクセスするフォルダを <span class="key">Ctrl+D</span> でブックマークに追加できます。</p>
+
+  <h3>USBドライブ</h3>
+  <p>USBドライブなどのリムーバブルメディアはサイドパネルに自動表示されます。クリックでマウント、右クリック →「取り出し」で安全に取り外せます。</p>
+</div>
+
+<!-- 9. ファイル検索 -->
+<div class="section" id="sec17">
+  <h2>10. ファイル検索（Catfish）</h2>
+  <p>起動: メニュー →「アクセサリ」→「Catfish」</p>
+  <ol>
+    <li>検索バーにファイル名やキーワードを入力</li>
+    <li>検索場所のフォルダをドロップダウンから選択</li>
+    <li>Enter キーまたは検索ボタンをクリック</li>
+  </ol>
+  <p>フィルターボタンでファイルタイプ（ドキュメント、画像、音楽等）や日時で絞り込みできます。</p>
+</div>
+
+<!-- 10. アーカイブ -->
+<div class="section" id="sec19">
+  <h2>11. アーカイブ（圧縮・展開）</h2>
+  <p>ZIP、TAR.GZ、7Z、RAR 等の圧縮ファイルに対応しています。</p>
+  <h3>展開</h3>
+  <p>アーカイブファイルをダブルクリック、または右クリック →「ここに展開」。</p>
+  <h3>圧縮</h3>
+  <ol>
+    <li>Thunar で圧縮したいファイルを選択</li>
+    <li>右クリック →「アーカイブの作成」</li>
+    <li>ファイル名と圧縮形式を選択して「作成」</li>
+  </ol>
+</div>
+
+<p class="back-to-top"><a href="#">▲ 目次に戻る</a></p>
+<hr class="divider">
+
+<!-- ===== 標準アプリケーション ===== -->
+
+<!-- 11. ターミナル -->
+<div class="section" id="sec9">
+  <h2>12. ターミナル</h2>
+  <p>起動: <span class="key">Ctrl+Alt+T</span></p>
+  <table>
+    <tr><th>操作</th><th>ショートカット</th></tr>
+    <tr><td>新しいタブ</td><td><span class="key">Ctrl+Shift+T</span></td></tr>
+    <tr><td>タブを閉じる</td><td><span class="key">Ctrl+Shift+W</span></td></tr>
+    <tr><td>コピー</td><td><span class="key">Ctrl+Shift+C</span></td></tr>
+    <tr><td>貼り付け</td><td><span class="key">Ctrl+Shift+V</span></td></tr>
+    <tr><td>フォントサイズ拡大</td><td><span class="key">Ctrl+Shift++</span></td></tr>
+    <tr><td>フォントサイズ縮小</td><td><span class="key">Ctrl+-</span></td></tr>
+  </table>
+  <div class="tip">ターミナル内のコピー・貼り付けは通常の <span class="key">Ctrl+C</span> / <span class="key">Ctrl+V</span> ではなく、<span class="key">Shift</span> を追加します。<span class="key">Ctrl+C</span> はコマンドの中断に使われます。</div>
+</div>
+
+<!-- 12. テキストエディター -->
+<div class="section" id="sec10">
+  <h2>13. テキストエディター（Mousepad）</h2>
+  <p>起動: メニュー →「アクセサリ」→「Mousepad」 / テキストファイルをダブルクリック</p>
+  <table>
+    <tr><th>操作</th><th>ショートカット</th></tr>
+    <tr><td>新規</td><td><span class="key">Ctrl+N</span></td></tr>
+    <tr><td>開く</td><td><span class="key">Ctrl+O</span></td></tr>
+    <tr><td>保存</td><td><span class="key">Ctrl+S</span></td></tr>
+    <tr><td>検索</td><td><span class="key">Ctrl+F</span></td></tr>
+    <tr><td>置換</td><td><span class="key">Ctrl+H</span></td></tr>
+    <tr><td>元に戻す</td><td><span class="key">Ctrl+Z</span></td></tr>
+  </table>
+  <p>シンタックスハイライト、行番号表示、カラースキーム変更に対応。プログラミングにも使えます。</p>
+</div>
+
+<!-- 13. ウェブブラウザー -->
+<div class="section" id="sec11">
+  <h2>14. ウェブブラウザー（Firefox）</h2>
+  <p>起動: パネルの Firefox アイコン / メニュー →「インターネット」→「Firefox」</p>
+  <table>
+    <tr><th>操作</th><th>ショートカット</th></tr>
+    <tr><td>新しいタブ</td><td><span class="key">Ctrl+T</span></td></tr>
+    <tr><td>タブを閉じる</td><td><span class="key">Ctrl+W</span></td></tr>
+    <tr><td>アドレスバー</td><td><span class="key">Ctrl+L</span></td></tr>
+    <tr><td>ページ内検索</td><td><span class="key">Ctrl+F</span></td></tr>
+    <tr><td>ブックマーク追加</td><td><span class="key">Ctrl+D</span></td></tr>
+    <tr><td>プライベートウィンドウ</td><td><span class="key">Ctrl+Shift+P</span></td></tr>
+    <tr><td>ズームイン / アウト</td><td><span class="key">Ctrl++</span> / <span class="key">Ctrl+-</span></td></tr>
+  </table>
+</div>
+
+<!-- 14. メール -->
+<div class="section" id="sec12">
+  <h2>15. メール（Thunderbird）</h2>
+  <p>起動: メニュー →「インターネット」→「Thunderbird」</p>
+  <h3>初期設定</h3>
+  <ol>
+    <li>起動時にアカウント設定ウィザードが表示される</li>
+    <li>名前、メールアドレス、パスワードを入力</li>
+    <li>サーバー設定（IMAP/POP3）が自動検出される</li>
+  </ol>
+  <table>
+    <tr><th>操作</th><th>ショートカット</th></tr>
+    <tr><td>新規メッセージ作成</td><td><span class="key">Ctrl+N</span></td></tr>
+    <tr><td>送信</td><td><span class="key">Ctrl+Enter</span></td></tr>
+    <tr><td>返信</td><td><span class="key">Ctrl+R</span></td></tr>
+    <tr><td>メールの取得</td><td><span class="key">F5</span></td></tr>
+  </table>
+</div>
+
+<!-- 15. LibreOffice -->
+<div class="section" id="sec13">
+  <h2>16. オフィス（LibreOffice）</h2>
+  <p>起動: メニュー →「オフィス」から各アプリケーションを選択</p>
+  <table>
+    <tr><th>アプリ</th><th>用途</th><th>対応形式</th></tr>
+    <tr><td>Writer</td><td>ワードプロセッサー</td><td>ODT, DOCX, DOC</td></tr>
+    <tr><td>Calc</td><td>表計算</td><td>ODS, XLSX, CSV</td></tr>
+    <tr><td>Impress</td><td>プレゼンテーション</td><td>ODP, PPTX</td></tr>
+    <tr><td>Draw</td><td>ドローイング</td><td>ODG, SVG, PNG</td></tr>
+  </table>
+  <h3>共通ショートカット</h3>
+  <table>
+    <tr><th>操作</th><th>ショートカット</th></tr>
+    <tr><td>保存</td><td><span class="key">Ctrl+S</span></td></tr>
+    <tr><td>PDF出力</td><td>メニュー →「ファイル」→「PDFとしてエクスポート」</td></tr>
+    <tr><td>印刷</td><td><span class="key">Ctrl+P</span></td></tr>
+    <tr><td>元に戻す</td><td><span class="key">Ctrl+Z</span></td></tr>
+  </table>
+  <div class="tip">Microsoft Office の Word、Excel、PowerPoint のファイルを開いたり編集したりできます。</div>
+</div>
+
+<!-- 16. 画像ビューアー -->
+<div class="section" id="sec14">
+  <h2>17. 画像ビューアー（Ristretto）</h2>
+  <p>起動: 画像ファイルをダブルクリック</p>
+  <table>
+    <tr><th>操作</th><th>方法</th></tr>
+    <tr><td>次の画像 / 前の画像</td><td><span class="key">→</span> / <span class="key">←</span></td></tr>
+    <tr><td>ズームイン / アウト</td><td><span class="key">+</span> / <span class="key">-</span></td></tr>
+    <tr><td>全画面表示</td><td><span class="key">F11</span></td></tr>
+    <tr><td>スライドショー</td><td><span class="key">F5</span></td></tr>
+    <tr><td>回転</td><td><span class="key">Ctrl+]</span> / <span class="key">Ctrl+[</span></td></tr>
+  </table>
+</div>
+
+<!-- 17. メディアプレーヤー -->
+<div class="section" id="sec15">
+  <h2>18. メディアプレーヤー（Parole）</h2>
+  <p>起動: メディアファイルをダブルクリック / メニュー →「マルチメディア」→「Parole」</p>
+  <table>
+    <tr><th>操作</th><th>ショートカット</th></tr>
+    <tr><td>再生 / 一時停止</td><td><span class="key">Space</span></td></tr>
+    <tr><td>音量上げ / 下げ</td><td><span class="key">↑</span> / <span class="key">↓</span></td></tr>
+    <tr><td>ミュート</td><td><span class="key">M</span></td></tr>
+    <tr><td>全画面表示</td><td><span class="key">F11</span></td></tr>
+  </table>
+  <div class="tip">MP3、MP4 等を再生するには、ソフトウェアマネージャーからマルチメディアコーデック（mint-meta-codecs）をインストールしてください。</div>
+</div>
+
+<!-- 18. スクリーンショット -->
+<div class="section" id="sec16">
+  <h2>19. スクリーンショット</h2>
+  <table>
+    <tr><th>操作</th><th>ショートカット</th></tr>
+    <tr><td>画面全体</td><td><span class="key">Print</span></td></tr>
+    <tr><td>アクティブウィンドウ</td><td><span class="key">Alt+Print</span></td></tr>
+    <tr><td>範囲選択</td><td><span class="key">Shift+Print</span></td></tr>
+  </table>
+  <p>撮影後、ファイルに保存 / クリップボードにコピー / アプリケーションで開く、を選択できます。</p>
+</div>
+
+<p class="back-to-top"><a href="#">▲ 目次に戻る</a></p>
+<hr class="divider">
+
+<!-- ===== システム管理 ===== -->
+
+<!-- 19. ソフトウェアのインストール -->
+<div class="section" id="sec23">
+  <h2>20. ソフトウェアのインストール</h2>
+  <p>起動: メニュー →「システム管理」→「ソフトウェアマネージャー」</p>
+  <h3>GUI でインストール</h3>
+  <ol>
+    <li>検索バーにアプリケーション名を入力</li>
+    <li>検索結果から選択して「インストール」</li>
+    <li>パスワードを入力して認証</li>
+  </ol>
+  <h3>コマンドラインでインストール（APT）</h3>
+  <div class="cmd"># パッケージのインストール
+sudo apt install パッケージ名
+
+# パッケージの削除
+sudo apt remove パッケージ名
+
+# パッケージの検索
+apt search キーワード</div>
+</div>
+
+<!-- 20. アップデート -->
+<div class="section" id="sec24">
+  <h2>21. アップデート</h2>
+  <p>起動: パネルのシールドアイコンをクリック / メニュー →「システム管理」→「アップデートマネージャー」</p>
+  <ol>
+    <li>「更新を確認」ボタンでリストを更新</li>
+    <li>適用したいアップデートにチェック（デフォルトで全選択）</li>
+    <li>「アップデートをインストール」をクリック</li>
+    <li>パスワードを入力</li>
+  </ol>
+  <table>
+    <tr><th>種類</th><th>説明</th></tr>
+    <tr><td>セキュリティアップデート</td><td>脆弱性の修正パッチ</td></tr>
+    <tr><td>ソフトウェアアップデート</td><td>バグ修正・機能改善</td></tr>
+    <tr><td>カーネルアップデート</td><td>Linux カーネルの新バージョン</td></tr>
+  </table>
+  <div class="warn">アップデートは定期的に実行してください。セキュリティを最新に保つことが重要です。</div>
+</div>
+
+<!-- 21. Timeshift -->
+<div class="section" id="sec25">
+  <h2>22. システムスナップショット（Timeshift）</h2>
+  <p>起動: メニュー →「システム管理」→「Timeshift」</p>
+  <p>システムの状態をバックアップし、問題発生時に以前の状態に復元できます。</p>
+  <h3>初期設定</h3>
+  <ol>
+    <li>初回起動時にウィザードが表示される</li>
+    <li>スナップショットタイプを選択（RSYNC 推奨）</li>
+    <li>保存先ドライブを選択</li>
+    <li>自動スナップショットのスケジュールを設定</li>
+  </ol>
+  <h3>スナップショットの作成</h3>
+  <p>「作成」ボタンをクリック。数分〜数十分で完了します。</p>
+  <h3>復元</h3>
+  <p>復元したいスナップショットを選択 →「復元」→ 確認して実行 → 再起動。</p>
+  <div class="tip">大きなアップデートの前にスナップショットを作成しておくと安心です。個人データ（ホームディレクトリ）はスナップショットに含まれません。</div>
+</div>
+
+<!-- 22. タスクマネージャー -->
+<div class="section" id="sec21">
+  <h2>23. タスクマネージャー</h2>
+  <p>起動: <span class="key">Ctrl+Shift+Escape</span></p>
+  <ul>
+    <li>実行中のプロセスを CPU 使用率・メモリ使用量順にソート</li>
+    <li>プロセスを右クリック →「終了」または「強制終了」</li>
+    <li>検索バーでプロセス名をフィルタリング</li>
+  </ul>
+</div>
+
+<!-- 23. 電源管理 -->
+<div class="section" id="sec22">
+  <h2>24. 電源管理</h2>
+  <p>起動: メニュー →「設定」→「電源管理」</p>
+  <ul>
+    <li>電源ボタンの動作（シャットダウン、サスペンド等）</li>
+    <li>ノートPCのフタを閉じた時の動作</li>
+    <li>バッテリー残量低下時のアクション</li>
+    <li>ディスプレイの電源オフまでの時間</li>
+  </ul>
+</div>
+
+<!-- 24. ネットワーク設定 -->
+<div class="section" id="sec29">
+  <h2>25. ネットワーク設定</h2>
+  <h3>Wi-Fi 接続</h3>
+  <ol>
+    <li>パネルのネットワークアイコンをクリック</li>
+    <li>利用可能な Wi-Fi 一覧から選択</li>
+    <li>パスワード（セキュリティキー）を入力して「接続」</li>
+  </ol>
+  <h3>有線接続</h3>
+  <p>イーサネットケーブルを接続すると自動的に接続されます。</p>
+  <h3>固定 IP アドレスの設定</h3>
+  <p>ネットワークアイコンを右クリック →「接続を編集する」→ 対象の接続を選択 →「IPv4設定」タブでメソッドを「手動」に変更。</p>
+</div>
+
+<!-- 25. Bluetooth -->
+<div class="section" id="sec27">
+  <h2>26. Bluetooth</h2>
+  <h3>デバイスのペアリング</h3>
+  <ol>
+    <li>システムトレイの Bluetooth アイコンをクリック</li>
+    <li>「検索」をクリックして近くのデバイスを探索</li>
+    <li>デバイスを選択して「ペアリング」</li>
+    <li>必要に応じて PIN コードを確認</li>
+  </ol>
+  <h3>Bluetooth のオン / オフ</h3>
+  <p>システムトレイの Bluetooth アイコンを右クリック →「Bluetooth をオフにする」/「オンにする」。</p>
+</div>
+
+<!-- 26. プリンター -->
+<div class="section" id="sec28">
+  <h2>27. プリンター</h2>
+  <p>Linux Mint 21 以降では IPP（Internet Printing Protocol）によるドライバーレス印刷が標準サポートされています。対応プリンターは自動検出されます。</p>
+  <h3>印刷方法</h3>
+  <p>アプリケーションのメニューから「ファイル」→「印刷」を選択します。</p>
+  <h3>メーカー別ドライバー</h3>
+  <table>
+    <tr><th>メーカー</th><th>方法</th></tr>
+    <tr><td>HP</td><td>標準搭載済み。GUI ツール: <code>sudo apt install hplip-gui</code></td></tr>
+    <tr><td>Epson / Canon / Brother</td><td>メーカーサイトから Linux 用ドライバーをダウンロード</td></tr>
+  </table>
+</div>
+
+<!-- 27. 音声設定 -->
+<div class="section" id="sec40">
+  <h2>28. 音声設定</h2>
+  <p>Linux Mint 22 以降では Pipewire が標準のサウンドサーバーです。</p>
+  <ul>
+    <li>パネルのスピーカーアイコンをクリック → スライダーで音量調整</li>
+    <li>スピーカーアイコンを右クリック →「音量の設定」で出力デバイスを選択</li>
+    <li>アプリケーション別の音量制御も可能</li>
+  </ul>
+</div>
+
+<p class="back-to-top"><a href="#">▲ 目次に戻る</a></p>
+<hr class="divider">
+
+<!-- ===== 上級者向け ===== -->
+
+<!-- 28. コマンドライン -->
+<div class="section" id="sec36">
+  <h2>29. コマンドライン基本操作</h2>
+  <p>ターミナル（<span class="key">Ctrl+Alt+T</span>）で実行します。</p>
+  <h3>ファイルとディレクトリ</h3>
+  <div class="cmd">ls -la          # ファイル一覧
+cd ~/Documents  # ディレクトリ移動
+cp file1 file2  # ファイルコピー
+mv old new      # 移動・名前変更
+rm filename     # ファイル削除
+mkdir dirname   # ディレクトリ作成</div>
+  <h3>システム情報</h3>
+  <div class="cmd">uname -a                 # カーネル情報
+cat /etc/linuxmint/info  # Mint バージョン
+df -h                    # ディスク使用量
+free -h                  # メモリ使用状況</div>
+  <h3>パッケージ管理</h3>
+  <div class="cmd">sudo apt update && sudo apt upgrade  # 一括アップデート
+sudo apt install パッケージ名         # インストール
+sudo apt remove パッケージ名          # 削除</div>
+</div>
+
+<!-- 29. Grub -->
+<div class="section" id="sec33">
+  <h2>30. ブートメニュー（Grub）</h2>
+  <p>Grub は起動時の OS 選択メニューです。起動中に左 <span class="key">Shift</span> キーを押し続けると表示されます。</p>
+  <h3>カーネルの選択</h3>
+  <p>Grub メニュー →「Advanced options」から使用するカーネルを選択できます。問題が起きた場合に以前のカーネルで起動できます。</p>
+  <h3>常に Grub メニューを表示する設定</h3>
+  <div class="cmd"># /etc/default/grub.d/90_custom.cfg に追記
+GRUB_TIMEOUT="5"
+GRUB_TIMEOUT_STYLE="menu"
+
+# 反映
+sudo update-grub</div>
+</div>
+
+<!-- 30. システムアップグレード -->
+<div class="section" id="sec35">
+  <h2>31. システムアップグレード</h2>
+  <table>
+    <tr><th>タイプ</th><th>例</th><th>所要時間</th></tr>
+    <tr><td>マイナー</td><td>22.1 → 22.3</td><td>短時間</td></tr>
+    <tr><td>メジャー</td><td>21.3 → 22</td><td>数時間</td></tr>
+  </table>
+  <div class="warn">メジャーアップグレードは直接スキップできません（例: 21 → 22 は不可）。必ず 21 → 21.3 → 22 の順にアップグレードしてください。</div>
+</div>
+
+<!-- 31. Flatpak -->
+<div class="section" id="sec42">
+  <h2>32. Flatpak</h2>
+  <p>Linux Mint では Flatpak がデフォルトでサポートされており、Flathub リポジトリが有効です。ソフトウェアマネージャーからも Flatpak アプリをインストールできます。</p>
+  <div class="cmd"># アプリの検索
+flatpak search アプリ名
+
+# インストール
+flatpak install flathub アプリケーションID
+
+# アップデート
+flatpak update
+
+# 不要なランタイムの削除
+flatpak uninstall --unused</div>
+</div>
+
+<!-- 32. トラブルシューティング -->
+<div class="section" id="sec38">
+  <h2>33. トラブルシューティング</h2>
+
+  <h3>起動時のフリーズ</h3>
+  <ol>
+    <li>Grub メニューで「Compatibility Mode」を選択して起動</li>
+    <li>起動後、ドライバーマネージャーでプロプライエタリドライバーをインストール</li>
+    <li>再起動</li>
+  </ol>
+
+  <h3>音が出ない</h3>
+  <p>まずサウンドサーバーを確認します。</p>
+  <div class="cmd">inxi -A</div>
+  <p>Pipewire で音が出ない場合は PulseAudio に戻せます。</p>
+  <div class="cmd">sudo apt purge pipewire pipewire-bin
+systemctl enable --user pulseaudio
+sudo reboot</div>
+
+  <h3>パスワードを忘れた場合</h3>
+  <ol>
+    <li>Grub メニュー →「Advanced options」→「Recovery mode」</li>
+    <li>リカバリーメニューで「root」を選択</li>
+    <li><code>passwd ユーザー名</code> でパスワード再設定</li>
+    <li><code>reboot</code> で再起動</li>
+  </ol>
+
+  <h3>プロセスの強制終了</h3>
+  <div class="cmd"># クリックしたウィンドウを強制終了
+xkill
+# または Ctrl+Alt+Escape
+
+# コマンドラインで終了
+kill PID番号
+killall プロセス名</div>
+
+  <h3>ログの確認</h3>
+  <div class="cmd">journalctl -xe     # システムログ
+journalctl -b      # 起動時のログ
+dmesg | tail -50   # カーネルメッセージ</div>
+</div>
+
+<p class="back-to-top"><a href="#">▲ 目次に戻る</a></p>
+<hr class="divider">
+
+<!-- ===== 付録 ===== -->
+
+<!-- 付録A: 標準搭載アプリケーション一覧 -->
+<div class="section" id="appendixA">
+  <h2>付録A: 標準搭載アプリケーション一覧</h2>
+  <table>
+    <tr><th>カテゴリ</th><th>アプリ</th><th>用途</th></tr>
+    <tr><td>インターネット</td><td>Firefox</td><td>ウェブブラウザー</td></tr>
+    <tr><td>インターネット</td><td>Thunderbird</td><td>メールクライアント</td></tr>
+    <tr><td>インターネット</td><td>Warpinator</td><td>LAN内ファイル転送</td></tr>
+    <tr><td>オフィス</td><td>LibreOffice Writer</td><td>ワードプロセッサー</td></tr>
+    <tr><td>オフィス</td><td>LibreOffice Calc</td><td>表計算</td></tr>
+    <tr><td>オフィス</td><td>LibreOffice Impress</td><td>プレゼンテーション</td></tr>
+    <tr><td>グラフィックス</td><td>Ristretto</td><td>画像ビューアー</td></tr>
+    <tr><td>グラフィックス</td><td>Drawing</td><td>画像編集</td></tr>
+    <tr><td>グラフィックス</td><td>Pix</td><td>画像管理</td></tr>
+    <tr><td>マルチメディア</td><td>Parole</td><td>メディアプレーヤー</td></tr>
+    <tr><td>マルチメディア</td><td>Xfburn</td><td>CD/DVDライティング</td></tr>
+    <tr><td>アクセサリ</td><td>Mousepad</td><td>テキストエディター</td></tr>
+    <tr><td>アクセサリ</td><td>Catfish</td><td>ファイル検索</td></tr>
+    <tr><td>アクセサリ</td><td>スクリーンショット</td><td>画面キャプチャ</td></tr>
+    <tr><td>システム</td><td>Thunar</td><td>ファイルマネージャー</td></tr>
+    <tr><td>システム</td><td>Xfce Terminal</td><td>ターミナル</td></tr>
+    <tr><td>システム管理</td><td>ソフトウェアマネージャー</td><td>アプリの管理</td></tr>
+    <tr><td>システム管理</td><td>アップデートマネージャー</td><td>システム更新</td></tr>
+    <tr><td>システム管理</td><td>Timeshift</td><td>システムスナップショット</td></tr>
+    <tr><td>システム管理</td><td>ドライバーマネージャー</td><td>ドライバー管理</td></tr>
+    <tr><td>システム管理</td><td>バックアップツール</td><td>データのバックアップ</td></tr>
+  </table>
+</div>
+
+<!-- 付録B: よく使うコマンド -->
+<div class="section" id="appendixB">
+  <h2>付録B: よく使うコマンド・重要なディレクトリ</h2>
+  <h3>よく使うコマンド</h3>
+  <table>
+    <tr><th>目的</th><th>コマンド</th></tr>
+    <tr><td>パッケージ更新</td><td><code>sudo apt update && sudo apt upgrade</code></td></tr>
+    <tr><td>バージョン確認</td><td><code>cat /etc/linuxmint/info</code></td></tr>
+    <tr><td>カーネル確認</td><td><code>uname -a</code></td></tr>
+    <tr><td>ディスク容量</td><td><code>df -h</code></td></tr>
+    <tr><td>メモリ確認</td><td><code>free -h</code></td></tr>
+    <tr><td>IPアドレス</td><td><code>ip addr show</code></td></tr>
+    <tr><td>プロセス一覧</td><td><code>ps aux</code></td></tr>
+    <tr><td>サウンド確認</td><td><code>inxi -A</code></td></tr>
+  </table>
+  <h3>重要なディレクトリ</h3>
+  <table>
+    <tr><th>パス</th><th>内容</th></tr>
+    <tr><td><code>~</code></td><td>ホームディレクトリ（個人ファイル）</td></tr>
+    <tr><td><code>~/Documents</code></td><td>ドキュメント</td></tr>
+    <tr><td><code>~/Downloads</code></td><td>ダウンロード</td></tr>
+    <tr><td><code>~/Desktop</code></td><td>デスクトップ</td></tr>
+    <tr><td><code>~/.config</code></td><td>ユーザー設定ファイル</td></tr>
+    <tr><td><code>/etc</code></td><td>システム設定</td></tr>
+    <tr><td><code>/var/log</code></td><td>システムログ</td></tr>
+  </table>
+</div>
+
+<!-- 公式サイト・サポート案内 -->
+<div class="section">
+  <h2>さらに詳しい情報</h2>
+  <ul>
+    <li><strong>Linux Mint 公式サイト:</strong> <a href="https://linuxmint.com/" target="_blank" rel="noopener">https://linuxmint.com/</a></li>
+    <li><strong>Linux Mint 公式ドキュメント:</strong> <a href="https://linuxmint-user-guide.readthedocs.io/" target="_blank" rel="noopener">User Guide</a></li>
+  </ul>
+  <div class="support">
+    <strong>ペンギンコンピュータのサポート:</strong><br>
+    操作方法や設定でお困りのことがありましたら、お気軽にご連絡ください。解決までサポートいたします。<br>
+    📧 <a href="mailto:penguin.computer.2026@gmail.com">penguin.computer.2026@gmail.com</a>
+  </div>
+</div>
+
+<div class="footer">
+  <p>🐧 Penguin Computer（ペンギンコンピュータ）</p>
+  <p>Linux® は Linus Torvalds の米国およびその他の国における登録商標です。</p>
+</div>
+
+</div>
+</body>
+</html>
