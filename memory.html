@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>メモリ増設ガイド | Penguin Computer</title>
+<meta name="description" content="古い PC をメモリ増設で快適に。重い症状の見分け方、DDR3/DDR4・SODIMM/UDIMM の規格判別、取付手順を初心者向けに図解。MemTest86 Pro 検査済 + 7 日間初期不良保証 + 機種診断サポート付きのメモリをメルカリで販売中。">
+<!-- OGP -->
+<meta property="og:title" content="メモリ増設ガイド | Penguin Computer">
+<meta property="og:description" content="重い症状の見分け方、規格判別、取付手順を図解。検査済 + 7 日間保証 + 機種診断サポート付き。">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://penguin-computer.github.io/memory.html">
+<meta property="og:site_name" content="Penguin Computer">
+<meta property="og:locale" content="ja_JP">
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary">
+<meta name="twitter:site" content="@penguin_comp">
+<meta name="twitter:title" content="メモリ増設ガイド | Penguin Computer">
+<meta name="twitter:description" content="重い症状の見分け方、規格判別、取付手順を図解。検査済 + 7 日間保証 + 機種診断サポート付き。">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: -apple-system, 'Hiragino Sans', 'Noto Sans JP', sans-serif; background: #f5f7fa; color: #333; line-height: 1.8; }
+  .container { max-width: 700px; margin: 0 auto; padding: 24px 16px; }
+  h1 { font-size: 1.4em; margin-bottom: 8px; }
+  h2 { font-size: 1.15em; margin-bottom: 8px; color: #2d6a4f; }
+  h3 { font-size: 1.0em; margin-bottom: 6px; color: #2d6a4f; }
+  .brand { color: #2d6a4f; }
+  .tagline { font-size: 0.9em; color: #666; margin-bottom: 24px; }
+  a { color: #2d6a4f; }
+  .nav { text-align: center; margin-bottom: 20px; font-size: 0.9em; }
+  .nav a { margin: 0 8px; }
+  .section { background: #fff; border-radius: 12px; padding: 20px; margin-bottom: 16px; box-shadow: 0 1px 3px rgba(0,0,0,0.08); }
+  .section p { font-size: 0.95em; margin-bottom: 8px; }
+  .section p:last-child { margin-bottom: 0; }
+  .section ul, .section ol { padding-left: 22px; font-size: 0.93em; margin-bottom: 8px; }
+  .section li { margin-bottom: 4px; }
+  .mission { font-size: 1.05em; font-weight: bold; color: #2d6a4f; border-left: 4px solid #2d6a4f; padding-left: 12px; margin-bottom: 16px; }
+  .usp { display: flex; gap: 12px; margin-bottom: 8px; }
+  .usp-item { flex: 1; background: #f0f7f4; border-radius: 8px; padding: 12px; text-align: center; }
+  .usp-item .label { font-weight: bold; font-size: 0.92em; color: #2d6a4f; }
+  .usp-item .desc { font-size: 0.8em; color: #555; margin-top: 4px; }
+  .gallery { display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px; margin-top: 12px; }
+  .gallery figure { margin: 0; }
+  .gallery img { width: 100%; height: auto; border-radius: 8px; display: block; box-shadow: 0 1px 3px rgba(0,0,0,0.08); background: #eee; }
+  .gallery figcaption { font-size: 0.8em; color: #555; margin-top: 4px; text-align: center; }
+  .cat-label { display: inline-block; background: #2d6a4f; color: #fff; padding: 4px 12px; border-radius: 14px; font-size: 0.82em; font-weight: bold; margin-bottom: 4px; }
+  .cta { display: inline-block; background: #2d6a4f; color: #fff; padding: 12px 32px; border-radius: 8px; text-decoration: none; font-weight: bold; font-size: 1em; }
+  .footer { text-align: center; margin-top: 32px; font-size: 0.8em; color: #999; }
+  .footer p { margin-bottom: 2px; }
+  @media (max-width: 480px) { .usp { flex-direction: column; } .gallery { grid-template-columns: 1fr; } }
+
+  /* === クリック拡大 (lightbox) === */
+  figure img { cursor: zoom-in; transition: transform 0.1s; }
+  .lb-overlay { display: none; position: fixed; inset: 0; background: rgba(0,0,0,0.92); z-index: 999; text-align: center; overflow: auto; -webkit-overflow-scrolling: touch; }
+  .lb-overlay.open { display: block; }
+  .lb-overlay img { max-width: 100%; height: auto; margin: 0 auto; display: block; }
+  .lb-cap { color: #fff; font-size: 1.2em; padding: 14px; font-weight: bold; }
+  .lb-close { position: fixed; top: 10px; right: 16px; color: #fff; font-size: 2.4em; line-height: 1; cursor: pointer; z-index: 1000; background: rgba(0,0,0,0.5); border-radius: 8px; padding: 2px 14px; }
+  .lb-hint { color: #ccc; font-size: 0.95em; padding-bottom: 24px; }
+  /* === スマホ・年配者向け 文字拡大 (QR 経由スマホ閲覧前提) === */
+  @media (max-width: 640px) {
+    body { font-size: 17px; }
+    h1 { font-size: 1.6em; }
+    h2 { font-size: 1.3em; }
+    .section p { font-size: 1.05em; line-height: 1.7; }
+    .section ul, .section ol { font-size: 1.02em; line-height: 1.7; }
+    figcaption { font-size: 1.0em; }
+  }
+</style>
+</head>
+<body>
+<div class="container">
+
+<!-- ナビゲーション (新ナビ: home | memory | install | guide | books) -->
+<div class="nav">
+  <a href="index.html">home</a> | <a href="memory.html"><strong>memory</strong></a> | <a href="setup.html">install</a> | <a href="linuxmint-xfce-guide.html">guide</a> | <a href="books.html">books</a>
+</div>
+
+<h1>🐧 <span class="brand">メモリ増設ガイド</span></h1>
+<p class="tagline">古い PC、捨てる前に。メモリを足せば、まだ戦えます。</p>
+
+<!-- ヒーロー / ミッション -->
+<div class="section" style="background: #e8f5e9; border: 2px solid #2d6a4f;">
+  <p class="mission">「動作が重い」の 7-8 割は、メモリ不足が原因です。</p>
+  <p>SSD 換装より体感が大きく、CPU 換装よりずっと安い。メモリ増設は、古い PC をいちばん手軽に復活させる方法です。</p>
+  <p>でも「自分の PC にどのメモリが合うのか分からない」「分解が怖い」——その不安に、ペンギンコンピュータが伴走します。</p>
+  <p style="text-align: center; margin-top: 16px;">
+    <a href="https://jp.mercari.com/user/profile/544508417" target="_blank" rel="noopener" class="cta">メルカリストアで検査済メモリを見る</a>
+  </p>
+  <p style="text-align: center; font-size: 0.85em; color: #555; margin-top: 8px;"><strong>機種が分からない方は、まずご相談ください。</strong></p>
+</div>
+
+<!-- USP 3 本柱 -->
+<div class="section">
+  <h2>ペンギンのメモリ、3 つの約束</h2>
+  <p style="font-size:0.9em; color:#555;">無責任なジャンク出品とは違います。メモリを介して「サポート」を売っています。</p>
+  <div class="usp">
+    <div class="usp-item">
+      <div class="label">合うものを選ぶ</div>
+      <div class="desc">機種診断サポート無料。型番を送るだけで適合メモリを調べます</div>
+    </div>
+    <div class="usp-item">
+      <div class="label">迷わず付けられる</div>
+      <div class="desc">増設作業の手順を図解。分解の恐怖を解消します</div>
+    </div>
+    <div class="usp-item">
+      <div class="label">ハズレがない</div>
+      <div class="desc">MemTest86 Pro 検査済 + 7 日間初期不良保証</div>
+    </div>
+  </div>
+</div>
+
+<!-- ========================================== -->
+<!-- カテゴリ 1: 問題提起 (なぜ重い・なぜ増設) -->
+<!-- ========================================== -->
+<div class="section">
+  <span class="cat-label">① まず知る：なぜ重い?</span>
+  <h2>その重さ、故障じゃなくメモリ不足かも</h2>
+  <p>クルクル回る待ち時間、タブを開くと固まる、Zoom 中に他のアプリが動かない——どれもメモリが足りていないサインです。数千円の増設で直ることが多いんです。</p>
+  <div class="gallery">
+    <figure><img src="img/memory/problem_01.png" alt="その重さ、メモリ不足のサインです" loading="lazy"><figcaption>その重さ、メモリ不足のサイン</figcaption></figure>
+    <figure><img src="img/memory/problem_02.png" alt="タブを開くと固まるのはなぜ?" loading="lazy"><figcaption>タブを開くと固まるのはなぜ?</figcaption></figure>
+    <figure><img src="img/memory/problem_03.png" alt="Windows は毎年太る" loading="lazy"><figcaption>Windows は毎年「太る」</figcaption></figure>
+    <figure><img src="img/memory/problem_04.png" alt="古い PC、捨てる前に中を見て" loading="lazy"><figcaption>捨てる前に、中を見て</figcaption></figure>
+    <figure><img src="img/memory/problem_05.png" alt="あなたの PC、メモリは足りてる?" loading="lazy"><figcaption>あなたの PC、足りてる?</figcaption></figure>
+    <figure><img src="img/memory/problem_06.png" alt="容量が大きいほど PC は余裕で動く" loading="lazy"><figcaption>容量が大きいほど余裕で動く</figcaption></figure>
+    <figure><img src="img/memory/problem_07.png" alt="重い原因はストレージじゃなくメモリかも" loading="lazy"><figcaption>原因はストレージじゃないかも</figcaption></figure>
+  </div>
+</div>
+
+<!-- ========================================== -->
+<!-- カテゴリ 2: 規格解説 (どれを選ぶ) -->
+<!-- ========================================== -->
+<div class="section">
+  <span class="cat-label">② 選ぶ：どのメモリが合う?</span>
+  <h2>メモリは「形」と「世代」で選ぶ</h2>
+  <p>誤購入のいちばんの原因が規格ミスです。DDR3 と DDR4 は挿さりません。ノート用は短い SO-DIMM、デスクトップ用は長い UDIMM。難しい言葉はペンギンが翻訳します。</p>
+  <div class="gallery">
+    <figure><img src="img/memory/spec_01.png" alt="メモリは形と世代で選ぶ" loading="lazy"><figcaption>「形」と「世代」で選ぶ</figcaption></figure>
+    <figure><img src="img/memory/spec_02.png" alt="DDR3 と DDR4 まちがえると挿さらない" loading="lazy"><figcaption>DDR3 と DDR4 は挿さらない</figcaption></figure>
+    <figure><img src="img/memory/spec_03.png" alt="ノート PC は短いメモリ SO-DIMM" loading="lazy"><figcaption>ノートは短い SO-DIMM</figcaption></figure>
+    <figure><img src="img/memory/spec_04.png" alt="自分の PC に合うメモリ調べ方は 1 つ" loading="lazy"><figcaption>調べ方は 1 つ (msinfo32)</figcaption></figure>
+    <figure><img src="img/memory/spec_05.png" alt="ECC 電圧など難しい言葉はスルーで OK" loading="lazy"><figcaption>難しい言葉はスルーで OK</figcaption></figure>
+    <figure><img src="img/memory/spec_06.png" alt="UDIMM と RDIMM 家庭用はどっち?" loading="lazy"><figcaption>家庭用は UDIMM</figcaption></figure>
+    <figure><img src="img/memory/spec_07.png" alt="容量はどこまで増やせる? 上限の見方" loading="lazy"><figcaption>上限はどこまで?</figcaption></figure>
+  </div>
+  <p style="margin-top:12px; font-size:0.88em; color:#555;"><strong>分からなくても大丈夫。</strong>機種名・型番をメルカリのメッセージで送っていただければ、適合メモリを無料でお調べします。</p>
+</div>
+
+<!-- ========================================== -->
+<!-- カテゴリ 3: 作業手順 (デスクトップ) -->
+<!-- ========================================== -->
+<div class="section">
+  <span class="cat-label">③ 付ける：デスクトップ編</span>
+  <h2>デスクトップは、たった 3 ステップ</h2>
+  <p>電源を抜く → 静電気を逃がす → 「カチッ」と挿す。BIOS 設定はいじらなくて大丈夫。所要 5 分です。</p>
+  <div class="gallery">
+    <figure><img src="img/memory/desktop_01.png" alt="メモリ交換はたった 3 ステップ" loading="lazy"><figcaption>たった 3 ステップ</figcaption></figure>
+    <figure><img src="img/memory/desktop_02.png" alt="カチッと音がしたら成功" loading="lazy"><figcaption>「カチッ」で成功</figcaption></figure>
+    <figure><img src="img/memory/desktop_03.png" alt="静電気だけ気をつければ OK" loading="lazy"><figcaption>静電気だけ気をつければ OK</figcaption></figure>
+    <figure><img src="img/memory/desktop_04.png" alt="BIOS 設定はいじらなくていい" loading="lazy"><figcaption>BIOS はいじらない</figcaption></figure>
+    <figure><img src="img/memory/desktop_05.png" alt="自分の PC に合うメモリ、コメントで聞ける" loading="lazy"><figcaption>合うメモリ、聞ける</figcaption></figure>
+    <figure><img src="img/memory/desktop_06.png" alt="重い Windows が増設で復活" loading="lazy"><figcaption>重い Windows が復活</figcaption></figure>
+    <figure><img src="img/memory/desktop_07.png" alt="検査済みだからハズレなし" loading="lazy"><figcaption>検査済だからハズレなし</figcaption></figure>
+  </div>
+</div>
+
+<!-- ========================================== -->
+<!-- カテゴリ 4: 作業手順 (ノート) -->
+<!-- ========================================== -->
+<div class="section">
+  <span class="cat-label">④ 付ける：ノート編</span>
+  <h2>ノートも、裏蓋 1 枚 + ドライバー 1 本</h2>
+  <p>底面パネルを開けて SO-DIMM を交換するだけ。所要 10-15 分。初めてでも、ペンギンが手順に伴走します。</p>
+  <div class="gallery">
+    <figure><img src="img/memory/laptop_01.png" alt="裏蓋 1 枚、それだけ" loading="lazy"><figcaption>裏蓋 1 枚、それだけ</figcaption></figure>
+    <figure><img src="img/memory/laptop_02.png" alt="メモリはカチッで完成" loading="lazy"><figcaption>「カチッ」で完成</figcaption></figure>
+    <figure><img src="img/memory/laptop_03.png" alt="私の機種、どれを買う?" loading="lazy"><figcaption>私の機種、どれを買う?</figcaption></figure>
+    <figure><img src="img/memory/laptop_04.png" alt="ドライバー 1 本で 15 分" loading="lazy"><figcaption>ドライバー 1 本で 15 分</figcaption></figure>
+    <figure><img src="img/memory/laptop_05.png" alt="初めてでも、ひとりじゃない" loading="lazy"><figcaption>初めてでも、ひとりじゃない</figcaption></figure>
+    <figure><img src="img/memory/laptop_06.png" alt="軽くなる、よみがえる" loading="lazy"><figcaption>軽くなる、よみがえる</figcaption></figure>
+    <figure><img src="img/memory/laptop_07.png" alt="失敗 3 点、これだけ避ければ OK" loading="lazy"><figcaption>失敗 3 点だけ避ける</figcaption></figure>
+    <figure><img src="img/memory/laptop_08.png" alt="テスト済みだからハズレなし" loading="lazy"><figcaption>テスト済だからハズレなし</figcaption></figure>
+  </div>
+</div>
+
+<!-- ========================================== -->
+<!-- カテゴリ 5: 信頼性・差別化 -->
+<!-- ========================================== -->
+<div class="section">
+  <span class="cat-label">⑤ 安心：なぜペンギンか</span>
+  <h2>検査済 + 保証 + 届いてからもサポート</h2>
+  <p>出荷前に MemTest86 Pro 全項目をパスしたメモリだけをお届けします。万一の初期不良は 7 日間保証で交換。古物商として、商品の品質に責任を持ちます。</p>
+  <div class="gallery">
+    <figure><img src="img/memory/trust_01.png" alt="ジャンク品 vs 動作保証、開けたら別世界" loading="lazy"><figcaption>ジャンク品 vs 動作保証</figcaption></figure>
+    <figure><img src="img/memory/trust_02.png" alt="全項目 PASS の合格証" loading="lazy"><figcaption>全項目 PASS の合格証</figcaption></figure>
+    <figure><img src="img/memory/trust_03.png" alt="MemTest86 って何? ペンギンお医者さん" loading="lazy"><figcaption>MemTest86 って何?</figcaption></figure>
+    <figure><img src="img/memory/trust_04.png" alt="届いてからも、ひとりにしない" loading="lazy"><figcaption>届いてからもサポート</figcaption></figure>
+    <figure><img src="img/memory/trust_05.png" alt="7 日間、もし動かなくても" loading="lazy"><figcaption>7 日間、もし動かなくても</figcaption></figure>
+  </div>
+</div>
+
+<!-- CTA -->
+<div class="section" style="background: #e8f5e9; border: 2px solid #2d6a4f; text-align: center;">
+  <h2>適合メモリを探す</h2>
+  <p>機種が分からなければ、メルカリのメッセージで PC の型番か写真を送ってください。無料でお調べします。</p>
+  <p style="margin-top:16px;">
+    <a href="https://jp.mercari.com/user/profile/544508417" target="_blank" rel="noopener" class="cta">メルカリストアで購入する</a>
+  </p>
+</div>
+
+<!-- クロスセル -->
+<div class="section" style="background: #f8f9fa;">
+  <h2>もっと PC を快適にしたい方へ</h2>
+  <ul>
+    <li><a href="setup.html">Linux インストール USB メディア</a> — Windows 10 終了後の選択肢</li>
+    <li><a href="linuxmint-xfce-guide.html">Linux Mint Xfce 操作ガイド</a> — インストール後の使い方</li>
+    <li><a href="index.html">整備済み Linux パソコン販売</a> — 完成品が欲しい方へ</li>
+  </ul>
+</div>
+
+<!-- フッター -->
+<div class="footer">
+  <p><strong>Penguin Computer</strong></p>
+  <p>Linuxプリインストールの整備済み中古パソコン</p>
+  <p style="margin-top:8px;"><a href="mailto:penguin.computer.2026@gmail.com">penguin.computer.2026@gmail.com</a></p>
+  <p><a href="https://x.com/penguin_comp" target="_blank" rel="noopener">X @penguin_comp</a></p>
+  <p><a href="https://jp.mercari.com/user/profile/544508417" target="_blank" rel="noopener">メルカリストア</a></p>
+  <p style="margin-top:12px; font-size:0.75em;">Linux は Linus Torvalds の登録商標です。</p>
+</div>
+
+</div>
+
+<div class="lb-overlay" id="lb" onclick="closeLb()">
+  <span class="lb-close" onclick="closeLb()">&times;</span>
+  <div class="lb-cap" id="lb-cap"></div>
+  <img id="lb-img" src="" alt="">
+  <div class="lb-hint">画面をタップで閉じる</div>
+</div>
+<script>
+  function closeLb(){ document.getElementById('lb').classList.remove('open'); }
+  document.addEventListener('DOMContentLoaded', function(){
+    document.querySelectorAll('figure img').forEach(function(im){
+      im.addEventListener('click', function(e){
+        e.stopPropagation();
+        var lb = document.getElementById('lb');
+        document.getElementById('lb-img').src = im.src;
+        document.getElementById('lb-img').alt = im.alt;
+        var cap = im.parentElement.querySelector('figcaption');
+        document.getElementById('lb-cap').textContent = cap ? cap.textContent : im.alt;
+        lb.classList.add('open');
+      });
+    });
+  });
+  document.addEventListener('keydown', function(e){ if(e.key==='Escape') closeLb(); });
+</script>
+</body>
+</html>
