@@ -3,11 +3,11 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Linuxプリインストールの整備済み中古パソコン</title>
-<meta name="description" content="Penguin Computer（ペンギンコンピュータ）は整備済み中古PCにLinuxをインストールしてお届けします。1台ずつ分解クリーニング、SSD換装、チューニング。">
+<title>検査済みメモリ販売と宅配アップグレード｜Penguin Computer</title>
+<meta name="description" content="Penguin Computer（ペンギンコンピュータ）は検査済みメモリの販売と、宅配でのメモリ増設・SSD換装・Linux化アップグレードを提供。古いパソコンを買い替えずに延命します。送料ご負担で無料診断。">
 <!-- OGP -->
-<meta property="og:title" content="Linuxプリインストールの整備済み中古パソコン">
-<meta property="og:description" content="整備済み中古PCにLinuxをインストール。1台ずつ分解クリーニングして仕上げています。">
+<meta property="og:title" content="検査済みメモリ販売と宅配アップグレード｜Penguin Computer">
+<meta property="og:description" content="検査済みメモリの販売と、宅配でのメモリ増設・SSD換装・Linux化。古いパソコンを買い替えずに延命します。">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://penguin-computer.github.io/">
 <meta property="og:site_name" content="Penguin Computer">
@@ -15,8 +15,8 @@
 <!-- Twitter Card -->
 <meta name="twitter:card" content="summary">
 <meta name="twitter:site" content="@penguin_comp">
-<meta name="twitter:title" content="Linuxプリインストールの整備済み中古パソコン">
-<meta name="twitter:description" content="整備済み中古PCにLinuxをインストール。1台ずつ分解クリーニングして仕上げています。">
+<meta name="twitter:title" content="検査済みメモリ販売と宅配アップグレード｜Penguin Computer">
+<meta name="twitter:description" content="検査済みメモリの販売と、宅配でのメモリ増設・SSD換装・Linux化。古いパソコンを延命します。">
 <style>
   * { margin: 0; padding: 0; box-sizing: border-box; }
   body { font-family: -apple-system, 'Hiragino Sans', 'Noto Sans JP', sans-serif; background: #f5f7fa; color: #333; line-height: 1.8; }
@@ -38,9 +38,19 @@
   .usp-item { flex: 1; background: #f0f7f4; border-radius: 8px; padding: 12px; text-align: center; }
   .usp-item .label { font-weight: bold; font-size: 0.95em; color: #2d6a4f; }
   .usp-item .desc { font-size: 0.82em; color: #555; margin-top: 4px; }
+  .cta { background: #e8f5ee; border: 2px solid #2d6a4f; border-radius: 12px; padding: 18px; margin-bottom: 16px; text-align: center; }
+  .cta h2 { margin-bottom: 8px; }
+  .btn { display: inline-block; background: #2d6a4f; color: #fff; padding: 11px 30px; border-radius: 8px; text-decoration: none; font-weight: bold; margin-top: 10px; }
+  .menu-item { border-left: 4px solid #2d6a4f; padding-left: 12px; margin-bottom: 14px; }
+  .menu-item .mlabel { font-weight: bold; color: #2d6a4f; font-size: 1em; }
+  .menu-item .mdesc { font-size: 0.92em; color: #444; margin-top: 2px; }
+  .note { font-size: 0.85em; color: #777; }
+  .flow { list-style: none; padding-left: 0; counter-reset: step; }
+  .flow li { padding-left: 32px; position: relative; margin-bottom: 8px; font-size: 0.93em; }
+  .flow li::before { counter-increment: step; content: counter(step); position: absolute; left: 0; top: 2px; background: #2d6a4f; color: #fff; width: 22px; height: 22px; border-radius: 50%; text-align: center; font-size: 0.8em; line-height: 22px; }
   .footer { text-align: center; margin-top: 32px; font-size: 0.8em; color: #999; }
   .footer p { margin-bottom: 2px; }
-  @media (max-width: 480px) { .usp { flex-direction: column; } }
+  @media (max-width: 480px) { .usp { flex-direction: column; } body { font-size: 1.02em; } }
 </style>
 </head>
 <body>
@@ -56,39 +66,57 @@
 <!-- ミッション -->
 <div class="section">
   <p class="mission">バージョンアップのたびにパソコンを買い替えるのは、もうやめよう。</p>
-  <p>Windows 10 のサポートは2025年10月に終了しました。Windows 11 は古いPCにインストールできません。でも、まだ使えるパソコンを捨てる必要はありません。</p>
-  <p>Linux という選択肢があります。</p>
+  <p>Windows 10のサポートは2025年10月に終了しました。Windows 11は古いパソコンにインストールできないことが多く、買い替えを迫られます。</p>
+  <p>でも、まだ使えるパソコンを捨てる必要はありません。<strong>メモリ増設・SSD換装・Linux化</strong>で、今あるパソコンはまだまだ快適に使えます。</p>
 </div>
 
-<!-- やっていること -->
+<!-- 問題提起 -->
 <div class="section">
-  <h2>ペンギンコンピュータがやっていること</h2>
-  <p>整備済み中古PCに Linux をインストールしてお届けしています。</p>
+  <h2>今、パソコンもメモリも高い</h2>
+  <p>半導体価格の高騰により、パソコン本体もメモリも値上がりが続いています。</p>
   <ul>
-    <li>1台ずつ分解して内部クリーニング</li>
-    <li>SSD換装（起動・動作が10倍以上速くなります）</li>
-    <li>Linux インストール + チューニング</li>
-    <li>日本語環境・必要なアプリをセットアップ済み</li>
+    <li>新しいパソコンに買い替える予算がない</li>
+    <li>メモリの増設も部品が高い</li>
+    <li>Windows 11にアップデート出来ない</li>
+    <li>まだ動くパソコンを捨てるのはもったいない</li>
   </ul>
-  <p>届いたらすぐ使える状態に仕上げています。</p>
+  <p>お金をかけすぎずに、今あるパソコンを活かす方法があります。</p>
 </div>
 
-<!-- USP -->
+<!-- 2本柱 -->
 <div class="section">
-  <h2>3つの約束</h2>
+  <h2>ペンギンができること</h2>
   <div class="usp">
     <div class="usp-item">
-      <div class="label">Clean</div>
-      <div class="desc">パソコン内部まで清掃、点検、整備</div>
+      <div class="label">① 検査済みメモリの販売</div>
+      <div class="desc">MemTest86 Proで1枚ずつ検品。メルカリにて、機種相談・7日初期不良保証つきでお届け。</div>
     </div>
     <div class="usp-item">
-      <div class="label">Fast</div>
-      <div class="desc">Linux 軽量OS + SSD で軽快な動作</div>
+      <div class="label">② 宅配アップグレード</div>
+      <div class="desc">お使いのパソコンをお送りいただき、メモリ増設・SSD換装・Linux化を承ります。</div>
     </div>
-    <div class="usp-item">
-      <div class="label">Easy</div>
-      <div class="desc">オリジナル操作ガイドと技術サポート</div>
-    </div>
+  </div>
+</div>
+
+<!-- 宅配アップグレード メニュー -->
+<div class="section">
+  <h2>🚚 宅配アップグレードサービス</h2>
+  <p>お手元のパソコンを宅配でお預かりし、作業後にお返しします（全国対応）。</p>
+  <div class="menu-item">
+    <div class="mlabel">🧩 メモリ増設</div>
+    <div class="mdesc">検査済みメモリを増設し、動作のもたつき・フリーズを軽減します。増設後に二次検品してからご返送します。</div>
+  </div>
+  <div class="menu-item">
+    <div class="mlabel">💾 SSD換装（データクローン）</div>
+    <div class="mdesc">HDDからSSDへ交換すると、起動やアプリの動作が大幅に速くなります。今お使いの環境（データ）をそのまま新しいSSDへクローンします。<span class="note">※データの内容・完全性は保証いたしません。事前のバックアップをお願いします。</span></div>
+  </div>
+  <div class="menu-item">
+    <div class="mlabel">🐧 Linux化（おすすめ）</div>
+    <div class="mdesc">Windows 10終了機の延命に。当方は「インターネットのプライバシー」を大切にする立場から、軽快で安全なLinux（Linux Mint Xfceを標準）への移行を積極的におすすめしています。考え方は<a href="books.html">books</a>もご覧ください。</div>
+  </div>
+  <div class="menu-item">
+    <div class="mlabel">🔍 動作診断（送料のみご負担）</div>
+    <div class="mdesc">パソコンの状態を診断し、最適なアップグレードをご提案します。診断の際には、内部やキーボード周りのクリーニング（ブロア・エアダスター等）を必ず行います。アップグレードをご依頼いただかない場合でも、この清掃は実施しますので、それだけでもお使いのパソコンが快適になります。</div>
   </div>
 </div>
 
@@ -96,58 +124,83 @@
 <div class="section">
   <h2>🛒 取扱商品（メルカリで販売中）</h2>
   <ul>
-    <li>Linux 搭載 整備済みデスクトップPC</li>
-    <li>Linux 搭載 整備済みノートPC</li>
-    <li>Linux インストール USB メディア</li>
-    <li>PCパーツ（メモリ・SSD 等）</li>
+    <li>パソコン用メモリ全般</li>
+    <li>LinuxインストールUSBメディア</li>
+    <li>整備済みLinuxパソコン</li>
   </ul>
-  <p><a href="https://jp.mercari.com/user/profile/544508417" target="_blank" rel="noopener">メルカリストアで商品を見る</a></p>
+  <p><a href="https://jp.mercari.com/user/profile/544508417" target="_blank" rel="noopener">メルカリストアで商品を見る</a>／メモリ選びは<a href="memory.html">memoryガイド</a>へ</p>
 </div>
 
-<!-- 推奨構成 -->
+<!-- ご利用の流れ -->
 <div class="section">
-  <h2>💻 推奨構成：Linux Mint × ThinkPad</h2>
-  <p>ペンギンコンピュータはOSとして<strong>Linux Mint</strong>をプッシュしています。そして端末は<strong>ThinkPadシリーズ</strong>をメインに取り扱い、<strong>この組み合わせを推奨</strong>します。</p>
+  <h2>ご利用の流れ（宅配）</h2>
+  <ol class="flow">
+    <li>メールでご相談（機種名・お困りごとをお知らせください）</li>
+    <li>対応可否をご返信。OKならパソコンを発送（送料はお客様ご負担）</li>
+    <li>当方で動作診断・お見積り</li>
+    <li>内容にご承認いただいてから作業</li>
+    <li>二次検品のうえご返送</li>
+  </ol>
+</div>
+
+<!-- 料金 -->
+<div class="section">
+  <h2>料金について</h2>
+  <p>作業料金は内容により異なり、部品相場も変動するため、<strong>お見積り制</strong>としています（固定価格は掲載していません）。</p>
+  <p>概算の目安：</p>
   <ul>
-    <li><strong>費用対価格性能が高い</strong>：中古市場で流通が多く、同世代の他社ビジネスノートと比べて入手性・整備性が優れています</li>
-    <li><strong>優れた設計により長く使える</strong>：堅牢な筐体、メンテナンス性の高い内部構造、キーボード品質、モデルによっては内蔵＋着脱式のデュアルバッテリー（Power Bridge）で長時間運用も可能</li>
-    <li><strong>Linux Mintとの相性が良い</strong>：公式ドライバ・各種チューニングとの親和性が高く、インストール後のトラブルが少ない</li>
-    <li><strong>当方が長年のThinkPadユーザー</strong>：実機で検証した設定・運用ノウハウを提供できます</li>
+    <li>動作診断：<strong>無料</strong>（往復送料はお客様ご負担）</li>
+    <li>メモリ増設／SSD換装／Linux化：内容に応じてお見積り</li>
   </ul>
+  <p>工賃は1時間あたり5,000円です。作業内容に応じてお見積もりします。</p>
+</div>
+
+<!-- 対象 -->
+<div class="section">
+  <h2>対象のお客様・対応パソコン</h2>
+  <p>個人のお客様向け、<strong>宅配での全国対応</strong>です。</p>
+  <p>ご依頼前に必ずメールでお問い合わせいただき、対応可能か確認のうえお送りください。</p>
+</div>
+
+<!-- 注意事項 -->
+<div class="section">
+  <h2>ご注意事項</h2>
+  <ul>
+    <li>作業前に、必ず大切なデータのバックアップをお願いします。データの消失について当方は責任を負いかねます。</li>
+    <li>SSD換装のデータクローンは現状のデータを移行する作業であり、データの内容・完全性は保証いたしません。</li>
+    <li>お預かり中の輸送事故等については、発送方法を含め事前にご相談ください。</li>
+  </ul>
+</div>
+
+<!-- アフターサポート -->
+<div class="section">
+  <h2>アフターサポート</h2>
+  <p>操作方法やメモリ選びのご相談は、メールでお気軽にどうぞ。</p>
 </div>
 
 <!-- なぜペンギン -->
 <div class="section">
   <h2>なぜ「ペンギン」？</h2>
-  <p>Linux の公式マスコットはペンギンの Tux です。Penguin Computer という名前は Tux へのオマージュであり、Apple Computer へのセルフパロディでもあります。</p>
+  <p>Linuxの公式マスコットはペンギンのTuxです。Penguin Computerという名前はTuxへのオマージュであり、Apple Computerへのセルフパロディでもあります。</p>
 </div>
 
-<!-- キャンペーン告知（企画再考のため一時非表示）
-<div class="section" style="background: #fff3cd; border: 2px solid #ffc107;">
-  <h2 style="color: #856404;">🎁 Linux パソコン プレゼント</h2>
-  <p>毎月1名様に、販売中の Linux パソコンから1台をプレゼント！</p>
-  <p style="font-size: 0.93em;">
-    ① X の <a href="https://x.com/penguin_comp" target="_blank" rel="noopener">@penguin_comp</a> をフォロー<br>
-    ② キャンペーン関連投稿をリポスト<br>
-    <strong>これだけで応募完了！</strong><br>
-    <span style="font-size: 0.88em; color: #856404;">毎月末日締切 → 翌月初に抽選・発表</span>
-  </p>
-  <p style="margin-top: 12px; text-align: center;">
-    <a href="campaign.html" style="display: inline-block; background: #2d6a4f; color: #fff; padding: 10px 28px; border-radius: 8px; text-decoration: none; font-weight: bold;">キャンペーン詳細・応募はこちら</a>
-  </p>
+<!-- お問い合わせ -->
+<div class="cta">
+  <h2>お問い合わせ</h2>
+  <p>ご相談・お見積りはメールで承ります。</p>
+  <p class="note">機種名とお困りごとを添えてご連絡ください。</p>
+  <a class="btn" href="mailto:penguin.computer.2026@gmail.com?subject=アップグレードの相談">penguin.computer.2026@gmail.com</a>
+  <p class="note" style="margin-top:10px;">X <a href="https://x.com/penguin_comp" target="_blank" rel="noopener">@penguin_comp</a>でもどうぞ。</p>
 </div>
--->
-
 
 <!-- フッター -->
 <div class="footer">
   <p><strong>Penguin Computer</strong></p>
-  <p>Linuxプリインストールの整備済み中古パソコン</p>
+  <p>検査済みメモリの販売と宅配アップグレード</p>
   <p style="margin-top:8px;"><a href="mailto:penguin.computer.2026@gmail.com">penguin.computer.2026@gmail.com</a></p>
   <p><a href="https://x.com/penguin_comp" target="_blank" rel="noopener">X @penguin_comp</a></p>
   <p><a href="https://jp.mercari.com/user/profile/544508417" target="_blank" rel="noopener">メルカリストア</a></p>
-  <!-- <p><a href="campaign.html">Linux パソコン プレゼント実施中</a></p> -->
-  <p style="margin-top:12px; font-size:0.75em;">Linux は Linus Torvalds の登録商標です。</p>
+  <p style="margin-top:12px; font-size:0.75em;">LinuxはLinus Torvaldsの登録商標です。</p>
 </div>
 
 </div>
