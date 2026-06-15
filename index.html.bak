@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Linuxプリインストールの整備済み中古パソコン</title>
+<meta name="description" content="Penguin Computer（ペンギンコンピュータ）は整備済み中古PCにLinuxをインストールしてお届けします。1台ずつ分解クリーニング、SSD換装、チューニング。">
+<!-- OGP -->
+<meta property="og:title" content="Linuxプリインストールの整備済み中古パソコン">
+<meta property="og:description" content="整備済み中古PCにLinuxをインストール。1台ずつ分解クリーニングして仕上げています。">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://penguin-computer.github.io/">
+<meta property="og:site_name" content="Penguin Computer">
+<meta property="og:locale" content="ja_JP">
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary">
+<meta name="twitter:site" content="@penguin_comp">
+<meta name="twitter:title" content="Linuxプリインストールの整備済み中古パソコン">
+<meta name="twitter:description" content="整備済み中古PCにLinuxをインストール。1台ずつ分解クリーニングして仕上げています。">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: -apple-system, 'Hiragino Sans', 'Noto Sans JP', sans-serif; background: #f5f7fa; color: #333; line-height: 1.8; }
+  .container { max-width: 640px; margin: 0 auto; padding: 24px 16px; }
+  h1 { font-size: 1.4em; margin-bottom: 4px; }
+  h2 { font-size: 1.1em; margin-bottom: 8px; color: #2d6a4f; }
+  .brand { color: #2d6a4f; }
+  .tagline { font-size: 0.9em; color: #666; margin-bottom: 24px; }
+  a { color: #2d6a4f; }
+  .nav { text-align: center; margin-bottom: 20px; font-size: 0.9em; }
+  .nav a { margin: 0 8px; }
+  .section { background: #fff; border-radius: 12px; padding: 20px; margin-bottom: 16px; box-shadow: 0 1px 3px rgba(0,0,0,0.08); }
+  .section p { font-size: 0.95em; margin-bottom: 8px; }
+  .section p:last-child { margin-bottom: 0; }
+  .section ul { padding-left: 20px; font-size: 0.92em; margin-bottom: 8px; }
+  .section li { margin-bottom: 4px; }
+  .mission { font-size: 1.05em; font-weight: bold; color: #2d6a4f; border-left: 4px solid #2d6a4f; padding-left: 12px; margin-bottom: 16px; }
+  .usp { display: flex; gap: 12px; margin-bottom: 8px; }
+  .usp-item { flex: 1; background: #f0f7f4; border-radius: 8px; padding: 12px; text-align: center; }
+  .usp-item .label { font-weight: bold; font-size: 0.95em; color: #2d6a4f; }
+  .usp-item .desc { font-size: 0.82em; color: #555; margin-top: 4px; }
+  .footer { text-align: center; margin-top: 32px; font-size: 0.8em; color: #999; }
+  .footer p { margin-bottom: 2px; }
+  @media (max-width: 480px) { .usp { flex-direction: column; } }
+</style>
+</head>
+<body>
+<div class="container">
+
+<div class="nav">
+  <a href="index.html"><strong>home</strong></a> | <a href="memory.html">memory</a> | <a href="setup.html">install</a> | <a href="linuxmint-xfce-guide.html">guide</a> | <a href="books.html">books</a>
+</div>
+
+<h1>🐧 <span class="brand">Penguin Computer</span></h1>
+<p class="tagline">自分たちの自由なコンピュータ（Your own computer）</p>
+
+<!-- ミッション -->
+<div class="section">
+  <p class="mission">バージョンアップのたびにパソコンを買い替えるのは、もうやめよう。</p>
+  <p>Windows 10 のサポートは2025年10月に終了しました。Windows 11 は古いPCにインストールできません。でも、まだ使えるパソコンを捨てる必要はありません。</p>
+  <p>Linux という選択肢があります。</p>
+</div>
+
+<!-- やっていること -->
+<div class="section">
+  <h2>ペンギンコンピュータがやっていること</h2>
+  <p>整備済み中古PCに Linux をインストールしてお届けしています。</p>
+  <ul>
+    <li>1台ずつ分解して内部クリーニング</li>
+    <li>SSD換装（起動・動作が10倍以上速くなります）</li>
+    <li>Linux インストール + チューニング</li>
+    <li>日本語環境・必要なアプリをセットアップ済み</li>
+  </ul>
+  <p>届いたらすぐ使える状態に仕上げています。</p>
+</div>
+
+<!-- USP -->
+<div class="section">
+  <h2>3つの約束</h2>
+  <div class="usp">
+    <div class="usp-item">
+      <div class="label">Clean</div>
+      <div class="desc">パソコン内部まで清掃、点検、整備</div>
+    </div>
+    <div class="usp-item">
+      <div class="label">Fast</div>
+      <div class="desc">Linux 軽量OS + SSD で軽快な動作</div>
+    </div>
+    <div class="usp-item">
+      <div class="label">Easy</div>
+      <div class="desc">オリジナル操作ガイドと技術サポート</div>
+    </div>
+  </div>
+</div>
+
+<!-- 取扱商品 -->
+<div class="section">
+  <h2>🛒 取扱商品（メルカリで販売中）</h2>
+  <ul>
+    <li>Linux 搭載 整備済みデスクトップPC</li>
+    <li>Linux 搭載 整備済みノートPC</li>
+    <li>Linux インストール USB メディア</li>
+    <li>PCパーツ（メモリ・SSD 等）</li>
+  </ul>
+  <p><a href="https://jp.mercari.com/user/profile/544508417" target="_blank" rel="noopener">メルカリストアで商品を見る</a></p>
+</div>
+
+<!-- 推奨構成 -->
+<div class="section">
+  <h2>💻 推奨構成：Linux Mint × ThinkPad</h2>
+  <p>ペンギンコンピュータはOSとして<strong>Linux Mint</strong>をプッシュしています。そして端末は<strong>ThinkPadシリーズ</strong>をメインに取り扱い、<strong>この組み合わせを推奨</strong>します。</p>
+  <ul>
+    <li><strong>費用対価格性能が高い</strong>：中古市場で流通が多く、同世代の他社ビジネスノートと比べて入手性・整備性が優れています</li>
+    <li><strong>優れた設計により長く使える</strong>：堅牢な筐体、メンテナンス性の高い内部構造、キーボード品質、モデルによっては内蔵＋着脱式のデュアルバッテリー（Power Bridge）で長時間運用も可能</li>
+    <li><strong>Linux Mintとの相性が良い</strong>：公式ドライバ・各種チューニングとの親和性が高く、インストール後のトラブルが少ない</li>
+    <li><strong>当方が長年のThinkPadユーザー</strong>：実機で検証した設定・運用ノウハウを提供できます</li>
+  </ul>
+</div>
+
+<!-- なぜペンギン -->
+<div class="section">
+  <h2>なぜ「ペンギン」？</h2>
+  <p>Linux の公式マスコットはペンギンの Tux です。Penguin Computer という名前は Tux へのオマージュであり、Apple Computer へのセルフパロディでもあります。</p>
+</div>
+
+<!-- キャンペーン告知（企画再考のため一時非表示）
+<div class="section" style="background: #fff3cd; border: 2px solid #ffc107;">
+  <h2 style="color: #856404;">🎁 Linux パソコン プレゼント</h2>
+  <p>毎月1名様に、販売中の Linux パソコンから1台をプレゼント！</p>
+  <p style="font-size: 0.93em;">
+    ① X の <a href="https://x.com/penguin_comp" target="_blank" rel="noopener">@penguin_comp</a> をフォロー<br>
+    ② キャンペーン関連投稿をリポスト<br>
+    <strong>これだけで応募完了！</strong><br>
+    <span style="font-size: 0.88em; color: #856404;">毎月末日締切 → 翌月初に抽選・発表</span>
+  </p>
+  <p style="margin-top: 12px; text-align: center;">
+    <a href="campaign.html" style="display: inline-block; background: #2d6a4f; color: #fff; padding: 10px 28px; border-radius: 8px; text-decoration: none; font-weight: bold;">キャンペーン詳細・応募はこちら</a>
+  </p>
+</div>
+-->
+
+
+<!-- フッター -->
+<div class="footer">
+  <p><strong>Penguin Computer</strong></p>
+  <p>Linuxプリインストールの整備済み中古パソコン</p>
+  <p style="margin-top:8px;"><a href="mailto:penguin.computer.2026@gmail.com">penguin.computer.2026@gmail.com</a></p>
+  <p><a href="https://x.com/penguin_comp" target="_blank" rel="noopener">X @penguin_comp</a></p>
+  <p><a href="https://jp.mercari.com/user/profile/544508417" target="_blank" rel="noopener">メルカリストア</a></p>
+  <!-- <p><a href="campaign.html">Linux パソコン プレゼント実施中</a></p> -->
+  <p style="margin-top:12px; font-size:0.75em;">Linux は Linus Torvalds の登録商標です。</p>
+</div>
+
+</div>
+</body>
+</html>
