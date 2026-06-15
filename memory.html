@@ -47,7 +47,7 @@
   .cta { display: inline-block; background: #2d6a4f; color: #fff; padding: 12px 32px; border-radius: 8px; text-decoration: none; font-weight: bold; font-size: 1em; }
   .footer { text-align: center; margin-top: 32px; font-size: 0.8em; color: #999; }
   .footer p { margin-bottom: 2px; }
-  @media (max-width: 480px) { .usp { flex-direction: column; } .gallery { grid-template-columns: 1fr; } }
+  @media (max-width: 480px) { .usp { flex-direction: column; } .gallery { grid-template-columns: 1fr; } body { font-size: 1.02em; } }
 
   /* === クリック拡大 (lightbox) === */
   figure img { cursor: zoom-in; transition: transform 0.1s; }
@@ -57,15 +57,6 @@
   .lb-cap { color: #fff; font-size: 1.2em; padding: 14px; font-weight: bold; }
   .lb-close { position: fixed; top: 10px; right: 16px; color: #fff; font-size: 2.4em; line-height: 1; cursor: pointer; z-index: 1000; background: rgba(0,0,0,0.5); border-radius: 8px; padding: 2px 14px; }
   .lb-hint { color: #ccc; font-size: 0.95em; padding-bottom: 24px; }
-  /* === スマホ・年配者向け 文字拡大 (QR 経由スマホ閲覧前提) === */
-  @media (max-width: 640px) {
-    body { font-size: 17px; }
-    h1 { font-size: 1.6em; }
-    h2 { font-size: 1.3em; }
-    .section p { font-size: 1.05em; line-height: 1.7; }
-    .section ul, .section ol { font-size: 1.02em; line-height: 1.7; }
-    figcaption { font-size: 1.0em; }
-  }
 </style>
 </head>
 <body>
