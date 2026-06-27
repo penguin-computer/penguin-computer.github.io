@@ -4,10 +4,10 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>メモリ増設ガイド | Penguin Computer</title>
-<meta name="description" content="古いPCをメモリ増設で快適に。重い症状の見分け方、DDR3/DDR4・SODIMM/UDIMMの規格判別、取付手順を初心者向けに図解。MemTest86 Pro検査済 + 7日間初期不良保証 + 機種診断サポート付きのメモリをメルカリで販売中。">
+<meta name="description" content="古いPCをメモリ増設で快適に。遅い症状の見分け方、DDR3/DDR4・SODIMM/UDIMMの規格判別、取付手順を初心者向けに図解。MemTest86 Pro検査済 + 7日間初期不良保証 + 機種診断サポート付きのメモリをメルカリで販売中。">
 <!-- OGP -->
 <meta property="og:title" content="メモリ増設ガイド | Penguin Computer">
-<meta property="og:description" content="重い症状の見分け方、規格判別、取付手順を図解。検査済 + 7日間保証 + 機種診断サポート付き。">
+<meta property="og:description" content="遅い症状の見分け方、規格判別、取付手順を図解。検査済 + 7日間保証 + 機種診断サポート付き。">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://penguin-computer.github.io/memory.html">
 <meta property="og:site_name" content="Penguin Computer">
@@ -16,7 +16,7 @@
 <meta name="twitter:card" content="summary">
 <meta name="twitter:site" content="@penguin_comp">
 <meta name="twitter:title" content="メモリ増設ガイド | Penguin Computer">
-<meta name="twitter:description" content="重い症状の見分け方、規格判別、取付手順を図解。検査済 + 7日間保証 + 機種診断サポート付き。">
+<meta name="twitter:description" content="遅い症状の見分け方、規格判別、取付手順を図解。検査済 + 7日間保証 + 機種診断サポート付き。">
 <style>
   * { margin: 0; padding: 0; box-sizing: border-box; }
   body { font-family: -apple-system, 'Hiragino Sans', 'Noto Sans JP', sans-serif; background: #f5f7fa; color: #333; line-height: 1.8; }
@@ -72,7 +72,7 @@
 
 <!-- ヒーロー / ミッション -->
 <div class="section" style="background: #e8f5e9; border: 2px solid #2d6a4f;">
-  <p class="mission">「動作が重い」の7-8割は、メモリ不足が原因です。</p>
+  <p class="mission">「動作が遅い」の7-8割は、メモリ不足が原因です。</p>
   <p>SSD換装より体感が大きく、CPU換装よりずっと安い。メモリ増設は、古いPCをいちばん手軽に復活させる方法です。</p>
   <p>でも「自分のPCにどのメモリが合うのか分からない」「分解が怖い」その不安に、ペンギンコンピュータが伴走します。</p>
   <p style="text-align: center; margin-top: 16px;">
@@ -104,19 +104,19 @@
 <!-- howto テキスト手順 -->
 <div class="section" id="howto" style="border: 2px solid #2d6a4f;">
   <span class="cat-label">📖 まず読む：メモリ交換の手順</span>
-  <h2>メモリ交換の手順（ノート/デスクトップ）</h2>
+  <h2>メモリ交換の手順（ノートパソコン/デスクトップパソコン）</h2>
   <p>このページの図解とあわせて、手順をテキストでもまとめました。はじめてでも、この通りに進めれば大丈夫です。</p>
 
   <h3>共通の準備（安全のために必ず）</h3>
   <ol>
-    <li>電源を完全に切る。ノートはACアダプタとバッテリーを外す。デスクトップは電源ケーブルを抜く。</li>
+    <li>電源を完全に切る。ノートパソコンはACアダプタとバッテリーを外す。デスクトップパソコンは電源ケーブルを抜く。</li>
     <li>数分置いて放電させてから作業する。</li>
     <li>金属部分（ドアノブや水道の蛇口など）に触れて、体にたまった静電気を逃がす。</li>
     <li>メモリは金色の端子とチップに素手で触れず、基板の左右の端だけを持つ。</li>
     <li>通電したまま（電源が入ったまま）の抜き差しは絶対にしない。</li>
   </ol>
 
-  <h3>ノートPCの場合</h3>
+  <h3>ノートパソコンの場合</h3>
   <ol>
     <li>底面のネジを外してカバーを開ける。メモリ専用の小フタがある機種と、底面全体を外す機種があります。</li>
     <li>メモリは左右の金具で斜めに固定されています。交換するときは左右の金具を外側に開くと、メモリが斜めに起き上がるので、まっすぐ引き抜く。</li>
@@ -125,7 +125,7 @@
     <li>カバーを戻してネジを締め、電源を入れる。容量が増えていれば成功です。</li>
   </ol>
 
-  <h3>デスクトップの場合</h3>
+  <h3>デスクトップパソコンの場合</h3>
   <ol>
     <li>ケースの側面パネル（多くは左側）のネジを外して開ける。</li>
     <li>マザーボード上の細長いメモリスロットを確認する。</li>
@@ -143,17 +143,17 @@
 
 <!-- problem -->
 <div class="section">
-  <span class="cat-label">① まず知る：なぜ重い?</span>
-  <h2>その重さ、故障じゃなくメモリ不足かも</h2>
+  <span class="cat-label">① まず知る：なぜ遅い?</span>
+  <h2>その遅さ、故障じゃなくメモリ不足かも</h2>
   <p>クルクル回る待ち時間、タブを開くと固まる、Zoom中に他のアプリが動かない。どれもメモリが足りていないサインです。数千円の増設で直ることが多いんです。</p>
   <div class="gallery">
-    <figure><img src="img/memory/problem_01.webp" alt="その重さ、メモリ不足のサインです" loading="lazy"><figcaption>その重さ、メモリ不足のサインです</figcaption></figure>
+    <figure><img src="img/memory/problem_01.webp" alt="その遅さ、メモリ不足のサインです" loading="lazy"><figcaption>その遅さ、メモリ不足のサインです</figcaption></figure>
     <figure><img src="img/memory/problem_02.webp" alt="タブを開くと固まるのはなぜ?" loading="lazy"><figcaption>タブを開くと固まるのはなぜ?</figcaption></figure>
     <figure><img src="img/memory/problem_03.webp" alt="Windowsは毎年「太る」って知ってた?" loading="lazy"><figcaption>Windowsは毎年「太る」って知ってた?</figcaption></figure>
     <figure><img src="img/memory/problem_04.webp" alt="古いPC、捨てる前に中を見て" loading="lazy"><figcaption>古いPC、捨てる前に中を見て</figcaption></figure>
     <figure><img src="img/memory/problem_05.webp" alt="あなたのPC、メモリは足りてる?" loading="lazy"><figcaption>あなたのPC、メモリは足りてる?</figcaption></figure>
     <figure><img src="img/memory/problem_06.webp" alt="容量が大きいほど、PCは余裕で動く" loading="lazy"><figcaption>容量が大きいほど、PCは余裕で動く</figcaption></figure>
-    <figure><img src="img/memory/problem_07.webp" alt="重い原因、ストレージじゃなくメモリかも" loading="lazy"><figcaption>重い原因、ストレージじゃなくメモリかも</figcaption></figure>
+    <figure><img src="img/memory/problem_07.webp" alt="遅い原因、ストレージじゃなくメモリかも" loading="lazy"><figcaption>遅い原因、ストレージじゃなくメモリかも</figcaption></figure>
   </div>
 </div>
 
@@ -161,11 +161,11 @@
 <div class="section">
   <span class="cat-label">② 選ぶ：どのメモリが合う?</span>
   <h2>メモリは「形」と「世代」で選ぶ</h2>
-  <p>誤購入のいちばんの原因が規格ミスです。DDR3とDDR4は挿さりません。ノート用は短いSO-DIMM、デスクトップ用は長いUDIMM。難しい言葉はペンギンが翻訳します。</p>
+  <p>誤購入のいちばんの原因が規格ミスです。DDR3とDDR4は挿さりません。ノートパソコン用は短いSO-DIMM、デスクトップパソコン用は長いUDIMM。難しい言葉はペンギンが翻訳します。</p>
   <div class="gallery">
     <figure><img src="img/memory/spec_01.webp" alt="メモリは「形」と「世代」で選ぶ" loading="lazy"><figcaption>メモリは「形」と「世代」で選ぶ</figcaption></figure>
     <figure><img src="img/memory/spec_02.webp" alt="DDR3とDDR4、まちがえると挿さらない" loading="lazy"><figcaption>DDR3とDDR4、まちがえると挿さらない</figcaption></figure>
-    <figure><img src="img/memory/spec_03.webp" alt="ノートPCは短いメモリ「SO-DIMM」" loading="lazy"><figcaption>ノートPCは短いメモリ「SO-DIMM」</figcaption></figure>
+    <figure><img src="img/memory/spec_03.webp" alt="ノートパソコンは短いメモリ「SO-DIMM」" loading="lazy"><figcaption>ノートパソコンは短いメモリ「SO-DIMM」</figcaption></figure>
     <figure><img src="img/memory/spec_04.webp" alt="自分のPCに合うメモリ、調べ方は1つ" loading="lazy"><figcaption>自分のPCに合うメモリ、調べ方は1つ</figcaption></figure>
     <figure><img src="img/memory/spec_05.webp" alt="ECC・電圧…難しい言葉はスルーでOK" loading="lazy"><figcaption>ECC・電圧…難しい言葉はスルーでOK</figcaption></figure>
     <figure><img src="img/memory/spec_06.webp" alt="UDIMMとRDIMM、家庭用はどっち?" loading="lazy"><figcaption>UDIMMとRDIMM、家庭用はどっち?</figcaption></figure>
@@ -190,8 +190,8 @@
 
 <!-- desktop -->
 <div class="section">
-  <span class="cat-label">④ 付ける：デスクトップ編</span>
-  <h2>デスクトップは、たった3ステップ</h2>
+  <span class="cat-label">④ 付ける：デスクトップパソコン編</span>
+  <h2>デスクトップパソコンは、たった3ステップ</h2>
   <p>電源を抜く、静電気を逃がす、「カチッ」と挿す。BIOS設定はいじらなくて大丈夫。所要5分です。</p>
   <div class="gallery">
     <figure><img src="img/memory/desktop_01.webp" alt="メモリ交換はたった3ステップ" loading="lazy"><figcaption>メモリ交換はたった3ステップ</figcaption></figure>
@@ -199,15 +199,15 @@
     <figure><img src="img/memory/desktop_03.webp" alt="静電気だけ気をつければOK" loading="lazy"><figcaption>静電気だけ気をつければOK</figcaption></figure>
     <figure><img src="img/memory/desktop_04.webp" alt="BIOS設定はいじらなくていい" loading="lazy"><figcaption>BIOS設定はいじらなくていい</figcaption></figure>
     <figure><img src="img/memory/desktop_05.webp" alt="自分のPCに合うメモリ、コメントで聞ける" loading="lazy"><figcaption>自分のPCに合うメモリ、コメントで聞ける</figcaption></figure>
-    <figure><img src="img/memory/desktop_06.webp" alt="重いWindowsが、増設で復活" loading="lazy"><figcaption>重いWindowsが、増設で復活</figcaption></figure>
+    <figure><img src="img/memory/desktop_06.webp" alt="遅いWindowsが、増設で復活" loading="lazy"><figcaption>遅いWindowsが、増設で復活</figcaption></figure>
     <figure><img src="img/memory/desktop_07.webp" alt="検査済みだから、ハズレなし" loading="lazy"><figcaption>検査済みだから、ハズレなし</figcaption></figure>
   </div>
 </div>
 
 <!-- laptop -->
 <div class="section">
-  <span class="cat-label">⑤ 付ける：ノート編</span>
-  <h2>ノートも、裏蓋1枚とドライバー1本</h2>
+  <span class="cat-label">⑤ 付ける：ノートパソコン編</span>
+  <h2>ノートパソコンも、裏蓋1枚とドライバー1本</h2>
   <p>底面パネルを開けてSO-DIMMを交換するだけ。所要10分から15分。初めてでも、ペンギンが手順に伴走します。</p>
   <div class="gallery">
     <figure><img src="img/memory/laptop_01.webp" alt="裏蓋1枚、それだけ" loading="lazy"><figcaption>裏蓋1枚、それだけ</figcaption></figure>
@@ -221,13 +221,13 @@
   </div>
 </div>
 
-<!-- prep (ノート交換チャレンジ準備系) -->
+<!-- prep (ノートパソコン交換チャレンジ準備系) -->
 <div class="section">
-  <span class="cat-label">⑥ ノートに挑戦：失敗しない準備</span>
-  <h2>ノートのメモリ交換、準備さえ整えば怖くない</h2>
-  <p>増設できる機種かの確認、必要な道具、WEBでの調べ方、互換チェック、静電気対策、挿し方のコツ。事前に押さえておけば、初めてのノート交換も失敗しません。</p>
+  <span class="cat-label">⑥ ノートパソコンに挑戦：失敗しない準備</span>
+  <h2>ノートパソコンのメモリ交換、準備さえ整えば怖くない</h2>
+  <p>増設できる機種かの確認、必要な道具、WEBでの調べ方、互換チェック、静電気対策、挿し方のコツ。事前に押さえておけば、初めてのノートパソコン交換も失敗しません。</p>
   <div class="gallery">
-    <figure><img src="img/memory/prep_01.webp" alt="まず確認、そのノートは「増設できる」?" loading="lazy"><figcaption>まず確認、そのノートは「増設できる」?</figcaption></figure>
+    <figure><img src="img/memory/prep_01.webp" alt="まず確認、そのノートパソコンは「増設できる」?" loading="lazy"><figcaption>まず確認、そのノートパソコンは「増設できる」?</figcaption></figure>
     <figure><img src="img/memory/prep_02.webp" alt="用意するのは精密ドライバー1本と静電気対策" loading="lazy"><figcaption>用意するのは精密ドライバー1本と静電気対策</figcaption></figure>
     <figure><img src="img/memory/prep_03.webp" alt="手順は「機種名+メモリ」でWEB検索" loading="lazy"><figcaption>手順は「機種名+メモリ」でWEB検索</figcaption></figure>
     <figure><img src="img/memory/prep_04.webp" alt="買う前に互換チェッカーで対応メモリを確定" loading="lazy"><figcaption>買う前に互換チェッカーで対応メモリを確定</figcaption></figure>
@@ -276,8 +276,8 @@
   <div class="gallery">
     <figure><img src="img/memory/character_01.webp" alt="ペンギンと一緒に、はじめてのメモリ増設" loading="lazy"><figcaption>ペンギンと一緒に、はじめてのメモリ増設</figcaption></figure>
     <figure><img src="img/memory/character_02.webp" alt="「この機種、どのメモリを買えばいいの?」ペンギンが診断します" loading="lazy"><figcaption>「この機種、どのメモリを買えばいいの?」ペンギンが診断します</figcaption></figure>
-    <figure><img src="img/memory/character_03.webp" alt="ノートの底フタ1枚、ペンギンが開けてみせます" loading="lazy"><figcaption>ノートの底フタ1枚、ペンギンが開けてみせます</figcaption></figure>
-    <figure><img src="img/memory/character_04.webp" alt="重いWindows、ペンギンと3ステップで復活" loading="lazy"><figcaption>重いWindows、ペンギンと3ステップで復活</figcaption></figure>
+    <figure><img src="img/memory/character_03.webp" alt="ノートパソコンの底フタ1枚、ペンギンが開けてみせます" loading="lazy"><figcaption>ノートパソコンの底フタ1枚、ペンギンが開けてみせます</figcaption></figure>
+    <figure><img src="img/memory/character_04.webp" alt="遅いWindows、ペンギンと3ステップで復活" loading="lazy"><figcaption>遅いWindows、ペンギンと3ステップで復活</figcaption></figure>
     <figure><img src="img/memory/character_05.webp" alt="検査するペンギン、だからハズレなし" loading="lazy"><figcaption>検査するペンギン、だからハズレなし</figcaption></figure>
     <figure><img src="img/memory/character_06.webp" alt="困ったらコメント欄、ペンギンが待ってます" loading="lazy"><figcaption>困ったらコメント欄、ペンギンが待ってます</figcaption></figure>
     <figure><img src="img/memory/character_07.webp" alt="ペンギンの安心3ステップ (相談→装着→保証)" loading="lazy"><figcaption>ペンギンの安心3ステップ (相談→装着→保証)</figcaption></figure>
