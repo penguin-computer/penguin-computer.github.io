@@ -4,32 +4,35 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="robots" content="noindex, nofollow">
-<title>背景候補の比較（内部用）</title>
+<title>背景候補 v2（一点透視・内部用）</title>
 <style>
   body { font-family: -apple-system, 'Hiragino Sans', sans-serif; background: #222; color: #eee; margin: 0; padding: 16px; text-align: center; }
-  img { max-width: 100%; width: 960px; border-radius: 8px; }
-  h3 { margin: 1.4em 0 0.4em; }
-  p { font-size: 0.85em; color: #aaa; max-width: 960px; margin: 0.4em auto; }
+  img { max-width: 100%; width: 960px; border-radius: 8px; margin-bottom: 6px; }
+  h3 { margin: 1.6em 0 0.4em; }
+  p { font-size: 0.85em; color: #aaa; max-width: 960px; margin: 0.3em auto; }
+  .sub { color: #ffd54f; font-size: 0.8em; }
 </style>
 </head>
 <body>
-<h2>背景候補の比較（キャラ・タブレット・キャプション帯を合成済み）</h2>
-<p>評価基準: 柴犬の茶色の毛並みが映えるか / 白猫が埋もれないか / きなこもっちー（昼の自室）との差別化</p>
+<h2>背景候補 v2: 一点透視（キューブリック構図）・手前床は完全に空き</h2>
+<p>前回指摘の反映: ①手前1/3は床のみ（キャラ位置に家具・鉢植えなし=カブリ解消）②中央消失点の一点透視で奥行き ③細部はシンプル方向。<br>各候補とも「全景（カードなし）」→「キャラ配置＋<b>接地影</b>」の順。接地影はレンダリング側で常時入れる修正として実装します。</p>
 
-<h3>現行（仮）: 暖色の作業部屋</h3>
-<img src="room_v1_frame.jpg" loading="lazy">
-<p>木目・ベージュがさとの毛色と同系で、キャラの抜けが弱い（比較用）</p>
+<h3>候補D: ティール工房（一点透視・夕方）</h3>
+<img src="bg2_teal_workshop_1p_full.jpg" loading="lazy">
+<p class="sub">↓ キャラ配置＋接地影</p>
+<img src="bg2_teal_workshop_1p_chars.jpg" loading="lazy">
+<p>作業台と工具ボードが両壁沿いに奥へ後退。奥のアーチ窓が消失点。修理工房テーマ</p>
 
-<h3>候補A: ティール工房（夕方）</h3>
-<img src="bg_teal_workshop_frame.jpg" loading="lazy">
-<p>深い青緑×茶色は補色。白猫・柴犬とも抜けが良い。「修理工房」=番組テーマど真ん中</p>
+<h3>候補E: 深緑ミニマルルーム（一点透視・昼）</h3>
+<img src="bg2_minimal_gallery_1p_full.jpg" loading="lazy">
+<p class="sub">↓ キャラ配置＋接地影</p>
+<img src="bg2_minimal_gallery_1p_chars.jpg" loading="lazy">
+<p>「細部で破綻するくらいならシンプル」の極。黒板IGとの重複もなし</p>
 
-<h3>候補B: ブルーアワーの書斎（夜）</h3>
-<img src="bg_dusk_room_frame.jpg" loading="lazy">
-<p>紺×オレンジでさとのコントラスト最強。夜トーンなので速報・特番向きか</p>
-
-<h3>候補C: 深緑の教室・アトリエ</h3>
-<img src="bg_green_classroom_frame.jpg" loading="lazy">
-<p>緑×赤バンダナ・茶が好相性。黒板IGと「授業」世界観が揃う。資格聞き流しレーン向き</p>
+<h3>候補F: 夜の図書室（一点透視・紺）</h3>
+<img src="bg2_navy_library_1p_full.jpg" loading="lazy">
+<p class="sub">↓ キャラ配置＋接地影</p>
+<img src="bg2_navy_library_1p_chars.jpg" loading="lazy">
+<p>書架が左右対称に後退、中央に星空の窓。書籍解説との親和性。夜トーン</p>
 </body>
 </html>
