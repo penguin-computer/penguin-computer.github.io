@@ -4,30 +4,98 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="robots" content="noindex, nofollow">
-<title>デモ動画 試写ページ（v1）</title>
+<title>デモ動画 試写ページ</title>
 <style>
-  body { font-family: -apple-system, 'Hiragino Sans', sans-serif; background: #1a2233; color: #eee; margin: 0 auto; padding: 24px 16px; max-width: 720px; }
-  h2 { font-size: 1.1em; } .v { background: #243049; border-radius: 8px; padding: 14px 16px; margin: 12px 0; }
-  li { font-size: 0.9em; color: #ccd; margin-bottom: 6px; } p { font-size: 0.85em; color: #aab; }
+  :root { color-scheme: dark; }
+  * { box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Hiragino Sans', 'Noto Sans JP', sans-serif;
+    background: #161d2b; color: #e8ecf4; margin: 0 auto; padding: 28px 18px 64px;
+    max-width: 760px; line-height: 1.75; font-size: 16px;
+  }
+  h1 { font-size: 1.35em; margin: 0 0 6px; letter-spacing: .01em; }
+  .lead { color: #9fb0cc; font-size: .92em; margin: 0 0 4px; }
+  .note { color: #7f8fa8; font-size: .82em; margin: 0 0 28px; }
+
+  .demo { background: #1e2637; border: 1px solid #2c3852; border-radius: 12px;
+          padding: 18px 18px 14px; margin: 0 0 22px; }
+  .tag { display: inline-block; background: #33415e; color: #cfe0ff; font-size: .74em;
+         font-weight: 700; padding: 3px 10px; border-radius: 99px; margin-bottom: 8px; }
+  .demo h2 { font-size: 1.08em; margin: 0 0 4px; }
+  .meta { color: #8fa0bb; font-size: .82em; margin: 0 0 12px; }
+  video { width: 100%; border-radius: 8px; display: block; background: #000; }
+  .aim { color: #b9c7de; font-size: .88em; margin: 12px 0 0; }
+  .aim b { color: #e8ecf4; }
+
+  .ask { background: #1b2942; border: 1px solid #31456b; border-radius: 12px;
+         padding: 18px 20px 6px; margin: 34px 0 22px; }
+  .ask h2 { font-size: 1.05em; margin: 0 0 10px; color: #cfe0ff; }
+  .ask ol { padding-left: 1.25em; margin: 0; }
+  .ask li { margin-bottom: 14px; font-size: .93em; }
+  .ask li b { display: block; color: #fff; margin-bottom: 2px; }
+  .ask li span { color: #a9b9d2; font-size: .93em; }
+
+  .wip { border-left: 3px solid #4b5b7c; padding: 2px 0 2px 14px; margin: 26px 0; }
+  .wip h2 { font-size: .95em; margin: 0 0 6px; color: #9fb0cc; }
+  .wip ul { padding-left: 1.1em; margin: 0; }
+  .wip li { color: #8d9db8; font-size: .85em; margin-bottom: 5px; }
+
+  .close { color: #b9c7de; font-size: .9em; margin-top: 30px; }
+  .close b { color: #fff; }
 </style>
 </head>
 <body>
-<h2>デモ1「大人の社会科見学 北海道視察」（試写v6・9分29秒）</h2>
-<div class="v"><video controls preload="metadata" style="width:100%;border-radius:8px" src="d2v6.mp4"></video></div>
-<p>ご確認用の一時ページです（検索には載らず、このURLを知っている方のみ閲覧できます）。</p>
-<ul>
-<li>v6の変更: 脚注をスライドの真下へ（字幕が2行になっても重なりません）/ 手にしたタブレットと白いインナーが透けていた不具合を修正（明るい部分がくり抜かれていました。18枚すべて直しました）/ 最後の「くわしくは、ブログで」の文字の折り返しを整理 / 終わりの案内文も読みやすい位置で改行</li>
-<li>犬が横切るのは 4:00ごろ と 7:35ごろ です</li>
-<li>画面下の小さな「※」は脚注（読み上げない補足情報)です</li>
-</ul>
 
-<h2 style="margin-top:34px">デモ2「その桃は、どこから来たのか」（第4版・6分29秒）</h2>
-<div class="v"><video controls preload="metadata" style="width:100%;border-radius:8px" src="d3v4.mp4"></video></div>
-<ul>
-<li>制度・要望をあつかう回のトーン見本です。背景は暗いスタジオ、スライドは白基調、犬の登場やクイズはなし</li>
-<li>第4版の変更: 脚注をスライドの真下へ（字幕が2行になっても重なりません）/ キャラクターの明るい部分が透けていた不具合を修正 / 最後の「くわしくは、ブログで」の文字の折り返しを整理 / 終わりの案内文も読みやすい位置で改行</li>
-<li><b>この回はBGMなしで確定</b>（ご判断のとおり、無音のほうが内容に合います）</li>
-<li>画面下の小さな「※」は脚注（読み上げない補足）です。法令の根拠をそっと示しています</li>
-</ul>
+<h1>デモ動画 2本、ご確認のお願い</h1>
+<p class="lead">合計およそ16分です。分けてご覧いただいて構いません。</p>
+<p class="note">このURLを知っている方だけが見られる一時ページです。検索には出ません。</p>
+
+<div class="demo">
+  <span class="tag">デモ1・やわらかい回</span>
+  <h2>大人の社会科見学 北海道視察</h2>
+  <p class="meta">9分29秒</p>
+  <video controls preload="metadata" playsinline src="d2v6.mp4"></video>
+  <p class="aim"><b>ねらい</b>: 視察や現場レポートを、予備知識のない方にも最後まで見てもらう形です。
+  クイズをはさみ、犬が横切り（4:00ごろと7:35ごろ）、場面が切り替わります。</p>
+</div>
+
+<div class="demo">
+  <span class="tag">デモ2・かたい回</span>
+  <h2>その桃は、どこから来たのか</h2>
+  <p class="meta">6分29秒・BGMなし</p>
+  <video controls preload="metadata" playsinline src="d3v4.mp4"></video>
+  <p class="aim"><b>ねらい</b>: 制度や要望をあつかう回です。同じキャラクターのまま、背景を暗くし、
+  クイズも犬も音楽も入れずに、内容だけで見せています。<b>記事の内容によってトーンを変えられる</b>、
+  ということの見本です。</p>
+</div>
+
+<div class="ask">
+  <h2>とくに伺いたいのは、この4点です</h2>
+  <ol>
+    <li><b>キャラクターを、ご自身として世に出せますか</b>
+      <span>見た目、話し方、声の速さ、服装。ここが最優先です。違和感があれば作り直します。</span></li>
+    <li><b>途中で飽きるところはありませんでしたか</b>
+      <span>「何分あたり」だけで結構です。長さそのもの（9分・6分）が長すぎないかも伺いたいです。</span></li>
+    <li><b>2本のトーンの差は、使い分けとして成り立っていますか</b>
+      <span>やわらかい回とかたい回。どちらを標準にするか、記事によって変えるかのご判断をいただきたいです。</span></li>
+    <li><b>言い方として危ないところはありませんか</b>
+      <span>事実の誤り、断定しすぎ、誤解を招く表現。政治的な機微はこちらでは判断しきれません。</span></li>
+  </ol>
+</div>
+
+<div class="wip">
+  <h2>まだ調整中のところ</h2>
+  <ul>
+    <li>ナレーションは合成音声です。読み方のクセは1か所ずつ直せます</li>
+    <li>スライドの絵はAIで作った仮のものです。差し替えできます</li>
+    <li>やわらかい回のBGMは仮置きです。かたい回は音楽なしで固めました</li>
+    <li>キャラクターはご提供いただいたイラストをもとにした試作です</li>
+  </ul>
+</div>
+
+<p class="close">お気づきの点は、<b>メモ書き程度で結構です</b>。
+いただいたうえで、あらためてお時間をいただき、直接お話を伺えればと思います。
+オンラインでも、お伺いする形でも構いません。</p>
+
 </body>
 </html>
