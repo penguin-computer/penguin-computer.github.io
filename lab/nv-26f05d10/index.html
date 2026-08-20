@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow">
+<title>口パク・表情の確認</title>
+<style>
+  :root { color-scheme: dark; }
+  * { box-sizing: border-box; }
+  body { font-family: -apple-system, BlinkMacSystemFont, 'Hiragino Sans', 'Noto Sans JP', sans-serif;
+    background: #161d2b; color: #e8ecf4; margin: 0 auto; padding: 28px 18px 64px;
+    max-width: 760px; line-height: 1.75; font-size: 16px; }
+  h1 { font-size: 1.3em; margin: 0 0 6px; }
+  .lead { color: #9fb0cc; font-size: .92em; margin: 0 0 4px; }
+  .note { color: #7f8fa8; font-size: .82em; margin: 0 0 26px; }
+  .demo { background: #1e2637; border: 1px solid #2c3852; border-radius: 12px;
+          padding: 18px 18px 14px; margin: 0 0 22px; }
+  .tag { display: inline-block; background: #33415e; color: #cfe0ff; font-size: .74em;
+         font-weight: 700; padding: 3px 10px; border-radius: 99px; margin-bottom: 8px; }
+  .demo h2 { font-size: 1.05em; margin: 0 0 4px; }
+  .meta { color: #8fa0bb; font-size: .82em; margin: 0 0 12px; }
+  video { width: 100%; max-width: 420px; border-radius: 8px; display: block;
+          background: #000; margin: 0 auto; }
+  .aim { color: #b9c7de; font-size: .88em; margin: 12px 0 0; }
+  .aim b { color: #e8ecf4; }
+  .warn { border-left: 3px solid #b4643c; padding: 6px 0 6px 14px; margin: 26px 0 0;
+          color: #d8b9a4; font-size: .86em; }
+</style>
+</head>
+<body>
+<h1>口パク・表情の確認</h1>
+<p class="lead">音声を聞ける環境で、声と口の動きが合っているかを見るためのページです。</p>
+<p class="note">検索には出ません（noindex）。確認が済んだら削除します。</p>
+
+<div class="demo">
+  <span class="tag">A</span>
+  <h2>本編（字幕なし）</h2>
+  <p class="meta">16秒 / 1080x1920 / 30fps</p>
+  <video src="a.mp4" controls playsinline preload="metadata"></video>
+  <p class="aim">見ていただきたいところ<br>
+    <b>1.</b> 声と口の開閉が合っているか<br>
+    <b>2.</b> 笑顔から始まっているか<br>
+    <b>3.</b> まばたき・頷き・呼吸で生きて見えるか<br>
+    <b>4.</b> 肌に余計な線（シワに見えるもの）が出ていないか</p>
+</div>
+
+<div class="demo">
+  <span class="tag">B</span>
+  <h2>確認用（字幕・表情・口の状態を焼き込み）</h2>
+  <p class="meta">同じ映像に、時刻・表情名・口の開き段階・読んでいる文を重ねたもの</p>
+  <video src="b.mp4" controls playsinline preload="metadata"></video>
+  <p class="aim">音が出ない環境でも、口の段階と文字を突き合わせて確認できます。</p>
+</div>
+
+<p class="warn">読んでいる文は、口の動きを確かめるためだけの意味のない文です。
+声は仮の合成音声で、本番では差し替わります。</p>
+</body>
+</html>
