@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow">
+<title>話者の聞き比べ</title>
+<style>
+  :root { color-scheme: dark; }
+  * { box-sizing: border-box; }
+  body { font-family: -apple-system, BlinkMacSystemFont, 'Hiragino Sans', 'Noto Sans JP', sans-serif;
+         background: #161d2b; color: #e8ecf4; margin: 0 auto; padding: 26px 18px 70px;
+         max-width: 780px; line-height: 1.7; font-size: 16px; }
+  h1 { font-size: 1.25em; margin: 0 0 4px; }
+  .lead { color: #9fb0cc; font-size: .9em; margin: 0 0 26px; }
+  h2 { font-size: 1.02em; margin: 30px 0 10px; color: #cfe0ff; }
+  .vid { display: flex; gap: 16px; flex-wrap: wrap; }
+  .vid figure { margin: 0; flex: 1 1 260px; }
+  .vid figcaption { font-size: .85em; color: #a9b9d2; margin-top: 6px; }
+  video { width: 100%; border-radius: 8px; background: #000; display: block; }
+  ul { list-style: none; padding: 0; margin: 0; }
+  li { background: #1e2637; border: 1px solid #2c3852; border-radius: 10px;
+       padding: 12px 14px; margin-bottom: 10px; }
+  .nm { font-weight: 700; }
+  .tag { display: inline-block; font-size: .72em; font-weight: 700; padding: 2px 9px;
+         border-radius: 99px; margin-left: 8px; vertical-align: 2px; }
+  .ok { background: #1d4b32; color: #b6f0cd; }
+  .so { background: #2b3f63; color: #cfe0ff; }
+  .gr { background: #4d3f1c; color: #f3dfa8; }
+  .ng { background: #5a2323; color: #ffc9c9; }
+  .note { color: #93a4bd; font-size: .84em; margin: 4px 0 8px; }
+  audio { width: 100%; margin-top: 4px; }
+  .foot { color: #7f8fa8; font-size: .8em; margin-top: 30px; border-top: 1px solid #2c3852; padding-top: 14px; }
+</style>
+</head>
+<body>
+<h1>話者の聞き比べ</h1>
+<p class="lead">同じ2文（名乗り・数字の読み）を8話者で。合成音声が本番の声になる前提で、規約を先に確認しました。</p>
+
+<h2>画面つき（32秒・同じ映像で声だけ違う）</h2>
+<div class="vid">
+  <figure><video src="a_ritsu.mp4" controls playsinline preload="none"></video>
+    <figcaption>候補 波音リツ<span class="tag ok">規約 ◎</span></figcaption></figure>
+  <figure><video src="a_neko.mp4" controls playsinline preload="none"></video>
+    <figcaption>従来の声<span class="tag ng">規約 ×</span></figcaption></figure>
+</div>
+
+<h2>声だけ（8話者）</h2>
+<ul>
+<li><span class="nm">波音リツ ノーマル</span><span class="tag ok">◎</span>
+  <p class="note">規約が「性的表現、暴力的表現、政治的表現、宗教的表現など基本的に一切禁止しません」と明記。商用可・クレジット不要。他レーンとの重複なし</p>
+  <audio controls preload="none" src="ritsu.m4a"></audio></li>
+<li><span class="nm">WhiteCUL ノーマル</span><span class="tag so">○</span>
+  <p class="note">政治条項なし（公序良俗の一般条項のみ）。⚠️別レーンで使用中の話者</p>
+  <audio controls preload="none" src="wcul.m4a"></audio></li>
+<li><span class="nm">小夜/SAYO ノーマル</span><span class="tag so">○</span>
+  <p class="note">政治条項なし（同上）。⚠️別レーンで主要キャラに使用中</p>
+  <audio controls preload="none" src="sayo.m4a"></audio></li>
+<li><span class="nm">冥鳴ひまり ノーマル</span><span class="tag gr">△</span>
+  <p class="note">「特定の思想・団体に当たる行為」を禁止。今回の用途が読み込まれうる</p>
+  <audio controls preload="none" src="himari.m4a"></audio></li>
+<li><span class="nm">春歌ナナ ノーマル</span><span class="tag gr">△</span>
+  <p class="note">「特定の思想や団体に関係するもの」を禁止。同上</p>
+  <audio controls preload="none" src="nana.m4a"></audio></li>
+<li><span class="nm">ナースロボ＿タイプＴ ノーマル</span><span class="tag gr">？</span>
+  <p class="note">規約ページが403で未確認</p>
+  <audio controls preload="none" src="nurse.m4a"></audio></li>
+<li><span class="nm">もち子さん のんびり</span><span class="tag gr">△</span>
+  <p class="note">企業が携わる形での利用は権利者への事前確認が必要</p>
+  <audio controls preload="none" src="mochi.m4a"></audio></li>
+<li><span class="nm">猫使アル おちつき（従来の声）</span><span class="tag ng">×</span>
+  <p class="note">「政治的/宗教的用途、および公序良俗に反する利用は禁止します」と明文で禁止</p>
+  <audio controls preload="none" src="neko.m4a"></audio></li>
+</ul>
+
+<p class="foot">規約は2026-09-03に各配布元の本文を確認したもの。いずれもVOICEVOXのクレジット表記が必要です。</p>
+</body>
+</html>
