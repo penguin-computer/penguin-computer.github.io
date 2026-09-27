@@ -1,40 +1,78 @@
 <!DOCTYPE html>
-<html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>オリジナル操作解説書 機種編 Wave music system</title><style>* { margin: 0; padding: 0; box-sizing: border-box; }
-body { font-family: -apple-system, 'Hiragino Sans', 'Noto Sans JP', sans-serif; background: #f5f7fa; color: #333; line-height: 1.8; }
-.container { max-width: 700px; margin: 0 auto; padding: 24px 16px; }
-h1 { font-size: 1.4em; margin-bottom: 8px; color: #333; }
-.head p { font-size: 0.9em; color: #666; }
-.head { margin-bottom: 24px; }
-h2 { font-size: 1.15em; margin-bottom: 8px; color: #2d6a4f; }
-h3 { font-size: 1.0em; margin: 16px 0 6px; color: #2d6a4f; border-left: 4px solid #2d6a4f; padding-left: 10px; }
-h4 { font-size: 0.95em; margin: 12px 0 4px; }
-a { color: #2d6a4f; }
-.section { background: #fff; border-radius: 12px; padding: 20px; margin-bottom: 16px; box-shadow: 0 1px 3px rgba(0,0,0,0.08); }
-.section p { font-size: 0.95em; margin-bottom: 8px; }
-.section ul, .section ol { padding-left: 22px; font-size: 0.93em; margin-bottom: 8px; }
-.section li { margin-bottom: 6px; }
-table { border-collapse: collapse; width: 100%; display: block; overflow-x: auto; font-size: 0.9em; margin-bottom: 12px; }
-th, td { border: 1px solid #e2e6ea; padding: 6px 8px; vertical-align: top; text-align: left; }
-th { background: #eef4f1; color: #2d6a4f; }
-pre { background: #f5f7fa; border-radius: 8px; padding: 12px; overflow-x: auto; font-size: 0.85em; margin-bottom: 8px; }
-blockquote { border-left: 4px solid #2d6a4f; padding-left: 12px; color: #555; margin-bottom: 8px; }
-hr { display: none; }
-@media (max-width: 480px) { body { font-size: 1.02em; } }</style></head><body><div class="container">
-<div class="head"><h1>オリジナル操作解説書 機種編 Wave music system</h1>
-<p>対象機種: AWRCCB ／ AWRCCC ／ アンテナマーク版（国内後期型）
-version 2.0.0 ／ 2026-09-28
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>オリジナル操作解説書 機種編 Wave music system｜Penguin Computer</title>
+<meta name="description" content="オリジナル操作解説書 機種編 Wave music system。BOSE Wave music system。Penguin Computer（ペンギンコンピュータ）">
+<meta property="og:title" content="オリジナル操作解説書 機種編 Wave music system｜Penguin Computer">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://penguin-computer.github.io/bose/manual/wms/">
+<meta property="og:site_name" content="Penguin Computer">
+<meta property="og:locale" content="ja_JP">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:site" content="@penguin_comp">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: -apple-system, 'Hiragino Sans', 'Noto Sans JP', sans-serif; background: #f5f7fa; color: #333; line-height: 1.8; }
+  .container { max-width: 640px; margin: 0 auto; padding: 24px 16px; }
+  h1 { font-size: 1.4em; margin-bottom: 4px; }
+  h2 { font-size: 1.1em; margin-bottom: 8px; color: #2d6a4f; }
+  h3 { font-weight: bold; color: #2d6a4f; font-size: 1em; border-left: 4px solid #2d6a4f; padding-left: 12px; margin: 16px 0 6px; }
+  h4 { font-size: 0.95em; margin: 12px 0 4px; }
+  .brand { color: #2d6a4f; }
+  .tagline { font-size: 0.9em; color: #666; margin-bottom: 24px; }
+  a { color: #2d6a4f; }
+  .nav { text-align: center; margin-bottom: 20px; font-size: 0.9em; }
+  .nav a { margin: 0 8px; }
+  .section { background: #fff; border-radius: 12px; padding: 20px; margin-bottom: 16px; box-shadow: 0 1px 3px rgba(0,0,0,0.08); }
+  .section p { font-size: 0.95em; margin-bottom: 8px; }
+  .section p:last-child { margin-bottom: 0; }
+  .section ul, .section ol { padding-left: 20px; font-size: 0.92em; margin-bottom: 8px; }
+  .section li { margin-bottom: 4px; }
+  .mission { font-size: 1.05em; font-weight: bold; color: #2d6a4f; border-left: 4px solid #2d6a4f; padding-left: 12px; margin-bottom: 16px; }
+  .section table { border-collapse: collapse; width: 100%; font-size: 0.88em; margin-bottom: 12px; display: block; overflow-x: auto; }
+  .section th, .section td { border-bottom: 1px solid #e3e8ee; padding: 6px 8px; text-align: left; vertical-align: top; }
+  .section th { background: #f0f7f4; color: #2d6a4f; }
+  .section pre { background: #f0f7f4; border-radius: 8px; padding: 12px; font-size: 0.85em; overflow-x: auto; margin-bottom: 8px; white-space: pre-wrap; }
+  .section blockquote { border-left: 4px solid #2d6a4f; padding-left: 12px; color: #555; font-size: 0.93em; margin-bottom: 8px; }
+  .note { font-size: 0.85em; color: #777; }
+  .cta { background: #e8f5ee; border: 2px solid #2d6a4f; border-radius: 12px; padding: 18px; margin-bottom: 16px; text-align: center; }
+  .cta h2 { margin-bottom: 8px; }
+  .btn { display: inline-block; background: #2d6a4f; color: #fff; padding: 11px 30px; border-radius: 8px; text-decoration: none; font-weight: bold; margin-top: 10px; }
+  .footer { text-align: center; margin-top: 32px; font-size: 0.8em; color: #999; }
+  .footer p { margin-bottom: 2px; }
+  @media (max-width: 480px) { body { font-size: 1.02em; } }
+</style>
+</head>
+<body>
+<div class="container">
+
+<div class="nav">
+  <a href="/index.html">home</a> | <a href="/memory.html">memory</a> | <a href="/setup.html">install</a> | <a href="/linuxmint-xfce-guide.html">guide</a> | <a href="/books.html">books</a>
+</div>
+
+<h1>🐧 <span class="brand">Penguin Computer</span></h1>
+<p class="tagline">自分たちの自由なコンピュータ（Your own computer）</p>
+
+<div class="section">
+  <p class="mission">オリジナル操作解説書 機種編 Wave music system</p>
+<p>対象機種: AWRCCB ／ AWRCCC ／ アンテナマーク版（国内後期型）<br />
+version 2.0.0 ／ 2026-09-28<br />
 発行: ペンギンコンピュータ</p>
-<p>本書は共通編とあわせてお読みください。
+<p>本書は共通編とあわせてお読みください。<br />
 安全・設置・電源・リモコンの電池・CDの扱い・お手入れは共通編にあります。</p>
 <pre><code>共通編  https://penguin-computer.github.io/bose/manual/common/
 保証書  https://penguin-computer.github.io/bose/warranty/
 </code></pre>
-<p>本書は当方が実機を操作・分解・測定して書いた、オリジナル操作解説書の機種編です。
+<p>本書は当方が実機を操作・分解・測定して書いた、オリジナル操作解説書の機種編です。<br />
   Bose Corporationの公式マニュアルとは別に、当方が独自に作成しています。</p>
-<hr />
-</div><div class="section"><h2>A. この機種について</h2>
+
+</div>
+<div class="section">
+<h2>A. この機種について</h2>
 <h3>A-1. 型番を確かめる</h3>
-<p>本機の底面に銘板ラベルがあります。
+<p>本機の底面に銘板ラベルがあります。<br />
 <code>MODEL</code>欄に書かれた英数字が、本書でいう型番です。</p>
 <table>
 <thead>
@@ -62,22 +100,22 @@ version 2.0.0 ／ 2026-09-28
 </tr>
 </tbody>
 </table>
-<p>実機ではAWRCCCがプラチナムホワイト、AWRCCBがグラファイトグレーです。
+<p>実機ではAWRCCCがプラチナムホワイト、AWRCCBがグラファイトグレーです。<br />
   お手元の個体の色と型番は、当方の個体ページに写真つきで記載しています。</p>
-<p>北米向けの同型機はAWRCC1／AWRCC2という型番で、電源が120Vです。
+<p>北米向けの同型機はAWRCC1／AWRCC2という型番で、電源が120Vです。<br />
 当方がお届けするのは国内向け100Vの個体です。</p>
 <h3>A-2. 世代</h3>
-<p>Wave music systemは2004年に登場した、Wave Radio/CDの後継機です。
-国内では2005年から直販で売られました。
+<p>Wave music systemは2004年に登場した、Wave Radio/CDの後継機です。<br />
+国内では2005年から直販で売られました。<br />
 中古市場で「Wave Music System II」と書かれている個体の多くは、この初代と同じ銘板を持っています。</p>
 <h3>A-3. 音の成り立ち</h3>
-<p>本機の低音は、内部に折りたたまれた共鳴管から出ています。
-公称では26インチ（660mm）の先細りの管が2本、左右対称に入っており、左右のスピーカーそれぞれにつながっています。
+<p>本機の低音は、内部に折りたたまれた共鳴管から出ています。<br />
+公称では26インチ（660mm）の先細りの管が2本、左右対称に入っており、左右のスピーカーそれぞれにつながっています。<br />
 （出典: Bose Wave music system Owner's Guide英語版 p.6 ／ ボーズ日本法人の発表資料（2005年2月））</p>
-<p>前の世代のWave Radio/CDは685mmの管が1本でした。
+<p>前の世代のWave Radio/CDは685mmの管が1本でした。<br />
 2本にしたことで、メーカーの説明では音響的な内部エリアが約60パーセント増え、前の世代より半オクターブ低いところまで出るようになっています。</p>
-<p>小型の筐体から迫力あるBOSEサウンドが出るのは、この共鳴管の構造によるものです。
-そのため、低音の量と特有の広がりのある音場は、置き場所によって変わります。
+<p>小型の筐体から迫力あるBOSEサウンドが出るのは、この共鳴管の構造によるものです。<br />
+そのため、低音の量と特有の広がりのある音場は、置き場所によって変わります。<br />
 共通編 §3-1を読んでから置き場所を決めてください。</p>
 <h3>A-4. この機種でできること</h3>
 <table>
@@ -126,25 +164,27 @@ version 2.0.0 ／ 2026-09-28
 </tr>
 </tbody>
 </table>
-<hr />
-</div><div class="section"><h2>B. 各部の名称</h2>
+
+</div>
+<div class="section">
+<h2>B. 各部の名称</h2>
 <h3>B-1. 本体</h3>
-<p>前面の中央上寄りに表示部があります。
-表示部は蛍光表示管です。
-その下の横長のすき間がCDの投入口です。
-表示部の右側にある小さな窓が、リモコンの受光部と、周囲の明るさを見るセンサーです。
-この窓のまわりは開けておいてください。
+<p>前面の中央上寄りに表示部があります。<br />
+表示部は蛍光表示管です。<br />
+その下の横長のすき間がCDの投入口です。<br />
+表示部の右側にある小さな窓が、リモコンの受光部と、周囲の明るさを見るセンサーです。<br />
+この窓のまわりは開けておいてください。<br />
 周囲の明るさに合わせて、表示の明るさが自動で切り替わります。</p>
-<p>上面の手前側に操作ボタンが並んでいます。
-本体だけでも電源・音量・音源の切り替え・CDの停止と取り出しができます。
-本機の操作はリモコンで行うのが前提の設計です。
+<p>上面の手前側に操作ボタンが並んでいます。<br />
+本体だけでも電源・音量・音源の切り替え・CDの停止と取り出しができます。<br />
+本機の操作はリモコンで行うのが前提の設計です。<br />
 細かい設定はリモコンで行います。</p>
 <h3>B-2. リモコン</h3>
-<p>本機にはリモコンを1つお付けしています。
-純正の中古品か、サードパーティ製の新品のどちらかです。
+<p>本機にはリモコンを1つお付けしています。<br />
+純正の中古品か、サードパーティ製の新品のどちらかです。<br />
 お届けしたリモコンがどちらかは、個体ページに記載しています。</p>
-<p>主なボタンと働きです。
-ボタン名は純正リモコンの表記です。
+<p>主なボタンと働きです。<br />
+ボタン名は純正リモコンの表記です。<br />
 サードパーティ製のリモコンは、表記や配置が異なる場合があります。</p>
 <table>
 <thead>
@@ -256,11 +296,11 @@ version 2.0.0 ／ 2026-09-28
 </tr>
 </tbody>
 </table>
-<p>ヘッドホン端子が背面にあるのがこの機種の特徴です。
-  ヘッドホン端子にプラグが差してあると、スピーカーは消音されます。
+<p>ヘッドホン端子が背面にあるのがこの機種の特徴です。<br />
+  ヘッドホン端子にプラグが差してあると、スピーカーは消音されます。<br />
   スピーカーで聴くときは、背面のヘッドホン端子からプラグを抜いてください。</p>
 <h3>B-4. 表示部の読み方</h3>
-<p>表示部は、中央に大きく1つ、上下左右に小さく複数の情報が出ます。
+<p>表示部は、中央に大きく1つ、上下左右に小さく複数の情報が出ます。<br />
 何を聴いているかによって、出るものが変わります。</p>
 <table>
 <thead>
@@ -298,10 +338,12 @@ version 2.0.0 ／ 2026-09-28
 </tr>
 </tbody>
 </table>
-<p>表示の明るさは、周囲の明るさに応じて自動で切り替わります。
+<p>表示の明るさは、周囲の明るさに応じて自動で切り替わります。<br />
 明るいときと暗いときの明るさは、それぞれ別に設定できます（§I-5）。</p>
-<hr />
-</div><div class="section"><h2>C. 仕様</h2>
+
+</div>
+<div class="section">
+<h2>C. 仕様</h2>
 <table>
 <thead>
 <tr>
@@ -383,34 +425,38 @@ version 2.0.0 ／ 2026-09-28
 </tr>
 </tbody>
 </table>
-<p>国内向け個体には、FMの受信範囲が異なるものがあります。
-  ワイドFM（FM補完放送）の帯域まで受信する個体と、従来のFM帯域を受信する個体があります。
+<p>国内向け個体には、FMの受信範囲が異なるものがあります。<br />
+  ワイドFM（FM補完放送）の帯域まで受信する個体と、従来のFM帯域を受信する個体があります。<br />
   お手元の個体がどちらかは、当方が出荷前に実測して個体ページに記載しています。</p>
-<hr />
-</div><div class="section"><h2>D. 時計を合わせる</h2>
+
+</div>
+<div class="section">
+<h2>D. 時計を合わせる</h2>
 <p>電源プラグを差したら、最初に時計を合わせます。</p>
 <ol>
 <li>電源を切った状態にします</li>
-<li>Time − またはTime ＋を押します
+<li>Time − またはTime ＋を押します<br />
    押している間、時刻が進みます（戻ります）</li>
 <li>押し続けると速く動きます</li>
 </ol>
 <p>時刻の表示形式（12時間／24時間）はセットアップメニューで変えられます（§I-4）。</p>
-<p>時刻とアラームの設定は、電源プラグを差している間保持されます。
-  電源プラグを抜いたあとは、もう一度合わせてください。
-  プリセットした放送局は、プラグを抜いてから48時間保持されます（公称）。
+<p>時刻とアラームの設定は、電源プラグを差している間保持されます。<br />
+  電源プラグを抜いたあとは、もう一度合わせてください。<br />
+  プリセットした放送局は、プラグを抜いてから48時間保持されます（公称）。<br />
   模様替えや掃除で一時的に抜く程度なら、放送局は残ります。</p>
-<hr />
-</div><div class="section"><h2>E. CDを聴く</h2>
+
+</div>
+<div class="section">
+<h2>E. CDを聴く</h2>
 <h3>E-1. 入れる・再生する</h3>
-<p>ディスクのレーベル面（印刷のある面）を上にして、表示部の下のすき間に差し込みます。
+<p>ディスクのレーベル面（印刷のある面）を上にして、表示部の下のすき間に差し込みます。<br />
 途中まで差し込むと、本機が自動で引き込んで再生を始めます。</p>
 <ul>
 <li>引き込みが始まったら手を離し、あとは本機の引き込みに任せてください</li>
-<li>再生が始まるまで数秒かかります
+<li>再生が始まるまで数秒かかります<br />
   この間、表示部に読み込み中の表示が出ます</li>
 </ul>
-<p>読み込み中は、本機を水平に置いたまま、電源を入れたままにしてください。
+<p>読み込み中は、本機を水平に置いたまま、電源を入れたままにしてください。<br />
   ディスクと光学ピックアップを守るためです。</p>
 <p>CD以外の音源を聴いているときにCDボタンを押すと、入っているディスクの再生に戻ります。</p>
 <h3>E-2. 操作</h3>
@@ -452,7 +498,7 @@ version 2.0.0 ／ 2026-09-28
 </tr>
 </tbody>
 </table>
-<p>停止したディスクをもう一度再生すると、止めた位置から始まります。
+<p>停止したディスクをもう一度再生すると、止めた位置から始まります。<br />
 曲の頭から聴くときは、Seek/Trackの左を1回押します。</p>
 <h3>E-3. 取り出す</h3>
 <ol>
@@ -460,22 +506,22 @@ version 2.0.0 ／ 2026-09-28
 <li>もう一度Stop/Ejectを押すと、ディスクが出てきます</li>
 <li>再生中にStop/Ejectを長押しすると、止めてから排出します</li>
 </ol>
-<p>出てきたディスクは、10秒以内に抜き取ってください。
-  10秒たつと、本機がディスクをもう一度引き込み、停止した状態で待ちます。
+<p>出てきたディスクは、10秒以内に抜き取ってください。<br />
+  10秒たつと、本機がディスクをもう一度引き込み、停止した状態で待ちます。<br />
   取り出すときは、もう一度Stop/Ejectを押してください。</p>
 <h3>E-4. 読み込み中の注意</h3>
-<p>本機はディスクを引き込んでから、内容を読み取って、再生を始めます。
-再生が始まるまでは、操作を待つと安定して動作します。
+<p>本機はディスクを引き込んでから、内容を読み取って、再生を始めます。<br />
+再生が始まるまでは、操作を待つと安定して動作します。<br />
 次の3点を守ってください。</p>
 <ul>
 <li>ボタン操作は、再生が始まってから行う</li>
 <li>電源は入れたままにする</li>
 <li>電源プラグは差したままにする</li>
 </ul>
-<p>読み込みに時間がかかる場合、ディスクの記録品質が原因のことがあります。
+<p>読み込みに時間がかかる場合、ディスクの記録品質が原因のことがあります。<br />
 別のディスクで試してください。</p>
 <h3>E-5. MP3を記録したCDを聴く</h3>
-<p>CD-R／CD-RWにMP3ファイルを記録したディスクを再生できます。
+<p>CD-R／CD-RWにMP3ファイルを記録したディスクを再生できます。<br />
 ディスク上のフォルダの構造に従って、順に再生されます。</p>
 <table>
 <thead>
@@ -499,7 +545,7 @@ version 2.0.0 ／ 2026-09-28
 </tr>
 </tbody>
 </table>
-<p>再生中は、フォルダ番号とトラック番号が表示されます。
+<p>再生中は、フォルダ番号とトラック番号が表示されます。<br />
 ファイルにアーティスト名・曲名の情報が記録されていれば、表示されることがあります。</p>
 <p>記録の条件です。</p>
 <ul>
@@ -540,10 +586,12 @@ version 2.0.0 ／ 2026-09-28
 </tbody>
 </table>
 <p>ディスクを入れ直すとNORMAL PLAYに戻ります。</p>
-<hr />
-</div><div class="section"><h2>F. ラジオを聴く</h2>
+
+</div>
+<div class="section">
+<h2>F. ラジオを聴く</h2>
 <h3>F-1. つける</h3>
-<p>FM/AMを押すと、前回聴いていた放送局でラジオが始まります。
+<p>FM/AMを押すと、前回聴いていた放送局でラジオが始まります。<br />
 もう一度押すとFMとAMが入れ替わります。</p>
 <h3>F-2. 選局する</h3>
 <table>
@@ -573,8 +621,8 @@ version 2.0.0 ／ 2026-09-28
 </tbody>
 </table>
 <p>選局の操作をやめて5秒たつと、表示の中央は時刻に戻り、周波数は下に小さく出ます。</p>
-<p>受信を良くする方法は共通編 §8にあります。
-FMは電源コードを伸ばします。
+<p>受信を良くする方法は共通編 §8にあります。<br />
+FMは電源コードを伸ばします。<br />
 AMは本体ごと回します。</p>
 <h3>F-3. 放送局を登録する（プリセット）</h3>
 <p>FM 6局、AM 6局まで登録できます。</p>
@@ -583,21 +631,23 @@ AMは本体ごと回します。</p>
 <li>Presetsの1〜6のいずれかを、ビープ音が2回鳴るまで押し続けます</li>
 <li>表示にプリセット番号と周波数が出れば登録できています</li>
 </ol>
-<p>呼び出すときは、その番号を1回押します。
+<p>呼び出すときは、その番号を1回押します。<br />
 すでに登録されている番号に登録すると、前の放送局は上書きされます。</p>
 <p>停電や電源プラグを抜いたときも、登録した放送局は48時間保持されます（公称）。</p>
 <h3>F-4. TALK RADIOモード</h3>
-<p>トーク番組では、放送局側が声を聴きやすくするために低音を持ち上げていることがあります。
+<p>トーク番組では、放送局側が声を聴きやすくするために低音を持ち上げていることがあります。<br />
 そのまま本機で再生すると、低音が強く出すぎることがあります。</p>
-<p>ラジオを聴いているときにPlay Modeを2回押すと、この補正を打ち消すモードに入ります。
-表示にTALK RADIO– ONと出ます。
+<p>ラジオを聴いているときにPlay Modeを2回押すと、この補正を打ち消すモードに入ります。<br />
+表示にTALK RADIO– ONと出ます。<br />
 もう一度2回押すとOFFになります。</p>
 <p>このモードは、別の局に合わせたとき、音源を切り替えたとき、電源を切ったときに自動で解除されます。</p>
-<p>ニュースや語学番組を毎日聴く方には効果がはっきり分かります。
+<p>ニュースや語学番組を毎日聴く方には効果がはっきり分かります。<br />
   音楽番組はOFFのまま聴くと、低音まで豊かに再生されます。</p>
-<hr />
-</div><div class="section"><h2>G. アラーム</h2>
-<p>本機のアラームは1系統です。
+
+</div>
+<div class="section">
+<h2>G. アラーム</h2>
+<p>本機のアラームは1系統です。<br />
 ラジオでもCDでも起こせます。</p>
 <h3>G-1. 起きる音を決める</h3>
 <ol>
@@ -608,16 +658,16 @@ AMは本体ごと回します。</p>
 <p>これで、その音源と音量が記憶されます。</p>
 <h3>G-2. 時刻を決める</h3>
 <ol>
-<li>Alarm Timeを押します
+<li>Alarm Timeを押します<br />
    アラーム時刻が中央に出て、右上で点滅します</li>
 <li>Time − またはTime ＋で時刻を合わせます</li>
 <li>もう一度Alarm Timeを押すと確定します</li>
 </ol>
 <p>設定中にボタン操作が10秒途切れると、自動で設定から抜けます。</p>
-<p>設定を確認したいときはAlarm Timeを1回押してください。
+<p>設定を確認したいときはAlarm Timeを1回押してください。<br />
 アラーム時刻と、起きる音源が10秒間表示されます。</p>
 <h3>G-3. 有効にする・無効にする</h3>
-<p>Alarm On/Offを押します。
+<p>Alarm On/Offを押します。<br />
 表示の右上にアラーム時刻が出ているときが、アラームが有効な状態です。</p>
 <h3>G-4. 鳴っているアラームを止める・延ばす</h3>
 <table>
@@ -638,25 +688,29 @@ AMは本体ごと回します。</p>
 </tr>
 </tbody>
 </table>
-<p>スヌーズ中はSNOOZEと表示されます。
-設定した時間がたつと、また鳴ります。
-スヌーズの長さは工場出荷時10分です。
+<p>スヌーズ中はSNOOZEと表示されます。<br />
+設定した時間がたつと、また鳴ります。<br />
+スヌーズの長さは工場出荷時10分です。<br />
 長さは変えられます（§I-2）。</p>
 <p>ヘッドホンをつないだままアラームを設定した場合でも、アラームは本体のスピーカーから鳴ります。</p>
-<hr />
-</div><div class="section"><h2>H. スリープタイマー</h2>
-<p>電源が入っている状態でSleepを押すと、自動で電源が切れるまでの時間を設定できます。
+
+</div>
+<div class="section">
+<h2>H. スリープタイマー</h2>
+<p>電源が入っている状態でSleepを押すと、自動で電源が切れるまでの時間を設定できます。<br />
 押すたびに10分から90分の間で切り替わります。</p>
 <p>眠ってしまっても本機が自分で止まります。</p>
-<hr />
-</div><div class="section"><h2>I. セットアップメニュー</h2>
+
+</div>
+<div class="section">
+<h2>I. セットアップメニュー</h2>
 <p>本機の動作を好みに合わせて変えられます。</p>
 <h3>I-1. 操作のしかた</h3>
 <ol>
 <li>Alarm Time（Menu）を、表示に<code>-SETUP MENU-</code>が出るまで押し続けます</li>
 <li>Tune/MP3の右を押して、変えたい項目まで進みます</li>
 <li>Time − またはTime ＋で値を変えます</li>
-<li>Alarm Time（Menu）を押すと抜けます
+<li>Alarm Time（Menu）を押すと抜けます<br />
    10秒そのままにしておいても自動で抜けます</li>
 </ol>
 <h3>I-2 〜 I-7. 変えられる項目</h3>
@@ -716,40 +770,44 @@ AMは本体ごと回します。</p>
 </table>
 <ul>
 <li>I-2 スヌーズの長さ … SNOOZE-</li>
-<li>I-3 CD終了後の音源 … CONT PLAY-
+<li>I-3 CD終了後の音源 … CONT PLAY-<br />
   CDが終わったらラジオに移りたいときに使います</li>
 <li>I-4 時刻の表示形式 … TIME-</li>
-<li>I-5 表示の明るさ … BRIGHT HI- / BRIGHT LO-
+<li>I-5 表示の明るさ … BRIGHT HI- / BRIGHT LO-<br />
   本機は周囲の明るさを見て自動で切り替えます</li>
-<li>I-6 ルームコード … ROOM-
+<li>I-6 ルームコード … ROOM-<br />
   Lifestyleシステムにつないだときに使います（§J-3）</li>
-<li>I-7 リセット … RESET ALL-
+<li>I-7 リセット … RESET ALL-<br />
   YESにすると、設定が工場出荷時に戻ります</li>
 </ul>
-<p>リセットすると、プリセットした放送局・アラーム・明るさの設定がすべて工場出荷時の状態に戻ります。
-  動作の様子が気になるときの切り分けに役立ちます。
+<p>リセットすると、プリセットした放送局・アラーム・明るさの設定がすべて工場出荷時の状態に戻ります。<br />
+  動作の様子が気になるときの切り分けに役立ちます。<br />
   その前に、まず電源プラグを抜いて差し直す方法を試してください。</p>
-<hr />
-</div><div class="section"><h2>J. 背面の端子を使う</h2>
+
+</div>
+<div class="section">
+<h2>J. 背面の端子を使う</h2>
 <h3>J-1. AUX IN</h3>
-<p>3.5mmステレオミニの入力です。
+<p>3.5mmステレオミニの入力です。<br />
 使い方は共通編 §9-1にあります。</p>
 <h3>J-2. 外部FMアンテナ（75Ω）</h3>
-<p>3.5mmのプラグを差す形式です。
+<p>3.5mmのプラグを差す形式です。<br />
 市販のFMダイポールアンテナが使えます。</p>
 <ol>
 <li>アンテナのプラグを背面の75Ω FM ANTENNAに差します</li>
 <li>アンテナの両端を伸ばし、本機や他の機器からできるだけ離します</li>
 </ol>
 <h3>J-3. Bose link</h3>
-<p>BoseのLifestyleシステムに本機をつなぎ、別室用のスピーカーとして使うための端子です。
+<p>BoseのLifestyleシステムに本機をつなぎ、別室用のスピーカーとして使うための端子です。<br />
 接続には専用のケーブルが必要です。</p>
-<p>この使い方をするときだけ、ルームコード（§I-6）を設定します。
+<p>この使い方をするときだけ、ルームコード（§I-6）を設定します。<br />
 ルームコードは、Lifestyle側のリモコンのスイッチ設定と対応させます。</p>
 <p>ふつうに音楽を聴くときは、この端子とルームコードは工場出荷時のままで使えます。</p>
-<hr />
-</div><div class="section"><h2>K. アクセサリーの互換について</h2>
-<p>この機種は、製造時期によって対応するアクセサリーが逆転しています。
+
+</div>
+<div class="section">
+<h2>K. アクセサリーの互換について</h2>
+<p>この機種は、製造時期によって対応するアクセサリーが逆転しています。<br />
 買い足すときの目安として、次の表をご覧ください。</p>
 <table>
 <thead>
@@ -772,13 +830,15 @@ AMは本体ごと回します。</p>
 </tr>
 </tbody>
 </table>
-<p>お手元の個体がどちらかは、個体ページに記載しています。
+<p>お手元の個体がどちらかは、個体ページに記載しています。<br />
   Bluetoothアダプタは別途お求めください。</p>
-<p>台座（本体の下に敷くスタンド）は、すべての機種でオプションです。
+<p>台座（本体の下に敷くスタンド）は、すべての機種でオプションです。<br />
 リモコンは、純正の中古品かサードパーティ製の新品のどちらかを1つお付けしています（§B-2）。</p>
-<hr />
-</div><div class="section"><h2>L. この機種で手入れが要る箇所と、当方の分解整備</h2>
-<p>中古の個体として、この機種には出やすい症状があります。
+
+</div>
+<div class="section">
+<h2>L. この機種で手入れが要る箇所と、当方の分解整備</h2>
+<p>中古の個体として、この機種には出やすい症状があります。<br />
 当方は出荷前にこれらを確認し、分解整備で必要な処置をしています。</p>
 <table>
 <thead>
@@ -827,9 +887,11 @@ AMは本体ごと回します。</p>
 </tbody>
 </table>
 <p>当方が行った整備の内容は、個体ページに書いています。</p>
-<hr />
-</div><div class="section"><h2>M. こんなときは（この機種固有）</h2>
-<p>共通の症状は共通編 §11にあります。
+
+</div>
+<div class="section">
+<h2>M. こんなときは（この機種固有）</h2>
+<p>共通の症状は共通編 §11にあります。<br />
 ここには、この機種でよく見る表示と症状を書きます。</p>
 <table>
 <thead>
@@ -882,16 +944,37 @@ AMは本体ごと回します。</p>
 </tbody>
 </table>
 <p>ほかの症状や、上記を試しても続くときは、封印バンドを装着したままの状態でご連絡ください。</p>
-<p>本機にはお届け日から1年間のセンドバック完全保証をお付けしています。
-保証は封印バンドが装着された状態に限らせていただきます。
-保証期間中に修理が必要になった場合は、「パソコン宅急便BOX B」に再梱包してお送りください。
+<p>本機にはお届け日から1年間のセンドバック完全保証をお付けしています。<br />
+保証は封印バンドが装着された状態に限らせていただきます。<br />
+保証期間中に修理が必要になった場合は、「パソコン宅急便BOX B」に再梱包してお送りください。<br />
 詳しい条件は保証書・保証規定をご覧ください。</p>
-<hr />
-</div><div class="section"><h2>N. 索引</h2>
-<p>AUX §J-1・共通編§9-1 ／ Bose link §J-3 ／ CONT PLAY §I-3 ／ MP3 §E-5 ／
-PLEASE WAIT §L・§M ／ RESET ALL §I-7 ／ ROOM §I-6 ／ TALK RADIO §F-4 ／
-アラーム §G ／ 明るさ §I-5 ／ 型番 §A-1 ／ 共鳴管 §A-3 ／ 蛍光表示管 §B-1・§C ／ スヌーズ §G-4・§I-2 ／
-スリープ §H ／ セットアップメニュー §I ／ 仕様 §C ／ 台座 §K ／ 時計 §D ／ 背面端子 §B-3・§J ／
-表示の読み方 §B-4 ／ 分解整備 §L ／ プリセット §F-3 ／ 保証 §M ／ 再生モード §E-6 ／ リモコン §B-2・§K ／
+
+</div>
+<div class="section">
+<h2>N. 索引</h2>
+<p>AUX §J-1・共通編§9-1 ／ Bose link §J-3 ／ CONT PLAY §I-3 ／ MP3 §E-5 ／<br />
+PLEASE WAIT §L・§M ／ RESET ALL §I-7 ／ ROOM §I-6 ／ TALK RADIO §F-4 ／<br />
+アラーム §G ／ 明るさ §I-5 ／ 型番 §A-1 ／ 共鳴管 §A-3 ／ 蛍光表示管 §B-1・§C ／ スヌーズ §G-4・§I-2 ／<br />
+スリープ §H ／ セットアップメニュー §I ／ 仕様 §C ／ 台座 §K ／ 時計 §D ／ 背面端子 §B-3・§J ／<br />
+表示の読み方 §B-4 ／ 分解整備 §L ／ プリセット §F-3 ／ 保証 §M ／ 再生モード §E-6 ／ リモコン §B-2・§K ／<br />
 ワイドFM §C</p></div>
-</div></body></html>
+
+<div class="cta">
+  <h2>お問い合わせ</h2>
+  <p>ご質問・修理のご依頼はメールで承ります。</p>
+  <p class="note">保証書の個体IDを添えてご連絡ください。</p>
+  <a class="btn" href="mailto:penguin.computer.2026@gmail.com?subject=BOSE Wave のお問い合わせ">penguin.computer.2026@gmail.com</a>
+</div>
+
+<div class="footer">
+  <p><strong>Penguin Computer</strong></p>
+  <p>BOSE Wave ファミリーのリファービッシュ</p>
+  <p style="margin-top:8px;"><a href="mailto:penguin.computer.2026@gmail.com">penguin.computer.2026@gmail.com</a></p>
+  <p><a href="https://x.com/penguin_comp" target="_blank" rel="noopener">X @penguin_comp</a></p>
+  <p><a href="https://jp.mercari.com/user/profile/544508417" target="_blank" rel="noopener">メルカリストア</a></p>
+  <p style="margin-top:12px; font-size:0.75em;">Bose、Wave、Acoustic WaveはBose Corporationの登録商標または商標です。</p>
+</div>
+
+</div>
+</body>
+</html>
