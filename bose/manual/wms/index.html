@@ -1,11 +1,26 @@
 <!DOCTYPE html>
-<html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>オリジナル操作解説書 機種編 Wave music system</title><style>body{margin:0;background:#fff;color:#222;font-family:"Hiragino Sans","Noto Sans JP",sans-serif;line-height:1.8}
-main{max-width:760px;margin:0 auto;padding:24px 16px 64px}
-h1{font-size:1.6em;border-bottom:2px solid #333;padding-bottom:.3em}h2{font-size:1.3em;margin-top:2em;border-bottom:1px solid #ccc}h3{font-size:1.1em;margin-top:1.6em}
-table{border-collapse:collapse;width:100%;display:block;overflow-x:auto;font-size:.95em}th,td{border:1px solid #ccc;padding:6px 8px;vertical-align:top}th{background:#f3f3f3}
-pre{background:#f6f6f6;padding:12px;overflow-x:auto;font-size:.9em}code{font-family:monospace}blockquote{border-left:4px solid #ccc;margin:1em 0;padding:0 1em;color:#555}hr{border:0;border-top:1px solid #ddd;margin:2em 0}
-@media (prefers-color-scheme:dark){body{background:#161616;color:#ddd}th{background:#262626}th,td{border-color:#444}pre{background:#222}h1{border-color:#aaa}h2{border-color:#444}blockquote{color:#aaa;border-color:#555}}</style></head><body><main>
-<h1>オリジナル操作解説書 機種編 Wave music system</h1>
+<html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>オリジナル操作解説書 機種編 Wave music system</title><style>* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: -apple-system, 'Hiragino Sans', 'Noto Sans JP', sans-serif; background: #f5f7fa; color: #333; line-height: 1.8; }
+.container { max-width: 700px; margin: 0 auto; padding: 24px 16px; }
+h1 { font-size: 1.4em; margin-bottom: 8px; color: #333; }
+.head p { font-size: 0.9em; color: #666; }
+.head { margin-bottom: 24px; }
+h2 { font-size: 1.15em; margin-bottom: 8px; color: #2d6a4f; }
+h3 { font-size: 1.0em; margin: 16px 0 6px; color: #2d6a4f; border-left: 4px solid #2d6a4f; padding-left: 10px; }
+h4 { font-size: 0.95em; margin: 12px 0 4px; }
+a { color: #2d6a4f; }
+.section { background: #fff; border-radius: 12px; padding: 20px; margin-bottom: 16px; box-shadow: 0 1px 3px rgba(0,0,0,0.08); }
+.section p { font-size: 0.95em; margin-bottom: 8px; }
+.section ul, .section ol { padding-left: 22px; font-size: 0.93em; margin-bottom: 8px; }
+.section li { margin-bottom: 6px; }
+table { border-collapse: collapse; width: 100%; display: block; overflow-x: auto; font-size: 0.9em; margin-bottom: 12px; }
+th, td { border: 1px solid #e2e6ea; padding: 6px 8px; vertical-align: top; text-align: left; }
+th { background: #eef4f1; color: #2d6a4f; }
+pre { background: #f5f7fa; border-radius: 8px; padding: 12px; overflow-x: auto; font-size: 0.85em; margin-bottom: 8px; }
+blockquote { border-left: 4px solid #2d6a4f; padding-left: 12px; color: #555; margin-bottom: 8px; }
+hr { display: none; }
+@media (max-width: 480px) { body { font-size: 1.02em; } }</style></head><body><div class="container">
+<div class="head"><h1>オリジナル操作解説書 機種編 Wave music system</h1>
 <p>対象機種: AWRCCB ／ AWRCCC ／ アンテナマーク版（国内後期型）
 version 2.0.0 ／ 2026-09-28
 発行: ペンギンコンピュータ</p>
@@ -17,7 +32,7 @@ version 2.0.0 ／ 2026-09-28
 <p>本書は当方が実機を操作・分解・測定して書いた、オリジナル操作解説書の機種編です。
   Bose Corporationの公式マニュアルとは別に、当方が独自に作成しています。</p>
 <hr />
-<h2>A. この機種について</h2>
+</div><div class="section"><h2>A. この機種について</h2>
 <h3>A-1. 型番を確かめる</h3>
 <p>本機の底面に銘板ラベルがあります。
 <code>MODEL</code>欄に書かれた英数字が、本書でいう型番です。</p>
@@ -112,7 +127,7 @@ version 2.0.0 ／ 2026-09-28
 </tbody>
 </table>
 <hr />
-<h2>B. 各部の名称</h2>
+</div><div class="section"><h2>B. 各部の名称</h2>
 <h3>B-1. 本体</h3>
 <p>前面の中央上寄りに表示部があります。
 表示部は蛍光表示管です。
@@ -286,7 +301,7 @@ version 2.0.0 ／ 2026-09-28
 <p>表示の明るさは、周囲の明るさに応じて自動で切り替わります。
 明るいときと暗いときの明るさは、それぞれ別に設定できます（§I-5）。</p>
 <hr />
-<h2>C. 仕様</h2>
+</div><div class="section"><h2>C. 仕様</h2>
 <table>
 <thead>
 <tr>
@@ -372,7 +387,7 @@ version 2.0.0 ／ 2026-09-28
   ワイドFM（FM補完放送）の帯域まで受信する個体と、従来のFM帯域を受信する個体があります。
   お手元の個体がどちらかは、当方が出荷前に実測して個体ページに記載しています。</p>
 <hr />
-<h2>D. 時計を合わせる</h2>
+</div><div class="section"><h2>D. 時計を合わせる</h2>
 <p>電源プラグを差したら、最初に時計を合わせます。</p>
 <ol>
 <li>電源を切った状態にします</li>
@@ -386,7 +401,7 @@ version 2.0.0 ／ 2026-09-28
   プリセットした放送局は、プラグを抜いてから48時間保持されます（公称）。
   模様替えや掃除で一時的に抜く程度なら、放送局は残ります。</p>
 <hr />
-<h2>E. CDを聴く</h2>
+</div><div class="section"><h2>E. CDを聴く</h2>
 <h3>E-1. 入れる・再生する</h3>
 <p>ディスクのレーベル面（印刷のある面）を上にして、表示部の下のすき間に差し込みます。
 途中まで差し込むと、本機が自動で引き込んで再生を始めます。</p>
@@ -526,7 +541,7 @@ version 2.0.0 ／ 2026-09-28
 </table>
 <p>ディスクを入れ直すとNORMAL PLAYに戻ります。</p>
 <hr />
-<h2>F. ラジオを聴く</h2>
+</div><div class="section"><h2>F. ラジオを聴く</h2>
 <h3>F-1. つける</h3>
 <p>FM/AMを押すと、前回聴いていた放送局でラジオが始まります。
 もう一度押すとFMとAMが入れ替わります。</p>
@@ -581,7 +596,7 @@ AMは本体ごと回します。</p>
 <p>ニュースや語学番組を毎日聴く方には効果がはっきり分かります。
   音楽番組はOFFのまま聴くと、低音まで豊かに再生されます。</p>
 <hr />
-<h2>G. アラーム</h2>
+</div><div class="section"><h2>G. アラーム</h2>
 <p>本機のアラームは1系統です。
 ラジオでもCDでも起こせます。</p>
 <h3>G-1. 起きる音を決める</h3>
@@ -629,12 +644,12 @@ AMは本体ごと回します。</p>
 長さは変えられます（§I-2）。</p>
 <p>ヘッドホンをつないだままアラームを設定した場合でも、アラームは本体のスピーカーから鳴ります。</p>
 <hr />
-<h2>H. スリープタイマー</h2>
+</div><div class="section"><h2>H. スリープタイマー</h2>
 <p>電源が入っている状態でSleepを押すと、自動で電源が切れるまでの時間を設定できます。
 押すたびに10分から90分の間で切り替わります。</p>
 <p>眠ってしまっても本機が自分で止まります。</p>
 <hr />
-<h2>I. セットアップメニュー</h2>
+</div><div class="section"><h2>I. セットアップメニュー</h2>
 <p>本機の動作を好みに合わせて変えられます。</p>
 <h3>I-1. 操作のしかた</h3>
 <ol>
@@ -715,7 +730,7 @@ AMは本体ごと回します。</p>
   動作の様子が気になるときの切り分けに役立ちます。
   その前に、まず電源プラグを抜いて差し直す方法を試してください。</p>
 <hr />
-<h2>J. 背面の端子を使う</h2>
+</div><div class="section"><h2>J. 背面の端子を使う</h2>
 <h3>J-1. AUX IN</h3>
 <p>3.5mmステレオミニの入力です。
 使い方は共通編 §9-1にあります。</p>
@@ -733,7 +748,7 @@ AMは本体ごと回します。</p>
 ルームコードは、Lifestyle側のリモコンのスイッチ設定と対応させます。</p>
 <p>ふつうに音楽を聴くときは、この端子とルームコードは工場出荷時のままで使えます。</p>
 <hr />
-<h2>K. アクセサリーの互換について</h2>
+</div><div class="section"><h2>K. アクセサリーの互換について</h2>
 <p>この機種は、製造時期によって対応するアクセサリーが逆転しています。
 買い足すときの目安として、次の表をご覧ください。</p>
 <table>
@@ -762,7 +777,7 @@ AMは本体ごと回します。</p>
 <p>台座（本体の下に敷くスタンド）は、すべての機種でオプションです。
 リモコンは、純正の中古品かサードパーティ製の新品のどちらかを1つお付けしています（§B-2）。</p>
 <hr />
-<h2>L. この機種で手入れが要る箇所と、当方の分解整備</h2>
+</div><div class="section"><h2>L. この機種で手入れが要る箇所と、当方の分解整備</h2>
 <p>中古の個体として、この機種には出やすい症状があります。
 当方は出荷前にこれらを確認し、分解整備で必要な処置をしています。</p>
 <table>
@@ -813,7 +828,7 @@ AMは本体ごと回します。</p>
 </table>
 <p>当方が行った整備の内容は、個体ページに書いています。</p>
 <hr />
-<h2>M. こんなときは（この機種固有）</h2>
+</div><div class="section"><h2>M. こんなときは（この機種固有）</h2>
 <p>共通の症状は共通編 §11にあります。
 ここには、この機種でよく見る表示と症状を書きます。</p>
 <table>
@@ -872,11 +887,11 @@ AMは本体ごと回します。</p>
 保証期間中に修理が必要になった場合は、「パソコン宅急便BOX B」に再梱包してお送りください。
 詳しい条件は保証書・保証規定をご覧ください。</p>
 <hr />
-<h2>N. 索引</h2>
+</div><div class="section"><h2>N. 索引</h2>
 <p>AUX §J-1・共通編§9-1 ／ Bose link §J-3 ／ CONT PLAY §I-3 ／ MP3 §E-5 ／
 PLEASE WAIT §L・§M ／ RESET ALL §I-7 ／ ROOM §I-6 ／ TALK RADIO §F-4 ／
 アラーム §G ／ 明るさ §I-5 ／ 型番 §A-1 ／ 共鳴管 §A-3 ／ 蛍光表示管 §B-1・§C ／ スヌーズ §G-4・§I-2 ／
 スリープ §H ／ セットアップメニュー §I ／ 仕様 §C ／ 台座 §K ／ 時計 §D ／ 背面端子 §B-3・§J ／
 表示の読み方 §B-4 ／ 分解整備 §L ／ プリセット §F-3 ／ 保証 §M ／ 再生モード §E-6 ／ リモコン §B-2・§K ／
-ワイドFM §C</p>
-</main></body></html>
+ワイドFM §C</p></div>
+</div></body></html>
