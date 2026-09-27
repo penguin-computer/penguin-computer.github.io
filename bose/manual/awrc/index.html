@@ -13,13 +13,13 @@
 <meta name="twitter:card" content="summary">
 <meta name="twitter:site" content="@penguin_comp">
 <style>
+
   * { margin: 0; padding: 0; box-sizing: border-box; }
   body { font-family: -apple-system, 'Hiragino Sans', 'Noto Sans JP', sans-serif; background: #f5f7fa; color: #333; line-height: 1.8; }
-  .container { max-width: 640px; margin: 0 auto; padding: 24px 16px; }
-  h1 { font-size: 1.4em; margin-bottom: 4px; }
-  h2 { font-size: 1.1em; margin-bottom: 8px; color: #2d6a4f; }
-  h3 { font-weight: bold; color: #2d6a4f; font-size: 1em; border-left: 4px solid #2d6a4f; padding-left: 12px; margin: 16px 0 6px; }
-  h4 { font-size: 0.95em; margin: 12px 0 4px; }
+  .container { max-width: 700px; margin: 0 auto; padding: 24px 16px; }
+  h1 { font-size: 1.4em; margin-bottom: 8px; }
+  h2 { font-size: 1.15em; margin-bottom: 8px; color: #2d6a4f; }
+  h3 { font-size: 1.0em; margin-bottom: 6px; color: #2d6a4f; }
   .brand { color: #2d6a4f; }
   .tagline { font-size: 0.9em; color: #666; margin-bottom: 24px; }
   a { color: #2d6a4f; }
@@ -28,21 +28,31 @@
   .section { background: #fff; border-radius: 12px; padding: 20px; margin-bottom: 16px; box-shadow: 0 1px 3px rgba(0,0,0,0.08); }
   .section p { font-size: 0.95em; margin-bottom: 8px; }
   .section p:last-child { margin-bottom: 0; }
-  .section ul, .section ol { padding-left: 20px; font-size: 0.92em; margin-bottom: 8px; }
+  .section ul, .section ol { padding-left: 22px; font-size: 0.93em; margin-bottom: 8px; }
   .section li { margin-bottom: 4px; }
   .mission { font-size: 1.05em; font-weight: bold; color: #2d6a4f; border-left: 4px solid #2d6a4f; padding-left: 12px; margin-bottom: 16px; }
+  .usp { display: flex; gap: 12px; margin-bottom: 8px; }
+  .usp-item { flex: 1; background: #f0f7f4; border-radius: 8px; padding: 12px; text-align: center; }
+  .usp-item .label { font-weight: bold; font-size: 0.92em; color: #2d6a4f; }
+  .usp-item .desc { font-size: 0.8em; color: #555; margin-top: 4px; }
+  .gallery { display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px; margin-top: 12px; }
+  .gallery figure { margin: 0; }
+  .gallery img { width: 100%; height: auto; border-radius: 8px; display: block; box-shadow: 0 1px 3px rgba(0,0,0,0.08); background: #eee; }
+  .gallery figcaption { font-size: 0.8em; color: #555; margin-top: 4px; text-align: center; }
+  .cat-label { display: inline-block; background: #2d6a4f; color: #fff; padding: 4px 12px; border-radius: 14px; font-size: 0.82em; font-weight: bold; margin-bottom: 4px; }
+  .cta { display: inline-block; background: #2d6a4f; color: #fff; padding: 12px 32px; border-radius: 8px; text-decoration: none; font-weight: bold; font-size: 1em; }
+  .footer { text-align: center; margin-top: 32px; font-size: 0.8em; color: #999; }
+  .footer p { margin-bottom: 2px; }
+  @media (max-width: 480px) { .usp { flex-direction: column; } .gallery { grid-template-columns: 1fr; } body { font-size: 1.02em; } }
   .section table { border-collapse: collapse; width: 100%; font-size: 0.88em; margin-bottom: 12px; display: block; overflow-x: auto; }
   .section th, .section td { border-bottom: 1px solid #e3e8ee; padding: 6px 8px; text-align: left; vertical-align: top; }
   .section th { background: #f0f7f4; color: #2d6a4f; }
   .section pre { background: #f0f7f4; border-radius: 8px; padding: 12px; font-size: 0.85em; overflow-x: auto; margin-bottom: 8px; white-space: pre-wrap; }
-  .section blockquote { border-left: 4px solid #2d6a4f; padding-left: 12px; color: #555; font-size: 0.93em; margin-bottom: 8px; }
+  .section h3 { margin-top: 14px; }
   .note { font-size: 0.85em; color: #777; }
-  .cta { background: #e8f5ee; border: 2px solid #2d6a4f; border-radius: 12px; padding: 18px; margin-bottom: 16px; text-align: center; }
-  .cta h2 { margin-bottom: 8px; }
+  .box { background: #e8f5ee; border: 2px solid #2d6a4f; border-radius: 12px; padding: 18px; margin-bottom: 16px; text-align: center; }
+  .box h2 { margin-bottom: 8px; }
   .btn { display: inline-block; background: #2d6a4f; color: #fff; padding: 11px 30px; border-radius: 8px; text-decoration: none; font-weight: bold; margin-top: 10px; }
-  .footer { text-align: center; margin-top: 32px; font-size: 0.8em; color: #999; }
-  .footer p { margin-bottom: 2px; }
-  @media (max-width: 480px) { body { font-size: 1.02em; } }
 </style>
 </head>
 <body>
@@ -1269,7 +1279,7 @@ FM、AM、またはPresetsのいずれかを押しても、ラジオが始まり
 表示の読み方 §B-3 ／ プリセット §F-3 ／ プログラム再生 §G-4 ／ フタ §G-1 ／ 保証 §K ／<br />
 リセット §E-5 ／ リモコン §A-6・§B-2 ／ 後継機との違い §A-5</p></div>
 
-<div class="cta">
+<div class="box">
   <h2>お問い合わせ</h2>
   <p>ご質問・修理のご依頼はメールで承ります。</p>
   <p class="note">保証書の個体IDを添えてご連絡ください。</p>
