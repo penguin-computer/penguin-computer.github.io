@@ -6,15 +6,14 @@
 <meta name="robots" content="noindex, nofollow">
 <title>&nbsp;</title>
 <style>
-  html, body { margin: 0; background: #0d1117; }
-  video { width: 100%; height: 100vh; max-width: 100vw;
+  html, body { height: 100%; margin: 0; background: #0d1117; }
+  body { display: flex; align-items: center; justify-content: center; gap: 6px; }
+  video { flex: 1 1 0; min-width: 0; max-height: 100vh; aspect-ratio: 9 / 16;
           object-fit: contain; display: block; background: #0d1117; }
-  hr { border: 0; height: 24px; margin: 0; background: #0d1117; }
 </style>
 </head>
 <body>
-<video src="a.mp4?v=3" controls playsinline preload="auto"></video>
-<hr>
-<video src="b.mp4?v=3" controls playsinline preload="auto"></video>
+<video src="a.mp4?v=4" controls playsinline preload="auto"></video>
+<video src="b.mp4?v=4" controls playsinline preload="auto"></video>
 </body>
 </html>
