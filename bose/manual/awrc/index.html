@@ -4,16 +4,17 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>オリジナル操作解説書 機種編 Wave Radio/CD | Penguin Computer</title>
-<meta name="description" content="オリジナル操作解説書 機種編 Wave Radio/CD。BOSE Wave Radio/CD。Penguin Computer（ペンギンコンピュータ）">
-<meta property="og:title" content="オリジナル操作解説書 機種編 Wave Radio/CD｜Penguin Computer">
-<meta property="og:type" content="article">
+<meta name="description" content="Penguin Computer（ペンギンコンピュータ）のオリジナル操作解説書 機種編 Wave Radio/CD。BOSE Wave Radio/CDの操作。">
+<meta property="og:title" content="オリジナル操作解説書 機種編 Wave Radio/CD | Penguin Computer">
+<meta property="og:description" content="BOSE Wave Radio/CDの操作。">
+<meta property="og:type" content="website">
 <meta property="og:url" content="https://penguin-computer.github.io/bose/manual/awrc/">
 <meta property="og:site_name" content="Penguin Computer">
 <meta property="og:locale" content="ja_JP">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:site" content="@penguin_comp">
+<meta name="twitter:title" content="オリジナル操作解説書 機種編 Wave Radio/CD | Penguin Computer">
 <style>
-
   * { margin: 0; padding: 0; box-sizing: border-box; }
   body { font-family: -apple-system, 'Hiragino Sans', 'Noto Sans JP', sans-serif; background: #f5f7fa; color: #333; line-height: 1.8; }
   .container { max-width: 700px; margin: 0 auto; padding: 24px 16px; }
@@ -44,15 +45,11 @@
   .footer { text-align: center; margin-top: 32px; font-size: 0.8em; color: #999; }
   .footer p { margin-bottom: 2px; }
   @media (max-width: 480px) { .usp { flex-direction: column; } .gallery { grid-template-columns: 1fr; } body { font-size: 1.02em; } }
-  .section table { border-collapse: collapse; width: 100%; font-size: 0.88em; margin-bottom: 12px; display: block; overflow-x: auto; }
-  .section th, .section td { border-bottom: 1px solid #e3e8ee; padding: 6px 8px; text-align: left; vertical-align: top; }
-  .section th { background: #f0f7f4; color: #2d6a4f; }
-  .section pre { background: #f0f7f4; border-radius: 8px; padding: 12px; font-size: 0.85em; overflow-x: auto; margin-bottom: 8px; white-space: pre-wrap; }
+
+  .section blockquote { background: #f0f7f4; border-radius: 8px; padding: 12px; font-size: 0.9em; color: #555; margin-bottom: 8px; }
   .section h3 { margin-top: 14px; }
-  .note { font-size: 0.85em; color: #777; }
-  .box { background: #e8f5ee; border: 2px solid #2d6a4f; border-radius: 12px; padding: 18px; margin-bottom: 16px; text-align: center; }
-  .box h2 { margin-bottom: 8px; }
-  .btn { display: inline-block; background: #2d6a4f; color: #fff; padding: 11px 30px; border-radius: 8px; text-decoration: none; font-weight: bold; margin-top: 10px; }
+  .section code { font-family: inherit; font-size: 1em; }
+  .section ul ul, .section ol ul { margin-bottom: 0; }
 </style>
 </head>
 <body>
@@ -62,58 +59,36 @@
   <a href="/index.html">home</a> | <a href="/memory.html">memory</a> | <a href="/setup.html">install</a> | <a href="/linuxmint-xfce-guide.html">guide</a> | <a href="/books.html">books</a>
 </div>
 
-<h1>🐧 <span class="brand">オリジナル操作解説書 機種編 Wave Radio/CD</span></h1>
-<p class="tagline">BOSE Wave Radio/CD</p>
-
-<div class="section">
-<p>対象機種: AWRC／0G ／ AWRC0P ／ AWRC-1G ／ AWRC-1P（国内向け100V個体）<br />
-version 2.0.0 ／ 2026-09-28<br />
-発行: ペンギンコンピュータ</p>
+<div class="section" style="border: 2px solid #2d6a4f;">
+  <span class="cat-label">オリジナル操作解説書 機種編 Wave Radio/CD</span>
+<p>version 2.1.0 ／ 2026-09-28<br />
+発行: ペンギンコンピュータ<br />
+対象: AWRC／0G ／ AWRC0P ／ AWRC-1G ／ AWRC-1P（国内向け100V個体）</p>
 <p>本書は共通編とあわせてお読みください。<br />
 安全・設置・電源・リモコンの電池・CDの扱い・お手入れは共通編にあります。</p>
-<pre><code>共通編  https://penguin-computer.github.io/bose/manual/common/
-保証書  https://penguin-computer.github.io/bose/warranty/
-</code></pre>
+<ul>
+<li>共通編: <a href="https://penguin-computer.github.io/bose/manual/common/">https://penguin-computer.github.io/bose/manual/common/</a></li>
+<li>保証: <a href="https://penguin-computer.github.io/bose/warranty/">https://penguin-computer.github.io/bose/warranty/</a></li>
+</ul>
+<blockquote>
 <p>本書は、当方が実機を操作して作成したオリジナル操作解説書です。<br />
-  Bose Corporationの公式マニュアルとは別に、当方が独自に作成しました。</p>
+Bose Corporationの公式マニュアルとは別に、当方が独自に作成しました。</p>
+</blockquote>
 
 </div>
+
 <div class="section">
-<h2>A. この機種について</h2>
+  <span class="cat-label">A. この機種について</span>
 <h3>A-1. 型番を確かめる</h3>
 <p>本機の底面に銘板ラベルがあります。<br />
 <code>MODEL</code>欄に書かれた英数字が型番です。</p>
-<table>
-<thead>
-<tr>
-<th>銘板の表記</th>
-<th>色</th>
-<th>仕向地・電源</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>AWRC／0G（AWRC0G表記の個体もあります）</td>
-<td>グラファイトグレー</td>
-<td>日本国内・AC100V</td>
-</tr>
-<tr>
-<td>AWRC0P</td>
-<td>プラチナムホワイト</td>
-<td>日本国内・AC100V</td>
-</tr>
-<tr>
-<td>AWRC-1G / AWRC1G</td>
-<td>グラファイト</td>
-<td>北米・120V</td>
-</tr>
-<tr>
-<td>AWRC-1P / AWRC1P</td>
-<td>プラチナムホワイト</td>
-<td>北米・120V</td>
-</tr>
-</tbody>
-</table>
+<p>銘板の表記ごとの色と仕向地・電源は次のとおりです。</p>
+<ul>
+<li>AWRC／0G（AWRC0G表記の個体もあります）: グラファイトグレー ／ 日本国内・AC100V</li>
+<li>AWRC0P: プラチナムホワイト ／ 日本国内・AC100V</li>
+<li>AWRC-1G / AWRC1G: グラファイト ／ 北米・120V</li>
+<li>AWRC-1P / AWRC1P: プラチナムホワイト ／ 北米・120V</li>
+</ul>
 <p>当方がお届けするのは、国内向け100Vの個体です。<br />
 本品はリファービッシュ（中古再生）品です。<br />
 当方が徹底したクリーニング、メンテナンス、チューニングを行いました。</p>
@@ -123,24 +98,10 @@ version 2.0.0 ／ 2026-09-28<br />
 北米で1998年、日本では1999年に発売されました。<br />
 後継は2004年のWave music systemです。</p>
 <p>当方が銘板で製造日を確かめた個体には、次のものがあります。</p>
-<table>
-<thead>
-<tr>
-<th>型番</th>
-<th>製造日</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>AWRC／0G</td>
-<td>2000-04-26</td>
-</tr>
-<tr>
-<td>AWRC0P</td>
-<td>2004-03-01</td>
-</tr>
-</tbody>
-</table>
+<ul>
+<li>AWRC／0G: 2000-04-26</li>
+<li>AWRC0P: 2004-03-01</li>
+</ul>
 <h3>A-3. 音の成り立ち</h3>
 <p>Wave Radio/CDは、約6cmの左右異なるスピーカーユニットを採用しています。<br />
 低音増強のための共鳴管を内部に折りたたんで収めています。<br />
@@ -150,251 +111,99 @@ version 2.0.0 ／ 2026-09-28<br />
 <p>会議室ほどの広さの部屋でも、サイズを超えた音量で迫力のある低音を再生します。<br />
 小型なので、デスクトップに置いて小音量で聴くのにも適しています。</p>
 <h3>A-4. この機種でできること</h3>
-<table>
-<thead>
-<tr>
-<th>できること</th>
-<th>備考</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>音楽CD（CD-DA）の再生</td>
-<td>天面のフタを開けてセットします（§G-1）</td>
-</tr>
-<tr>
-<td>CDのプログラム再生</td>
-<td>最大32曲まで順番を決められます（§G-4）</td>
-</tr>
-<tr>
-<td>FM / AMラジオ</td>
-<td>それぞれ6局ずつプリセットできます</td>
-</tr>
-<tr>
-<td>アラーム（2系統）</td>
-<td>2つを別々に設定できます。音はトーン／ラジオ／CDから選べます</td>
-</tr>
-<tr>
-<td>スリープタイマー</td>
-<td>10〜90分</td>
-</tr>
-<tr>
-<td>ナップタイマー</td>
-<td>指定時間後に電源が入ります（§H-4）</td>
-</tr>
-<tr>
-<td>AUX入力</td>
-<td>RCAピンジャック（左右）</td>
-</tr>
-<tr>
-<td>LINE OUT出力</td>
-<td>RCAピンジャック（左右）。録音やパワードスピーカーに</td>
-</tr>
-<tr>
-<td>外部FMアンテナ</td>
-<td>背面の75Ωねじ込み端子。ケーブルテレビのFM再送信も使えます</td>
-</tr>
-<tr>
-<td>バックアップ電池</td>
-<td>9V電池で時計とアラームを保持します（§D）</td>
-</tr>
-</tbody>
-</table>
+<ul>
+<li>音楽CD（CD-DA）の再生: 天面のフタを開けてセットします（§G-1）</li>
+<li>CDのプログラム再生: 最大32曲まで順番を決められます（§G-4）</li>
+<li>FM / AMラジオ: それぞれ6局ずつプリセットできます</li>
+<li>アラーム（2系統）: 2つを別々に設定できます。<br />
+  音はトーン／ラジオ／CDから選べます</li>
+<li>スリープタイマー: 10〜90分</li>
+<li>ナップタイマー: 指定時間後に電源が入ります（§H-4）</li>
+<li>AUX入力: RCAピンジャック（左右）</li>
+<li>LINE OUT出力: RCAピンジャック（左右）。<br />
+  録音やパワードスピーカーに</li>
+<li>外部FMアンテナ: 背面の75Ωねじ込み端子。<br />
+  ケーブルテレビのFM再送信も使えます</li>
+<li>バックアップ電池: 9V電池で時計とアラームを保持します（§D）</li>
+</ul>
+<blockquote>
 <p>ヘッドホンで聴くときは、背面のLINE OUTからヘッドホンアンプを経由してつなぎます。</p>
+</blockquote>
 <h3>A-5. 後継機との違い（要点）</h3>
-<table>
-<thead>
-<tr>
-<th>項目</th>
-<th>Wave Radio/CD（本機）</th>
-<th>Wave music system</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>CDの入れ方</td>
-<td>天面のフタを開けてセットする</td>
-<td>前面のすき間に差し込む</td>
-</tr>
-<tr>
-<td>再生できるCD</td>
-<td>音楽CD（CD-DA）</td>
-<td>音楽CDとMP3 CD</td>
-</tr>
-<tr>
-<td>アラーム</td>
-<td>2系統</td>
-<td>1系統</td>
-</tr>
-<tr>
-<td>ナップタイマー</td>
-<td>搭載</td>
-<td>—</td>
-</tr>
-<tr>
-<td>CDプログラム再生</td>
-<td>搭載（32曲）</td>
-<td>—</td>
-</tr>
-<tr>
-<td>ヘッドホン端子</td>
-<td>LINE OUTから外部のアンプへ</td>
-<td>背面に搭載</td>
-</tr>
-<tr>
-<td>AUX / LINE OUT</td>
-<td>RCAピンジャック</td>
-<td>AUXのみ・3.5mmステレオミニ</td>
-</tr>
-<tr>
-<td>バックアップ電池</td>
-<td>9V電池で時計とアラームを保持</td>
-<td>—</td>
-</tr>
-<tr>
-<td>共鳴管</td>
-<td>27インチ × 1</td>
-<td>26インチ × 2</td>
-</tr>
-</tbody>
-</table>
+<p>各項目は「Wave Radio/CD（本機）／ Wave music system」の順です。</p>
+<ul>
+<li>CDの入れ方: 天面のフタを開けてセットする ／ 前面のすき間に差し込む</li>
+<li>再生できるCD: 音楽CD（CD-DA）／ 音楽CDとMP3 CD</li>
+<li>アラーム: 2系統 ／ 1系統</li>
+<li>ナップタイマー: 搭載 ／ —</li>
+<li>CDプログラム再生: 搭載（32曲）／ —</li>
+<li>ヘッドホン端子: LINE OUTから外部のアンプへ ／ 背面に搭載</li>
+<li>AUX / LINE OUT: RCAピンジャック ／ AUXのみ・3.5mmステレオミニ</li>
+<li>バックアップ電池: 9V電池で時計とアラームを保持 ／ —</li>
+<li>共鳴管: 27インチ × 1 ／ 26インチ × 2</li>
+</ul>
 <h3>A-6. お届けするもの</h3>
-<p>本体／リモコン／バンドルCD／各種ご案内文書をお送りします。</p>
-<p>リモコンは、純正リモコン（中古）か、互換リモコン（新品）のどちらかです。<br />
-リモコンの使い方は§B-2にあります。</p>
+<p>本体／バンドルCD／各種ご案内文書をお送りします。</p>
 <p>台座はオプションです。<br />
 ストーン調の台座もオプションに含まれます。</p>
 
 </div>
+
 <div class="section">
-<h2>B. 各部の名称</h2>
+  <span class="cat-label">B. 各部の名称</span>
 <h3>B-1. 天面の操作パネル</h3>
 <p>本機の操作の中心は、天面のボタンです。<br />
 リモコンではよく使う操作を行えます（§B-2）。</p>
-<table>
-<thead>
-<tr>
-<th>ボタン</th>
-<th>働き</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Time −／＋</td>
-<td>時刻合わせ。設定値の増減</td>
-</tr>
-<tr>
-<td>Alarm Setup</td>
-<td>アラームの設定に入る。ほかのボタンと組み合わせる特殊操作の起点（§L）</td>
-</tr>
-<tr>
-<td>Alarm 1 On/Off</td>
-<td>アラーム1の有効・無効</td>
-</tr>
-<tr>
-<td>Alarm 2 On/Off</td>
-<td>アラーム2の有効・無効</td>
-</tr>
-<tr>
-<td>Presets 1〜6</td>
-<td>放送局の呼び出し。長押しで登録</td>
-</tr>
-<tr>
-<td>Track/Tune左／右</td>
-<td>ラジオの選局。CDの曲送り・早送り</td>
-</tr>
-<tr>
-<td>CD Play</td>
-<td>CDの再生・一時停止（プレイボタン）</td>
-</tr>
-<tr>
-<td>CD Stop</td>
-<td>CDの停止。トーンアラームの入切</td>
-</tr>
-<tr>
-<td>CD Mode</td>
-<td>CDのランダム・リピートの切り替え</td>
-</tr>
-<tr>
-<td>FM</td>
-<td>FMに切り替える</td>
-</tr>
-<tr>
-<td>AM</td>
-<td>AMに切り替える</td>
-</tr>
-<tr>
-<td>AUX</td>
-<td>外部入力に切り替える</td>
-</tr>
-<tr>
-<td>On/Off（Stop Alarm）</td>
-<td>電源の入切。鳴っているアラームを止める</td>
-</tr>
-<tr>
-<td>Sleep/Snooze</td>
-<td>スリープタイマー。鳴っているアラームのスヌーズ</td>
-</tr>
-<tr>
-<td>Volume上／下</td>
-<td>音量</td>
-</tr>
-</tbody>
-</table>
+<ul>
+<li>Time −／＋: 時刻合わせ。<br />
+  設定値の増減</li>
+<li>Alarm Setup: アラームの設定に入る。<br />
+  ほかのボタンと組み合わせる特殊操作の起点（§L）</li>
+<li>Alarm 1 On/Off: アラーム1の有効・無効</li>
+<li>Alarm 2 On/Off: アラーム2の有効・無効</li>
+<li>Presets 1〜6: 放送局の呼び出し。<br />
+  長押しで登録</li>
+<li>Track/Tune左／右: ラジオの選局。<br />
+  CDの曲送り・早送り</li>
+<li>CD Play: CDの再生・一時停止（プレイボタン）</li>
+<li>CD Stop: CDの停止。<br />
+  トーンアラームの入切</li>
+<li>CD Mode: CDのランダム・リピートの切り替え</li>
+<li>FM: FMに切り替える</li>
+<li>AM: AMに切り替える</li>
+<li>AUX: 外部入力に切り替える</li>
+<li>On/Off（Stop Alarm）: 電源の入切。<br />
+  鳴っているアラームを止める</li>
+<li>Sleep/Snooze: スリープタイマー。<br />
+  鳴っているアラームのスヌーズ</li>
+<li>Volume上／下: 音量</li>
+</ul>
 <p>Sleep/Snoozeのボタンには、突起が3つ付いています。<br />
 暗い部屋で手探りで押せるようにするためです。</p>
+<blockquote>
 <p>この操作パネルは、軽く触れるだけで反応します。<br />
-  強く押し込まないと反応しなくなったときは、保証で対応しますので、ご連絡ください。</p>
+強く押し込む必要が出てきたときは、保証で対応しますので、ご連絡ください。</p>
+</blockquote>
 <h3>B-2. リモコン</h3>
-<p>リモコンでは、よく使う操作を手元で行えます。<br />
-下の表は純正リモコンのボタンです。<br />
+<p>リモコンをお使いの場合の操作です。<br />
+リモコンでは、よく使う操作を手元で行えます。<br />
+純正リモコンのボタンは次のとおりです。<br />
 互換リモコンは、ボタンの表記や配置が純正と異なる場合があります。</p>
-<table>
-<thead>
-<tr>
-<th>ボタン</th>
-<th>働き</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>On/Off</td>
-<td>電源の入切。アラームの解除</td>
-</tr>
-<tr>
-<td>Sleep</td>
-<td>スリープタイマー。スヌーズ</td>
-</tr>
-<tr>
-<td>CD</td>
-<td>CDの再生・一時停止</td>
-</tr>
-<tr>
-<td>FM ／ AM</td>
-<td>ラジオに切り替える</td>
-</tr>
-<tr>
-<td>AUX</td>
-<td>外部入力に切り替える</td>
-</tr>
-<tr>
-<td>Mute</td>
-<td>消音・解除。この操作はリモコンで行います</td>
-</tr>
-<tr>
-<td>Track/Tune左／右</td>
-<td>選局。CDの曲送り・早送り</td>
-</tr>
-<tr>
-<td>Volume上／下</td>
-<td>音量</td>
-</tr>
-<tr>
-<td>Presets 1〜6</td>
-<td>放送局の呼び出し</td>
-</tr>
-</tbody>
-</table>
+<ul>
+<li>On/Off: 電源の入切。<br />
+  アラームの解除</li>
+<li>Sleep: スリープタイマー。<br />
+  スヌーズ</li>
+<li>CD: CDの再生・一時停止</li>
+<li>FM ／ AM: ラジオに切り替える</li>
+<li>AUX: 外部入力に切り替える</li>
+<li>Mute: 消音・解除。<br />
+  この操作はリモコンで行います</li>
+<li>Track/Tune左／右: 選局。<br />
+  CDの曲送り・早送り</li>
+<li>Volume上／下: 音量</li>
+<li>Presets 1〜6: 放送局の呼び出し</li>
+</ul>
 <p>次の操作は、天面のパネルで行います。</p>
 <ul>
 <li>時刻合わせ</li>
@@ -409,73 +218,30 @@ version 2.0.0 ／ 2026-09-28<br />
 <p>ディスプレイは蛍光表示管です。<br />
 濃い緑で光り、暗い部屋では文字だけが浮かび上がります。</p>
 <p>中央の大きな数字は、そのときの状況によって意味が変わります。</p>
-<table>
-<thead>
-<tr>
-<th>出ているもの</th>
-<th>意味</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>中央の大きな数字</td>
-<td>時刻／アラーム時刻／スリープ時間／スヌーズ時間／ナップ時間／周波数／CDの時間／プログラム番号／電池残量</td>
-</tr>
-<tr>
-<td>右下の小さな数字</td>
-<td>音量／プリセット番号／CDのトラック番号／明るさの設定値</td>
-</tr>
-<tr>
-<td>ALARM 1 / ALARM 2</td>
-<td>点灯は有効。設定中と鳴っているときは点滅します</td>
-</tr>
-<tr>
-<td>音源の表示</td>
-<td>FM / AM / CD / AUXのどれを聴いているか</td>
-</tr>
-<tr>
-<td>ステレオの表示</td>
-<td>FMをステレオ受信しているとき</td>
-</tr>
-<tr>
-<td>再生・一時停止の表示</td>
-<td>点灯は再生中。点滅は一時停止中、または電池が少ないとき</td>
-</tr>
-<tr>
-<td>PRESETの表示</td>
-<td>プリセットの操作中、CDのプログラム再生中</td>
-</tr>
-<tr>
-<td>AM / PMの表示</td>
-<td>12時間表示のとき</td>
-</tr>
-</tbody>
-</table>
+<ul>
+<li>中央の大きな数字: 時刻／アラーム時刻／スリープ時間／スヌーズ時間／ナップ時間／周波数／CDの時間／プログラム番号／電池残量</li>
+<li>右下の小さな数字: 音量／プリセット番号／CDのトラック番号／明るさの設定値</li>
+<li>ALARM 1 / ALARM 2: 点灯は有効。<br />
+  設定中と鳴っているときは点滅します</li>
+<li>音源の表示: FM / AM / CD / AUXのどれを聴いているか</li>
+<li>ステレオの表示: FMをステレオ受信しているとき</li>
+<li>再生・一時停止の表示: 点灯は再生中。<br />
+  点滅は一時停止中、または電池が少ないとき</li>
+<li>PRESETの表示: プリセットの操作中、CDのプログラム再生中</li>
+<li>AM / PMの表示: 12時間表示のとき</li>
+</ul>
 <p>表示には2つのモードがあります（§E-2）。<br />
 時計を出し続けるモードと、聴いている音源の情報を出すモードです。</p>
 <h3>B-4. 背面</h3>
-<table>
-<thead>
-<tr>
-<th>端子</th>
-<th>内容</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>AUX IN（R / L）</td>
-<td>RCAピンジャック。外部機器の入力</td>
-</tr>
-<tr>
-<td>LINE OUT（R / L）</td>
-<td>RCAピンジャック。固定出力。録音機やパワードスピーカーへ</td>
-</tr>
-<tr>
-<td>FM 75Ω EXTERNAL ANTENNA</td>
-<td>ねじ込み式。外部FMアンテナ、またはケーブルテレビのFM再送信</td>
-</tr>
-</tbody>
-</table>
+<ul>
+<li>AUX IN（R / L）: RCAピンジャック。<br />
+  外部機器の入力</li>
+<li>LINE OUT（R / L）: RCAピンジャック。<br />
+  固定出力。<br />
+  録音機やパワードスピーカーへ</li>
+<li>FM 75Ω EXTERNAL ANTENNA: ねじ込み式。<br />
+  外部FMアンテナ、またはケーブルテレビのFM再送信</li>
+</ul>
 <p>電源コードは本体に直接つながっています。</p>
 <h3>B-5. 底面</h3>
 <ul>
@@ -485,78 +251,34 @@ version 2.0.0 ／ 2026-09-28<br />
 </ul>
 
 </div>
+
 <div class="section">
-<h2>C. 仕様</h2>
-<table>
-<thead>
-<tr>
-<th>項目</th>
-<th>値</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>電源</td>
-<td>AC100V 50/60Hz（国内向け個体）</td>
-</tr>
-<tr>
-<td>消費電力</td>
-<td>50W（公称。北米向け120V版の値）</td>
-</tr>
-<tr>
-<td>外形寸法</td>
-<td>幅35.6 × 奥行21.6 × 高さ11.1cm（公称）</td>
-</tr>
-<tr>
-<td>質量</td>
-<td>約3.4kg（公称）</td>
-</tr>
-<tr>
-<td>スピーカーユニット</td>
-<td>約6cm。左右異なるユニット</td>
-</tr>
-<tr>
-<td>共鳴管</td>
-<td>27インチ（685mm）× 1本（公称）</td>
-</tr>
-<tr>
-<td>対応ディスク</td>
-<td>音楽CD（CD-DA）。CD-R、CD-RWは音楽CD形式で書き込んだものを再生します</td>
-</tr>
-<tr>
-<td>AM受信範囲</td>
-<td>531〜1629kHz</td>
-</tr>
-<tr>
-<td>プリセット</td>
-<td>FM 6局 ／ AM 6局</td>
-</tr>
-<tr>
-<td>アラーム</td>
-<td>2系統</td>
-</tr>
-<tr>
-<td>CDプログラム</td>
-<td>最大32曲</td>
-</tr>
-<tr>
-<td>入出力</td>
-<td>AUX IN（RCAステレオ）／ LINE OUT（RCAステレオ）／ 外部FMアンテナ（75Ω・ねじ込み）</td>
-</tr>
-<tr>
-<td>バックアップ電池</td>
-<td>9V（IEC 6F22）× 1。アルカリ推奨</td>
-</tr>
-<tr>
-<td>リモコン電池</td>
-<td>純正リモコンはCR2032（DL2032）3V × 1。互換リモコンは電池室の表示に従ってください</td>
-</tr>
-</tbody>
-</table>
+  <span class="cat-label">C. 仕様</span>
+<ul>
+<li>電源: AC100V 50/60Hz（国内向け個体）</li>
+<li>消費電力: 50W（公称。北米向け120V版の値）</li>
+<li>外形寸法: 幅35.6 × 奥行21.6 × 高さ11.1cm（公称）</li>
+<li>質量: 約3.4kg（公称）</li>
+<li>スピーカーユニット: 約6cm。<br />
+  左右異なるユニット</li>
+<li>共鳴管: 27インチ（685mm）× 1本（公称）</li>
+<li>対応ディスク: 音楽CD（CD-DA）。<br />
+  CD-R、CD-RWは音楽CD形式で書き込んだものを再生します</li>
+<li>AM受信範囲: 531〜1629kHz</li>
+<li>プリセット: FM 6局 ／ AM 6局</li>
+<li>アラーム: 2系統</li>
+<li>CDプログラム: 最大32曲</li>
+<li>入出力: AUX IN（RCAステレオ）／ LINE OUT（RCAステレオ）／ 外部FMアンテナ（75Ω・ねじ込み）</li>
+<li>バックアップ電池: 9V（IEC 6F22）× 1。<br />
+  アルカリ推奨</li>
+<li>リモコン電池: 純正リモコンはCR2032（DL2032）3V × 1。<br />
+  互換リモコンは電池室の表示に従ってください</li>
+</ul>
 
 </div>
+
 <div class="section">
-<h2>D. バックアップ電池（9V）</h2>
+  <span class="cat-label">D. バックアップ電池（9V）</span>
 <p>9V電池は本体の一部です。<br />
 常に装着した状態でお使いください。<br />
 本機は、9V電池を装着した状態で機能します。</p>
@@ -566,9 +288,11 @@ version 2.0.0 ／ 2026-09-28<br />
 <li>停電中にアラームの時刻が来たとき、電池だけでアラームを鳴らします（公称で最大24時間）</li>
 <li>音楽の再生と表示は、コンセントからの電源で行います</li>
 </ul>
+<blockquote>
 <p>当方は、新品のアルカリ9V電池を装着してお届けします。<br />
-  1年に1回の交換を目安にしてください。<br />
-  定期的な交換が、液漏れから本体を守ります。</p>
+1年に1回の交換を目安にしてください。<br />
+定期的な交換が、液漏れから本体を守ります。</p>
+</blockquote>
 <h3>D-2. 交換のしかた</h3>
 <ol>
 <li>CDを取り出しておきます</li>
@@ -580,41 +304,31 @@ version 2.0.0 ／ 2026-09-28<br />
 <li>ふたを閉めます</li>
 <li>本機を元に戻します</li>
 </ol>
+<blockquote>
 <p>裏返す前に、必ずCDを取り出してください。<br />
-  天面のフタは自由に開く構造なので、CDを取り出してから裏返します。</p>
+天面のフタは自由に開く構造なので、CDを取り出してから裏返します。</p>
+</blockquote>
 <h3>D-3. 電池の残量を調べる</h3>
 <ol>
 <li>本機の電源を切ります</li>
 <li>Alarm Setupを押しながらCD Stopを押します</li>
-<li>表示に残量が出ます</li>
+<li>
+<p>表示に残量が出ます</p>
+</li>
+<li>
+<p>Hi、または78以上の数字: 十分にあります</p>
+</li>
+<li>77以下の数字: 少なくなっています。<br />
+  交換の準備をおすすめします</li>
+<li>Lo: 交換の時期です。<br />
+  新しい電池に交換してください</li>
 </ol>
-<table>
-<thead>
-<tr>
-<th>表示</th>
-<th>意味</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Hi、または78以上の数字</td>
-<td>十分にあります</td>
-</tr>
-<tr>
-<td>77以下の数字</td>
-<td>少なくなっています。交換の準備をおすすめします</td>
-</tr>
-<tr>
-<td>Lo</td>
-<td>交換の時期です。新しい電池に交換してください</td>
-</tr>
-</tbody>
-</table>
 <p>電池が少なくなると、再生・一時停止の表示が点滅して知らせます。</p>
 
 </div>
+
 <div class="section">
-<h2>E. 時刻と表示の設定</h2>
+  <span class="cat-label">E. 時刻と表示の設定</span>
 <h3>E-1. 時刻を合わせる</h3>
 <p>電源プラグを差した直後は、時刻の表示が点滅しています。</p>
 <ol>
@@ -626,56 +340,21 @@ version 2.0.0 ／ 2026-09-28<br />
 <h3>E-2. 表示をカスタマイズする</h3>
 <p>この機種は、表示の出し方を細かく変えられます。<br />
 いずれも天面のパネルで行います。</p>
-<table>
-<thead>
-<tr>
-<th>したいこと</th>
-<th>操作</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>12時間表示と24時間表示を切り替える</td>
-<td>電源を切った状態で、Alarm Setupを押しながらOn/Off</td>
-</tr>
-<tr>
-<td>聴いている間ずっと時計を出す</td>
-<td>電源を入れた状態で、Alarm Setupを押しながらPreset 1</td>
-</tr>
-<tr>
-<td>聴いている間は音源の情報を出す</td>
-<td>電源を入れた状態で、Alarm Setupを押しながらPreset 2</td>
-</tr>
-<tr>
-<td>明るい部屋での表示の明るさ</td>
-<td>電源を切った状態で、CD Modeを押しながらVolume上／下。5〜9（初期値8）</td>
-</tr>
-<tr>
-<td>暗い部屋での表示の明るさ</td>
-<td>電源を切った状態で、CD Modeを押しながらVolume上／下。1〜5（初期値2）</td>
-</tr>
-<tr>
-<td>明るさを一定に保つ</td>
-<td>上の2つを両方5にします</td>
-</tr>
-<tr>
-<td>表示そのものを消す</td>
-<td>電源を切った状態で、CD Modeを押しながらOn/Off。もう一度同じ操作で戻ります</td>
-</tr>
-<tr>
-<td>今の音量を確認する</td>
-<td>Alarm Setupを押しながらVolume上または下</td>
-</tr>
-<tr>
-<td>今のCD時間・周波数を確認する</td>
-<td>電源を入れた状態で、Alarm Setupを押しながらTrack/Tune</td>
-</tr>
-<tr>
-<td>今の時刻を確認する</td>
-<td>Time −または＋を短く押す</td>
-</tr>
-</tbody>
-</table>
+<ul>
+<li>12時間表示と24時間表示を切り替える: 電源を切った状態で、Alarm Setupを押しながらOn/Off</li>
+<li>聴いている間ずっと時計を出す: 電源を入れた状態で、Alarm Setupを押しながらPreset 1</li>
+<li>聴いている間は音源の情報を出す: 電源を入れた状態で、Alarm Setupを押しながらPreset 2</li>
+<li>明るい部屋での表示の明るさ: 電源を切った状態で、CD Modeを押しながらVolume上／下。<br />
+  5〜9（初期値8）</li>
+<li>暗い部屋での表示の明るさ: 電源を切った状態で、CD Modeを押しながらVolume上／下。<br />
+  1〜5（初期値2）</li>
+<li>明るさを一定に保つ: 上の2つを両方5にします</li>
+<li>表示そのものを消す: 電源を切った状態で、CD Modeを押しながらOn/Off。<br />
+  もう一度同じ操作で戻ります</li>
+<li>今の音量を確認する: Alarm Setupを押しながらVolume上または下</li>
+<li>今のCD時間・周波数を確認する: 電源を入れた状態で、Alarm Setupを押しながらTrack/Tune</li>
+<li>今の時刻を確認する: Time −または＋を短く押す</li>
+</ul>
 <p>表示を消すと、ボタンを押したときとアラームが鳴っているときだけ、短く光ります。<br />
 寝室で使うときに便利です。</p>
 <h3>E-3. 音量の見え方</h3>
@@ -690,38 +369,21 @@ AUXにつないだ機器の電源は、機器側で入れてください。</p>
 9V電池が時計・アラーム・プリセットの設定を保持します。</p>
 
 </div>
+
 <div class="section">
-<h2>F. ラジオを聴く</h2>
+  <span class="cat-label">F. ラジオを聴く</span>
 <h3>F-1. つける</h3>
 <p>On/Offを押すと、前回聴いていた音源で電源が入ります。<br />
 FM、AM、またはPresetsのいずれかを押しても、ラジオが始まります。</p>
 <h3>F-2. 選局する</h3>
-<table>
-<thead>
-<tr>
-<th>したいこと</th>
-<th>操作</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>自動で局を探す</td>
-<td>Track/Tuneの左または右を1回押します。電波の強い局で止まります</td>
-</tr>
-<tr>
-<td>もう一度探す</td>
-<td>もう一度押します</td>
-</tr>
-<tr>
-<td>手で細かく合わせる</td>
-<td>Track/Tuneを素早く2回以上たたきます。1ステップずつ動きます</td>
-</tr>
-<tr>
-<td>速く移動する</td>
-<td>Track/Tuneを押し続けます</td>
-</tr>
-</tbody>
-</table>
+<ul>
+<li>自動で局を探す: Track/Tuneの左または右を1回押します。<br />
+  電波の強い局で止まります</li>
+<li>もう一度探す: もう一度押します</li>
+<li>手で細かく合わせる: Track/Tuneを素早く2回以上たたきます。<br />
+  1ステップずつ動きます</li>
+<li>速く移動する: Track/Tuneを押し続けます</li>
+</ul>
 <p>手動で合わせたあと、2秒待つと自動選局のモードに戻ります。</p>
 <h3>F-3. 放送局を登録する（プリセット）</h3>
 <p>FM 6局、AM 6局まで登録できます。<br />
@@ -742,8 +404,9 @@ FM、AM、またはPresetsのいずれかを押しても、ラジオが始まり
 <p>FMをステレオで受信しているときは、表示にステレオの印が出ます。</p>
 
 </div>
+
 <div class="section">
-<h2>G. CDを聴く</h2>
+  <span class="cat-label">G. CDを聴く</span>
 <h3>G-1. 入れる</h3>
 <p>ジャケットからCDを取り出し、天面のフタを開けてセットし、プレイボタンを押します。<br />
 手順は次のとおりです。</p>
@@ -754,51 +417,28 @@ FM、AM、またはPresetsのいずれかを押しても、ラジオが始まり
    カチッと止まるまで軽く押します</li>
 <li>フタを半分より下まで静かに下ろします。<br />
    そこから自力で閉じます。<br />
-   最後まで手で閉めても構いません</li>
+   最後まで手で閉めることもできます</li>
 <li>プレイボタン（CD Play）を押します</li>
 </ol>
 <p>CDモードのときは、フタを閉じると自動で再生が始まります。</p>
+<blockquote>
 <p>フタは手を添えて、静かに閉めてください。<br />
-  ヒンジを長く良い状態に保てます。</p>
+ヒンジを長く良い状態に保てます。</p>
+</blockquote>
 <h3>G-2. 操作</h3>
-<table>
-<thead>
-<tr>
-<th>したいこと</th>
-<th>操作</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>再生</td>
-<td>CD Playを押す。再生の表示が点灯します</td>
-</tr>
-<tr>
-<td>一時停止</td>
-<td>再生中にCD Playを押す。表示が点滅します</td>
-</tr>
-<tr>
-<td>停止</td>
-<td>CD Stopを押す。ディスクの総演奏時間と曲数が一瞬出ます</td>
-</tr>
-<tr>
-<td>次の曲へ</td>
-<td>Track/Tuneの右</td>
-</tr>
-<tr>
-<td>今の曲の頭に戻る</td>
-<td>Track/Tuneの左</td>
-</tr>
-<tr>
-<td>前の曲へ</td>
-<td>Track/Tuneの左を2秒以内に2回</td>
-</tr>
-<tr>
-<td>早送り・早戻し</td>
-<td>Track/Tuneを押し続ける。離したところから再生します</td>
-</tr>
-</tbody>
-</table>
+<ul>
+<li>再生: CD Playを押す。<br />
+  再生の表示が点灯します</li>
+<li>一時停止: 再生中にCD Playを押す。<br />
+  表示が点滅します</li>
+<li>停止: CD Stopを押す。<br />
+  ディスクの総演奏時間と曲数が一瞬出ます</li>
+<li>次の曲へ: Track/Tuneの右</li>
+<li>今の曲の頭に戻る: Track/Tuneの左</li>
+<li>前の曲へ: Track/Tuneの左を2秒以内に2回</li>
+<li>早送り・早戻し: Track/Tuneを押し続ける。<br />
+  離したところから再生します</li>
+</ul>
 <p>一時停止のまま10分たつと、本機の電源が切れます。</p>
 <p>ディスクの先頭でTrack/Tuneの左を押すと、最後の曲へ移ります。<br />
 最後の曲で右を押すと、1曲目へ移ります。</p>
@@ -808,8 +448,10 @@ FM、AM、またはPresetsのいずれかを押しても、ラジオが始まり
 <li>天面のフタを開けます</li>
 <li>軸の中央を押さえながら、ディスクの外周を持って静かに持ち上げます</li>
 </ol>
+<blockquote>
 <p>軸の中央を押さえながら、ディスクをまっすぐ持ち上げてください。<br />
-  中心の穴を傷めずに取り出せます。</p>
+中心の穴を良い状態に保ったまま取り出せます。</p>
+</blockquote>
 <h3>G-4. プログラム再生（最大32曲）</h3>
 <p>聴きたい曲の順番を決められます。<br />
 天面のパネルで行います。</p>
@@ -832,36 +474,14 @@ FM、AM、またはPresetsのいずれかを押しても、ラジオが始まり
 別のディスクを入れた場合も、その番号のトラックが再生されます。</p>
 <h3>G-5. 再生モード</h3>
 <p>CD Modeを押すたびに、次の順で切り替わります。</p>
-<table>
-<thead>
-<tr>
-<th>表示</th>
-<th>内容</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>RANDOM</td>
-<td>全曲を順不同で1回ずつ再生します</td>
-</tr>
-<tr>
-<td>REPEAT RANDOM</td>
-<td>順不同で繰り返します。毎回順番が変わります</td>
-</tr>
-<tr>
-<td>REPEAT</td>
-<td>ディスクを繰り返し再生します</td>
-</tr>
-<tr>
-<td>TRACK REPEAT</td>
-<td>選んだ曲を繰り返します</td>
-</tr>
-<tr>
-<td>TRACK</td>
-<td>曲順どおりに再生します（通常の再生）</td>
-</tr>
-</tbody>
-</table>
+<ul>
+<li>RANDOM: 全曲を順不同で1回ずつ再生します</li>
+<li>REPEAT RANDOM: 順不同で繰り返します。<br />
+  毎回順番が変わります</li>
+<li>REPEAT: ディスクを繰り返し再生します</li>
+<li>TRACK REPEAT: 選んだ曲を繰り返します</li>
+<li>TRACK: 曲順どおりに再生します（通常の再生）</li>
+</ul>
 <p>繰り返しのモードは、24時間で自動的に止まります。</p>
 <h3>G-6. CDの時間表示を切り替える</h3>
 <p>再生中または一時停止中に、Alarm Setupを押しながらCD Playを押します。<br />
@@ -877,8 +497,9 @@ FM、AM、またはPresetsのいずれかを押しても、ラジオが始まり
 <p>CDを聴いている途中で別の音源に切り替えても、10分以内にCDに戻れば、止めたところから再生が続きます。</p>
 
 </div>
+
 <div class="section">
-<h2>H. アラーム</h2>
+  <span class="cat-label">H. アラーム</span>
 <p>本機のアラームは2系統です。<br />
 電源が入っていても切れていても設定できます。</p>
 <h3>H-1. 設定に入る</h3>
@@ -890,77 +511,37 @@ FM、AM、またはPresetsのいずれかを押しても、ラジオが始まり
 すぐ抜けたいときはAUXを1回押すか、Alarm Setupを数回押します。</p>
 <h3>H-2. 時刻・音・音量を決める</h3>
 <p>選んだアラームが点滅している間に、次の操作を行います。</p>
-<table>
-<thead>
-<tr>
-<th>決めるもの</th>
-<th>操作</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>時刻</td>
-<td>Time −または＋</td>
-</tr>
-<tr>
-<td>音をラジオにする</td>
-<td>FMまたはAMを押す。前回このアラームで使った局が出ます。PresetsやTrack/Tuneで変えられます</td>
-</tr>
-<tr>
-<td>音をCDにする</td>
-<td>CD Playを押す。1曲目が出ます。Track/Tuneで曲を選べます。CD Modeでランダム・リピートも選べます</td>
-</tr>
-<tr>
-<td>音をブザー（トーン）に戻す</td>
-<td>いま選ばれている音源のボタンをもう一度押します。音源の表示が消えるとトーンになります</td>
-</tr>
-<tr>
-<td>ラジオやCDのあとにブザーを鳴らす</td>
-<td>ラジオまたはCDを選んだあと、CD Stopを押します</td>
-</tr>
-<tr>
-<td>音量</td>
-<td>Volume上／下。10〜99</td>
-</tr>
-<tr>
-<td>音量を試聴する</td>
-<td>Alarm Setupを押しながらVolume上／下。ブザー音で確認できます</td>
-</tr>
-<tr>
-<td>スヌーズの長さ</td>
-<td>Sleep/Snoozeを押しながらTime −または＋。1〜30分。表示に分数とSnが出ます</td>
-</tr>
-</tbody>
-</table>
+<ul>
+<li>時刻: Time −または＋</li>
+<li>音をラジオにする: FMまたはAMを押す。<br />
+  前回このアラームで使った局が出ます。<br />
+  PresetsやTrack/Tuneで変えられます</li>
+<li>音をCDにする: CD Playを押す。<br />
+  1曲目が出ます。<br />
+  Track/Tuneで曲を選べます。<br />
+  CD Modeでランダム・リピートも選べます</li>
+<li>音をブザー（トーン）に戻す: いま選ばれている音源のボタンをもう一度押します。<br />
+  音源の表示が消えるとトーンになります</li>
+<li>ラジオやCDのあとにブザーを鳴らす: ラジオまたはCDを選んだあと、CD Stopを押します</li>
+<li>音量: Volume上／下。<br />
+  10〜99</li>
+<li>音量を試聴する: Alarm Setupを押しながらVolume上／下。<br />
+  ブザー音で確認できます</li>
+<li>スヌーズの長さ: Sleep/Snoozeを押しながらTime −または＋。<br />
+  1〜30分。<br />
+  表示に分数とSnが出ます</li>
+</ul>
 <p>アラームの音源は、トーン・FM・AM・CDから選びます。<br />
 スヌーズの長さは、アラーム1と2で別々に設定できます。</p>
 <h3>H-3. 使う</h3>
-<table>
-<thead>
-<tr>
-<th>したいこと</th>
-<th>操作</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>アラームを有効・無効にする</td>
-<td>Alarm 1 On/Off ／ Alarm 2 On/Off</td>
-</tr>
-<tr>
-<td>鳴っているアラームを止める</td>
-<td>On/Off（Stop Alarm）</td>
-</tr>
-<tr>
-<td>もう少し寝る</td>
-<td>Sleep/Snoozeを押す</td>
-</tr>
-<tr>
-<td>設定を確認する</td>
-<td>Alarm Setupを押して離す。10秒間表示されます。もう一度押すともう一方が出ます</td>
-</tr>
-</tbody>
-</table>
+<ul>
+<li>アラームを有効・無効にする: Alarm 1 On/Off ／ Alarm 2 On/Off</li>
+<li>鳴っているアラームを止める: On/Off（Stop Alarm）</li>
+<li>もう少し寝る: Sleep/Snoozeを押す</li>
+<li>設定を確認する: Alarm Setupを押して離す。<br />
+  10秒間表示されます。<br />
+  もう一度押すともう一方が出ます</li>
+</ul>
 <h3>H-4. ナップタイマー（指定時間後に電源を入れる）</h3>
 <p>スリープタイマーの逆です。<br />
 指定した時間がたつと、本機の電源が入ります。</p>
@@ -971,8 +552,10 @@ FM、AM、またはPresetsのいずれかを押しても、ラジオが始まり
    Sleep/Snoozeを押すたびに10分ずつ増えます</li>
 </ol>
 <p>本機はいったん消音され、時間が来ると鳴り始めます。</p>
+<blockquote>
 <p>昼寝や、料理の待ち時間に使えます。<br />
-  待ち時間だけで指定するので、時刻を決める手間が省けます。</p>
+待ち時間だけで指定するので、時刻を決める手間が省けます。</p>
+</blockquote>
 <h3>H-5. スリープタイマー</h3>
 <p>電源が入っている状態でSleep/Snooze（またはリモコンのSleep）を押します。<br />
 はじめに10分が出て、押すたびに10分ずつ、90分まで増えます。<br />
@@ -980,39 +563,23 @@ FM、AM、またはPresetsのいずれかを押しても、ラジオが始まり
 <p>設定した時間は記憶され、次にスリープやナップを使うときの初期値になります。</p>
 
 </div>
+
 <div class="section">
-<h2>I. 背面の端子を使う</h2>
+  <span class="cat-label">I. 背面の端子を使う</span>
 <h3>I-1. AUX IN（RCA左右）</h3>
 <p>外部機器の音声出力をつなぎます。<br />
 赤いプラグをR（赤）へ、白または黒のプラグをL（白）へ差します。</p>
 <p>つなげる例です。</p>
-<table>
-<thead>
-<tr>
-<th>機器</th>
-<th>つなぎ方</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>ポータブルプレーヤー</td>
-<td>ヘッドホン出力から、ミニプラグ→RCAのケーブルでAUX INへ</td>
-</tr>
-<tr>
-<td>テレビ・パソコン</td>
-<td>音声出力からRCAケーブルでAUX INへ</td>
-</tr>
-<tr>
-<td>CDチェンジャー・カセットデッキ</td>
-<td>音声出力からRCAケーブルでAUX INへ</td>
-</tr>
-</tbody>
-</table>
+<ul>
+<li>ポータブルプレーヤー: ヘッドホン出力から、ミニプラグ→RCAのケーブルでAUX INへ</li>
+<li>テレビ・パソコン: 音声出力からRCAケーブルでAUX INへ</li>
+<li>CDチェンジャー・カセットデッキ: 音声出力からRCAケーブルでAUX INへ</li>
+</ul>
 <p>テレビにつなぐときは、本機をテレビの近くに置いてください。<br />
 画面と音の位置がそろいます。</p>
 <h3>I-2. LINE OUT（RCA左右）</h3>
 <p>本機の音を外に出す端子です。<br />
-音量つまみの影響を受けない固定出力です。</p>
+音量つまみから独立した固定出力です。</p>
 <ul>
 <li>録音機につないで、ラジオやCDを録音できます</li>
 <li>音量調整のできるパワードスピーカーにつなげます</li>
@@ -1029,254 +596,105 @@ FM、AM、またはPresetsのいずれかを押しても、ラジオが始まり
 <li>ケーブル会社に、FM再送信を提供しているか確認します</li>
 <li>同軸ケーブルを、背面のFM 75Ω端子にねじ込みます</li>
 </ol>
+<blockquote>
 <p>ケーブルテレビの信号には、FM放送以外の帯域も乗っています。<br />
-  FM帯だけを取り出す分配器（スプリッタ）が必要になる場合があります。<br />
-  接続の可否と必要な機材は、契約しているケーブル会社に確認してください。</p>
+FM帯だけを取り出す分配器（スプリッタ）が必要になる場合があります。<br />
+接続できるかどうかと必要な機材は、契約しているケーブル会社に確認してください。</p>
+</blockquote>
 
 </div>
+
 <div class="section">
-<h2>J. 経年で出やすい症状と、当方の分解整備</h2>
+  <span class="cat-label">J. 経年で出やすい症状と、当方の分解整備</span>
 <p>この機種は1998年に登場した製品です。<br />
 経年で出やすい症状があります。<br />
 当方はお届けの前にこれらを確認し、分解整備で処置しています。</p>
-<table>
-<thead>
-<tr>
-<th>症状</th>
-<th>原因</th>
-<th>当方の対応</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>FMの受信が弱い、途中で途切れる</td>
-<td>アンテナ端子の根元のはんだのひび割れ、または端子部の錆</td>
-<td>再はんだ・除錆</td>
-</tr>
-<tr>
-<td>意図せず電源が切れる</td>
-<td>電源の分岐部コネクタのはんだのひび割れ</td>
-<td>再はんだ</td>
-</tr>
-<tr>
-<td>天面のボタンを強く押して反応する</td>
-<td>操作パネルの接点の劣化</td>
-<td>清掃</td>
-</tr>
-<tr>
-<td>CDの回転・読み取りが途切れがち</td>
-<td>光学ピックアップの劣化、グリスの固着</td>
-<td>清掃とグリスの入れ替え</td>
-</tr>
-<tr>
-<td>CDを載せたときの認識が途切れがち</td>
-<td>CDユニット内の透過センサーの汚れ</td>
-<td>清掃。必要に応じて交換</td>
-</tr>
-<tr>
-<td>時計が停電のたびに消える</td>
-<td>9V電池の消耗</td>
-<td>新品のアルカリ電池を装着してお届けします</td>
-</tr>
-<tr>
-<td>内部に粘つく粉が飛散している</td>
-<td>発泡ウレタン材の加水分解</td>
-<td>除去（共通編 §12-2）</td>
-</tr>
-<tr>
-<td>ビス受けの割れ</td>
-<td>インチのタンパーねじを溝のない穴にねじ込む構造</td>
-<td>補修し、ミリねじに交換（共通編 §12-4）</td>
-</tr>
-</tbody>
-</table>
+<p>各項目は「症状: 原因 ／ 当方の対応」の順です。</p>
+<ul>
+<li>FMの受信が弱い、途中で途切れる: アンテナ端子の根元のはんだのひび割れ、または端子部の錆 ／ 再はんだ・除錆</li>
+<li>ひとりでに電源が切れる: 電源の分岐部コネクタのはんだのひび割れ ／ 再はんだ</li>
+<li>天面のボタンを強く押して反応する: 操作パネルの接点の劣化 ／ 清掃</li>
+<li>CDの回転・読み取りが途切れがち: 光学ピックアップの劣化、グリスの固着 ／ 清掃とグリスの入れ替え</li>
+<li>CDを載せたときの認識が途切れがち: CDユニット内の透過センサーの汚れ ／ 清掃。<br />
+  必要に応じて交換</li>
+<li>時計が停電のたびに消える: 9V電池の消耗 ／ 新品のアルカリ電池を装着してお届けします</li>
+<li>内部に粘つく粉が飛散している: 発泡ウレタン材の加水分解 ／ 除去（共通編 §12-2）</li>
+<li>ビス受けの割れ: インチのタンパーねじを平滑な下穴に直接ねじ込む構造 ／ 補修し、ミリねじに交換（共通編 §12-4）</li>
+</ul>
 
 </div>
+
 <div class="section">
-<h2>K. 困ったときは（この機種固有）</h2>
+  <span class="cat-label">K. 困ったときは（この機種固有）</span>
 <p>共通の症状は共通編 §11にあります。</p>
-<table>
-<thead>
-<tr>
-<th>症状</th>
-<th>確認すること</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>時計が点滅している</td>
-<td>電源を入れたばかりです。Time −または＋で合わせてください（§E-1）</td>
-</tr>
-<tr>
-<td>停電のたびに時計が消える</td>
-<td>9V電池の残量を確認してください（§D-3）</td>
-</tr>
-<tr>
-<td>表示が消えている</td>
-<td>表示を消す設定になっている可能性があります。電源を切った状態でCD Modeを押しながらOn/Off（§E-2）</td>
-</tr>
-<tr>
-<td>周波数を見たい</td>
-<td>時計モードになっています。Alarm Setupを押しながらTrack/Tuneで確認できます（§F-4）</td>
-</tr>
-<tr>
-<td>音量を見たい</td>
-<td>Alarm Setupを押しながらVolumeで確認できます（§E-2）</td>
-</tr>
-<tr>
-<td>本機を傾けるとCDのフタが開く</td>
-<td>天面のフタは、傾けると開く構造です。設計どおりの動作です。裏返す前にCDを取り出してください</td>
-</tr>
-<tr>
-<td>表示に<code>dISC</code>が出る</td>
-<td>ディスクの読み取りに失敗したときの表示です。表裏・傷・汚れを確認し、別のディスクで試してください。別のディスクでも同じ表示が出るときは、ご連絡ください</td>
-</tr>
-<tr>
-<td>CDが一時停止のまま電源が切れた</td>
-<td>一時停止から10分で自動的に電源が切れる設計です</td>
-</tr>
-<tr>
-<td>リピートが途中で止まった</td>
-<td>24時間で自動的に解除される設計です</td>
-</tr>
-<tr>
-<td>天面のボタンを強く押し込む必要がある</td>
-<td>接点の劣化によるものです。保証で対応しますので、ご連絡ください</td>
-</tr>
-<tr>
-<td>リモコンで時刻を合わせたい</td>
-<td>時刻・アラーム・プリセットは天面のパネルで設定します（§B-2）</td>
-</tr>
-<tr>
-<td>FMの受信が弱い</td>
-<td>電源コードを伸ばし、向きを変えます。それでも弱いときは、ご連絡ください</td>
-</tr>
-</tbody>
-</table>
+<ul>
+<li>時計が点滅している: 電源を入れたばかりです。<br />
+  Time −または＋で合わせてください（§E-1）</li>
+<li>停電のたびに時計が消える: 9V電池の残量を確認してください（§D-3）</li>
+<li>表示が消えている: 表示を消す設定になっている可能性があります。<br />
+  電源を切った状態でCD Modeを押しながらOn/Off（§E-2）</li>
+<li>周波数を見たい: 時計モードになっています。<br />
+  Alarm Setupを押しながらTrack/Tuneで確認できます（§F-4）</li>
+<li>音量を見たい: Alarm Setupを押しながらVolumeで確認できます（§E-2）</li>
+<li>本機を傾けるとCDのフタが開く: 天面のフタは、傾けると開く構造です。<br />
+  設計どおりの動作です。<br />
+  裏返す前にCDを取り出してください</li>
+<li>表示に<code>dISC</code>が出る: ディスクの読み取りに失敗したときの表示です。<br />
+  表裏・傷・汚れを確認し、別のディスクで試してください。<br />
+  別のディスクでも同じ表示が出るときは、ご連絡ください</li>
+<li>CDが一時停止のまま電源が切れた: 一時停止から10分で自動的に電源が切れる設計です</li>
+<li>リピートが途中で止まった: 24時間で自動的に解除される設計です</li>
+<li>天面のボタンを強く押し込む必要がある: 接点の劣化によるものです。<br />
+  保証で対応しますので、ご連絡ください</li>
+<li>リモコンで時刻を合わせたい: 時刻・アラーム・プリセットは天面のパネルで設定します（§B-2）</li>
+<li>FMの受信が弱い: 電源コードを伸ばし、向きを変えます。<br />
+  それでも弱いときは、ご連絡ください</li>
+</ul>
 <p>上記の確認のあとも続くときは、封印バンドを付けたままの状態でご連絡ください。</p>
-<h3>保証</h3>
-<p>お届け日から1年間のセンドバック完全保証をお付けしています。<br />
-保証は封印バンドが装着された状態に限らせていただきます。<br />
-保証期間中に修理が必要になった場合は、「パソコン宅急便BOX B」に再梱包してお送りください。<br />
-詳しくは保証書・保証規定をご覧ください。</p>
+<p>本機には、お届け日から1年間のセンドバック完全保証（1年保証）をお付けしています。<br />
+保証は、封印バンドが装着された状態で、メルカリでの当方との取引で購入されたユーザーご本人に適用されます。<br />
+保証期間中に修理が必要になった場合は、メールでご依頼のうえ、「パソコン宅急便BOX B」に再梱包してお送りください。<br />
+詳しくは保証ページをご覧ください。</p>
+<ul>
+<li>保証: <a href="https://penguin-computer.github.io/bose/warranty/">https://penguin-computer.github.io/bose/warranty/</a></li>
+</ul>
 
 </div>
+
 <div class="section">
-<h2>L. 特殊操作の早見表</h2>
-<p>いずれも天面の操作パネルで行います。</p>
-<table>
-<thead>
-<tr>
-<th>押しながら</th>
-<th>押す</th>
-<th>できること</th>
-<th>条件</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Alarm Setup</td>
-<td>Sleep/Snooze</td>
-<td>ナップタイマー（§H-4）</td>
-<td>電源の入切を問わず</td>
-</tr>
-<tr>
-<td>Sleep/Snooze</td>
-<td>Time −／＋</td>
-<td>スヌーズの長さ（§H-2）</td>
-<td>アラーム設定中</td>
-</tr>
-<tr>
-<td>Alarm Setup</td>
-<td>Volume上／下</td>
-<td>アラーム音量の試聴（§H-2）</td>
-<td>アラーム設定中</td>
-</tr>
-<tr>
-<td>Alarm Setup</td>
-<td>On/Off</td>
-<td>12時間／24時間の切り替え（§E-2）</td>
-<td>電源オフ</td>
-</tr>
-<tr>
-<td>Alarm Setup</td>
-<td>CD Stop</td>
-<td>バックアップ電池の残量（§D-3）</td>
-<td>電源オフ</td>
-</tr>
-<tr>
-<td>CD Mode</td>
-<td>Volume上／下</td>
-<td>表示の明るさ（§E-2）</td>
-<td>電源オフ</td>
-</tr>
-<tr>
-<td>CD Mode</td>
-<td>On/Off</td>
-<td>表示の消灯・点灯（§E-2）</td>
-<td>電源オフ</td>
-</tr>
-<tr>
-<td>Alarm Setup</td>
-<td>Volume上／下</td>
-<td>現在の音量の確認（§E-2）</td>
-<td>音量を確認したいとき</td>
-</tr>
-<tr>
-<td>Alarm Setup</td>
-<td>Track/Tune</td>
-<td>CD時間・周波数の確認（§E-2）</td>
-<td>時計モードのとき</td>
-</tr>
-<tr>
-<td>Alarm Setup</td>
-<td>CD Play</td>
-<td>CD時間の表示切替（§G-6）</td>
-<td>再生中・一時停止中</td>
-</tr>
-<tr>
-<td>Alarm Setup</td>
-<td>FM / AM / AUX</td>
-<td>CD終了後に移る音源（§G-7）</td>
-<td>CDモード</td>
-</tr>
-<tr>
-<td>Alarm Setup</td>
-<td>Preset 1</td>
-<td>時計モードにする（§E-2）</td>
-<td>電源オン</td>
-</tr>
-<tr>
-<td>Alarm Setup</td>
-<td>Preset 2</td>
-<td>音源情報モードにする（§E-2）</td>
-<td>電源オン</td>
-</tr>
-<tr>
-<td>Alarm Setup</td>
-<td>CD Stop</td>
-<td>CDプログラムの開始（§G-4）</td>
-<td>CD停止中</td>
-</tr>
-<tr>
-<td>Alarm Setup</td>
-<td>CD Mode</td>
-<td>CDプログラムに登録（§G-4）</td>
-<td>プログラム中</td>
-</tr>
-</tbody>
-</table>
+  <span class="cat-label">L. 特殊操作の早見表</span>
+<p>いずれも天面の操作パネルで行います。<br />
+各項目は「押しながら＋押すボタン: できること ／ 条件」の順です。</p>
+<ul>
+<li>Alarm Setup＋Sleep/Snooze: ナップタイマー（§H-4）／ 電源の入切どちらでも</li>
+<li>Sleep/Snooze＋Time −／＋: スヌーズの長さ（§H-2）／ アラーム設定中</li>
+<li>Alarm Setup＋Volume上／下: アラーム音量の試聴（§H-2）／ アラーム設定中</li>
+<li>Alarm Setup＋On/Off: 12時間／24時間の切り替え（§E-2）／ 電源オフ</li>
+<li>Alarm Setup＋CD Stop: バックアップ電池の残量（§D-3）／ 電源オフ</li>
+<li>CD Mode＋Volume上／下: 表示の明るさ（§E-2）／ 電源オフ</li>
+<li>CD Mode＋On/Off: 表示の消灯・点灯（§E-2）／ 電源オフ</li>
+<li>Alarm Setup＋Volume上／下: 現在の音量の確認（§E-2）／ 音量を確認したいとき</li>
+<li>Alarm Setup＋Track/Tune: CD時間・周波数の確認（§E-2）／ 時計モードのとき</li>
+<li>Alarm Setup＋CD Play: CD時間の表示切替（§G-6）／ 再生中・一時停止中</li>
+<li>Alarm Setup＋FM / AM / AUX: CD終了後に移る音源（§G-7）／ CDモード</li>
+<li>Alarm Setup＋Preset 1: 時計モードにする（§E-2）／ 電源オン</li>
+<li>Alarm Setup＋Preset 2: 音源情報モードにする（§E-2）／ 電源オン</li>
+<li>Alarm Setup＋CD Stop: CDプログラムの開始（§G-4）／ CD停止中</li>
+<li>Alarm Setup＋CD Mode: CDプログラムに登録（§G-4）／ プログラム中</li>
+</ul>
 
 </div>
+
 <div class="section">
-<h2>M. 索引</h2>
+  <span class="cat-label">M. 索引</span>
 <p>9V電池 §D ／ AUX IN §I-1 ／ LINE OUT §I-2 ／ Pr01 §G-4 ／ RANDOM §G-5 ／<br />
 アラーム §H ／ 明るさ §E-2 ／ お届けするもの §A-6 ／ 型番 §A-1 ／ 共鳴管 §A-3 ／ ケーブルテレビ §I-4 ／<br />
 蛍光表示管 §B-3 ／ 困ったときは §K ／ 再生モード §G-5 ／ 仕様 §C ／ 時計 §E-1 ／<br />
 製造日 §A-2 ／ 早見表 §L ／ 台座 §A-6 ／ ナップタイマー §H-4 ／ 分解整備 §J ／<br />
 スヌーズ §H-2 ／ スピーカーユニット §A-3 ／ スリープ §H-5 ／ 操作パネル §B-1 ／ 底面 §B-5 ／ 背面 §B-4 ／<br />
 表示の読み方 §B-3 ／ プリセット §F-3 ／ プログラム再生 §G-4 ／ フタ §G-1 ／ 保証 §K ／<br />
-リセット §E-5 ／ リモコン §A-6・§B-2 ／ 後継機との違い §A-5</p></div>
+リセット §E-5 ／ リモコン §B-2 ／ 後継機との違い §A-5</p>
+</div>
 
 <div class="footer">
   <p><strong>Penguin Computer</strong></p>
